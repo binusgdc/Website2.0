@@ -1,38 +1,38 @@
 // getStaticProps
 
-import React from "react";
-
-import Children from "../components/Children";
-import Style from "../styles/Home.module.css";
+import Children from "../components/Children"
+import Style from "../styles/Home.module.css"
 /**
  * import scoped css
  * css ini hanya berlaku di component ini saja
  */
 
-
 interface Contacts {
-    name: string;
-    age: number;
+    name: string
+    age: number
 }
 
 interface ContactProps {
-    contacts: Contacts[];
+    contacts: Contacts[]
 }
-
 
 // Naming convention (default react): huruf awal komponen HARUS Kapital
 export default function Contact({ contacts }: ContactProps) {
-
     return (
         <div>
             <h1>contact Page</h1>
-            {contacts.map((contact, index) => (  // mapping tiap contact
-                <div key={index} className={Style.background}>
-                    <p>Name: {contact.name}</p>  {/* tanda {} buat nampilkan value ke html */}
-                    <p>Age: {contact.age}</p>
-                    <hr />
-                </div>
-            ))}
+            {contacts.map(
+                (
+                    contact,
+                    index // mapping tiap contact
+                ) => (
+                    <div key={index} className={Style.background}>
+                        <p>Name: {contact.name}</p> {/* tanda {} buat nampilkan value ke html */}
+                        <p>Age: {contact.age}</p>
+                        <hr />
+                    </div>
+                )
+            )}
             <Children>
                 <button>a</button>
                 <button>b</button>
@@ -54,10 +54,9 @@ export async function getStaticProps() {
         { name: "Klee", age: 7 },
     ]
 
-
     return {
         props: {
-            contacts: dataContact
+            contacts: dataContact,
         },
     }
 }
