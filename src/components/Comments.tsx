@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react"
+import Image from "next/image"
 
 // Schema Data Comments
 // const dat2 = {
@@ -9,7 +9,7 @@ import Image from 'next/image'
 //     img: "/Ellipse.png",
 // }
 
-export default function Comments({ data } : any) {
+export default function Comments({ data }: any) {
     return (
         <>
             <div className="w-[397px] overflow-hidden text-sm relative bg-white rounded-xl shadow-xl">
@@ -30,5 +30,5 @@ export default function Comments({ data } : any) {
                 </div>
             </div>
         </>
-  )
+    )
 }
