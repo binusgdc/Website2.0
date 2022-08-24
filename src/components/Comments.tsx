@@ -10,13 +10,15 @@ interface commentsData {
     }
 }
 
-export default function Comments(data: commentsData) {
+export default function Comments({ commentdata }: commentsData) {
+    const { name, title, testimoni, img } = commentdata
+
     return (
-        <div className="w-[397px] overflow-hidden text-sm relative bg-white rounded-xl shadow-xl">
-            <p className="overflow-hidden p-[32.5px]">{data.commentdata.testimoni}</p>
-            <div className="flex px-[32.5px] pb-[32.5px] items-center">
+        <div className="max-w-sm m-3 overflow-hidden text-sm relative bg-white rounded-xl shadow-xl">
+            <p className="overflow-hidden p-8">{testimoni}</p>
+            <div className="flex px-8 pb-8 items-center">
                 <Image
-                    src={data.commentdata.img}
+                    src={img}
                     alt="photo"
                     width={64}
                     height={64}
@@ -24,8 +26,8 @@ export default function Comments(data: commentsData) {
                     className="rounded-full"
                 />
                 <div className="px-[17px]">
-                    <h4 className="font-bold">{data.commentdata.name}</h4>
-                    <h5 className="font-semibold">{data.commentdata.title}</h5>
+                    <h4 className="font-bold">{name}</h4>
+                    <h5 className="font-semibold">{title}</h5>
                 </div>
             </div>
         </div>
