@@ -25,10 +25,12 @@
   },
   "plugins": [
     "@next/eslint-plugin-next",
+    "unused-imports",
     "prettier"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": "warn"
+    "prettier/prettier": "warn",
+    "unused-imports/no-unused-imports": "warn"
   }
 }
