@@ -1,6 +1,7 @@
 // server side rendering (getServerSideProps)
 
 import { useEffect, useState } from "react"
+import { GetServerSidePropsContext } from "next"
 
 interface ServerProps {
     time: string
@@ -47,13 +48,15 @@ export default function Server({ time }: ServerProps) {
     )
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ req }: GetServerSidePropsContext) {
     /**
      * getServerSideProps() ini akan dijalankan di server
      * jadi dia bisa fetch data dari database
      */
 
-    const res = await fetch("http://localhost:3000/api/test") // kalau mau pakai axios jg bisa (npm install axios)
+    const protocol = req.headers["x-forwarded-proto"] || "http"
+    const baseUrl = req ? `${protocol}://${req.headers.host}` : ""
+    const res = await fetch(baseUrl + "/api/test") // kalau mau pakai axios jg bisa (npm install axios)
     /**
      * Ini cuma contoh fetch data dari API
      * Nggk direkomen fetch api internal dari getServerSideProps
