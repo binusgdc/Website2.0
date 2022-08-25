@@ -1,28 +1,33 @@
 import { useState } from "react"
 
-export default function Post() {
-    const [data, setData] = useState([
-        {
-            first: "John",
-            last: "Doe",
-            handle: "@johndoe",
-        },
-        {
-            first: "Alex",
-            last: "Smith",
-            handle: "@alexsmith",
-        },
-    ])
+import connect from "../libs/databse"
+import User from "../model/user"
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+interface PostProps {
+    users: {
+        first_name: string
+        last_name: string
+        handle: string
+    }[]
+}
+
+export default function Post({ users }: PostProps) {
+    const [data, setData] = useState(users)
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         const first = e.currentTarget.first.value
         const last = e.currentTarget.last.value
         const handle = e.currentTarget.handle.value
-        setData([...data, { first, last, handle }])
+        setData([...data, { first_name: first, last_name: last, handle }])
         e.currentTarget.first.value = ""
         e.currentTarget.last.value = ""
         e.currentTarget.handle.value = ""
+        await fetch("/api/db", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ first_name: first, last_name: last, handle }),
+        })
     }
 
     return (
@@ -40,8 +45,8 @@ export default function Post() {
                     {data.map((item, index) => (
                         <tr key={index}>
                             <th scope="row">{index + 1}</th>
-                            <td>{item.first}</td>
-                            <td>{item.last}</td>
+                            <td>{item.first_name}</td>
+                            <td>{item.last_name}</td>
                             <td>{item.handle}</td>
                         </tr>
                     ))}
@@ -75,4 +80,14 @@ export default function Post() {
             </form>
         </div>
     )
+}
+
+export async function getServerSideProps() {
+    await connect()
+    const users = await User.find({}, "-_id -__v").lean()
+    return {
+        props: {
+            users,
+        },
+    }
 }
