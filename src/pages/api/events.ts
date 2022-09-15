@@ -121,16 +121,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 }
 
                 const reqBodyKeys = Object.keys(req.body)
-                const illegalBodyHandler = () => {
-                    console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties or contains illegal properties\n`
-                    )
-                    resp(400)
-                }
-
                 for (let i = 0; i < reqBodyKeys.length; i++) {
                     if (!eventSchemaKeys.includes(reqBodyKeys[i])) {
-                        illegalBodyHandler()
+                        console.log(
+							`[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties\n`
+						)
+						resp(400)
                         return
                     }
                 }
