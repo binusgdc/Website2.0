@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next"
 
 import connect from "../../libs/database"
 
-import Event from "../../model/event"
+import Event, { eventSchemaKeys } from "../../model/event"
 
 interface PackedRequestData {
     client: string
@@ -103,6 +103,69 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
                 console.log(`[${client}]'s request has been fulfilled`)
                 resp(201)
+                return
+            }
+            break
+
+        case "PUT":
+            {
+                if (!checkRequestHeader(r, ContentType.JSON)) return
+                printRequest(r)
+
+                if (typeof req.body.id !== "string") {
+                    console.log(
+                        `[${client}]'s Request Body is malformed:\n\n> id field must be a single Event ID, which has the format /^E\\d+$/g\n`
+                    )
+                    resp(400)
+                    return
+                }
+
+                const reqBodyKeys = Object.keys(req.body)
+                console.log(reqBodyKeys)
+                console.log(eventSchemaKeys)
+                const illegalBodyHandler = () => {
+                    console.log(
+                        `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties or contains illegal properties\n`
+                    )
+                    resp(400)
+                }
+
+                if (reqBodyKeys.length !== eventSchemaKeys.length) {
+                    illegalBodyHandler()
+                    return
+                }
+
+                for (let i = 0; i < eventSchemaKeys.length; i++) {
+                    if (!eventSchemaKeys.includes(reqBodyKeys[i])) {
+                        illegalBodyHandler()
+                        return
+                    }
+                }
+
+                const { matchedCount, modifiedCount } = await Event.updateMany(
+                    { id: req.body.id },
+                    { $set: req.body },
+                    { runValidators: true }
+                )
+
+                if (matchedCount <= 0) {
+                    console.log(
+                        `[${client}]'s request to PUT id ${req.body.id} failed because it does not exist`
+                    )
+                    resp(404)
+                    return
+                }
+
+                if (matchedCount !== modifiedCount) {
+                    console.log(
+                        `[${client}]'s request to PUT id ${req.body.id} succeeded but did not modify anything`
+                    )
+                    resp(200)
+                    return
+                }
+
+                console.log(`[${client}]'s request has been fulfilled`)
+                resp(200)
                 return
             }
             break
