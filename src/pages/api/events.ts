@@ -130,12 +130,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     resp(400)
                 }
 
-                if (reqBodyKeys.length !== eventSchemaKeys.length) {
-                    illegalBodyHandler()
-                    return
-                }
-
-                for (let i = 0; i < eventSchemaKeys.length; i++) {
+                for (let i = 0; i < reqBodyKeys.length; i++) {
                     if (!eventSchemaKeys.includes(reqBodyKeys[i])) {
                         illegalBodyHandler()
                         return
