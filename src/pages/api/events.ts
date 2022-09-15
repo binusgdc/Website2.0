@@ -77,19 +77,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!checkRequestHeader(r, ContentType.JSON)) return
                 printRequest(r)
 
-                if (typeof req.body.id !== "string") {
+                if (typeof req.body._id !== "string") {
                     console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> id field must be a single Event ID, which has the format /^E\\d+$/g\n`
+                        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single Event ID, which has the format /^E\\d+$/g\n`
                     )
                     resp(400)
-                    return
-                }
-
-                if ((await Event.find({ id: req.body.id }).lean()).length > 0) {
-                    console.log(
-                        `[${client}]'s request to POST id ${req.body.id} cannot be fulfilled because it already exists`
-                    )
-                    resp(409)
                     return
                 }
 
@@ -112,9 +104,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!checkRequestHeader(r, ContentType.JSON)) return
                 printRequest(r)
 
-                if (typeof req.body.id !== "string") {
+                if (typeof req.body._id !== "string") {
                     console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> id field must be a single Event ID, which has the format /^E\\d+$/g\n`
+                        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single Event ID, which has the format /^E\\d+$/g\n`
                     )
                     resp(400)
                     return
@@ -132,14 +124,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 }
 
                 const { matchedCount, modifiedCount } = await Event.updateMany(
-                    { id: req.body.id },
+                    { _id: req.body._id },
                     { $set: req.body },
                     { runValidators: true }
                 )
 
                 if (matchedCount <= 0) {
                     console.log(
-                        `[${client}]'s request to PUT id ${req.body.id} failed because it does not exist`
+                        `[${client}]'s request to PUT _id ${req.body._id} failed because it does not exist`
                     )
                     resp(404)
                     return
@@ -147,7 +139,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
                 if (matchedCount !== modifiedCount) {
                     console.log(
-                        `[${client}]'s request to PUT id ${req.body.id} succeeded but did not modify anything`
+                        `[${client}]'s request to PUT _id ${req.body._id} succeeded but did not modify anything`
                     )
                     resp(200)
                     return
@@ -164,18 +156,18 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!checkRequestHeader(r, ContentType.JSON)) return
                 printRequest(r)
 
-                if (typeof req.body.id !== "string") {
+                if (typeof req.body._id !== "string") {
                     console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> id field must be a single Event ID, which has the format /^E\\d+$/g\n`
+                        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single Event ID, which has the format /^E\\d+$/g\n`
                     )
                     resp(400)
                     return
                 }
 
-                const { deletedCount } = await Event.deleteMany({ id: req.body.id })
+                const { deletedCount } = await Event.deleteMany({ _id: req.body._id })
                 if (~~deletedCount <= 0) {
                     console.log(
-                        `[${client}]'s request to DELETE id ${req.body.id} failed because it does not exist`
+                        `[${client}]'s request to DELETE _id ${req.body._id} failed because it does not exist`
                     )
                     resp(404)
                     return

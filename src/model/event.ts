@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose"
 
 const rawSchema = {
-    id: {
+    _id: {
         type: String,
         required: true,
         validate: {
