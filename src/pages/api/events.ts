@@ -35,11 +35,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!checkRequestHeader(r, ContentType.JSON)) return
                 printRequest(r)
 
-                if (typeof req.body._id !== "string") {
-                    console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single Event ID, which has the format /^E\\d+$/g\n`
-                    )
-                    resp(400)
+                if (!checkSuppliedId(r)) {
+                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
                     return
                 }
 
@@ -90,11 +87,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!checkRequestHeader(r, ContentType.JSON)) return
                 printRequest(r)
 
-                if (typeof req.body._id !== "string") {
-                    console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single Event ID, which has the format /^E\\d+$/g\n`
-                    )
-                    resp(400)
+                if (!checkSuppliedId(r)) {
+                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
                     return
                 }
 
