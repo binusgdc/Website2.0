@@ -57,14 +57,18 @@ export function checkRequestHeader(r: PackedRequestData, contentType: ContentTyp
 }
 
 export function checkRequestBody(r: PackedRequestData, schemaKeys: string[]) {
-    const { client, req } = r
+    const { req } = r
+
     const reqBodyKeys = Object.keys(req.body)
+
+    if (reqBodyKeys.length <= 0) {
+        sendMissingBodyPropertiesResponse(r)
+        return false
+    }
+
     for (let i = 0; i < reqBodyKeys.length; i++) {
         if (!schemaKeys.includes(reqBodyKeys[i])) {
-            console.log(
-                `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties\n`
-            )
-            respond(r, 400)
+            sendMissingBodyPropertiesResponse(r)
             return false
         }
     }
@@ -123,6 +127,16 @@ export function sendMultipleSuppliedIdsErrorResponse(
     const { client } = r
     console.log(
         `[${client}]'s Request Body is malformed:\n\n> _id field must be a single ${idType} ID, which has the format ${idFormat}\n`
+    )
+    respond(r, 400)
+    return
+}
+
+function sendMissingBodyPropertiesResponse(r: PackedRequestData) {
+    const { client } = r
+
+    console.log(
+        `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties\n`
     )
     respond(r, 400)
     return
