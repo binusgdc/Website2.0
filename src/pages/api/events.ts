@@ -1,12 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next"
 
 import {
+    checkRequestBody,
     checkRequestHeader,
+    checkSuppliedId,
     ContentType,
     greet,
     PackedRequestData,
     printRequest,
     respond,
+    sendIllegalMethodResponse,
+    sendMultipleSuppliedIdsErrorResponse,
+    sendUpdateResultResponse,
 } from "../../libs/apiHandling"
 import connect from "../../libs/database"
 
@@ -56,50 +61,21 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!checkRequestHeader(r, ContentType.JSON)) return
                 printRequest(r)
 
-                if (typeof req.body._id !== "string") {
-                    console.log(
-                        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single Event ID, which has the format /^E\\d+$/g\n`
-                    )
-                    resp(400)
+                if (!checkSuppliedId(r)) {
+                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
                     return
                 }
 
-                const reqBodyKeys = Object.keys(req.body)
-                for (let i = 0; i < reqBodyKeys.length; i++) {
-                    if (!eventSchemaKeys.includes(reqBodyKeys[i])) {
-                        console.log(
-                            `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties\n`
-                        )
-                        resp(400)
-                        return
-                    }
-                }
+                if (!checkRequestBody(r, eventSchemaKeys)) return
 
-                const { matchedCount, modifiedCount } = await Event.updateMany(
-                    { _id: req.body._id },
-                    { $set: req.body },
-                    { runValidators: true }
+                sendUpdateResultResponse(
+                    r,
+                    await Event.updateMany(
+                        { _id: req.body._id },
+                        { $set: req.body },
+                        { runValidators: true }
+                    )
                 )
-
-                if (matchedCount <= 0) {
-                    console.log(
-                        `[${client}]'s request to PUT _id ${req.body._id} failed because it does not exist`
-                    )
-                    resp(404)
-                    return
-                }
-
-                if (matchedCount !== modifiedCount) {
-                    console.log(
-                        `[${client}]'s request to PUT _id ${req.body._id} succeeded but did not modify anything`
-                    )
-                    resp(200)
-                    return
-                }
-
-                console.log(`[${client}]'s request has been fulfilled`)
-                resp(200)
-                return
             }
             break
 
@@ -132,11 +108,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             break
 
         default:
-            {
-                console.log(`[${client}] asked to ${req.method}, which is illegal here`)
-                resp(405)
-                return
-            }
+            sendIllegalMethodResponse(r)
             break
     }
 }

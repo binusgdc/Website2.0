@@ -1,3 +1,4 @@
+import { UpdateResult } from "mongodb"
 import { NextApiRequest, NextApiResponse } from "next"
 
 export interface PackedRequestData {
@@ -55,9 +56,82 @@ export function checkRequestHeader(r: PackedRequestData, contentType: ContentTyp
     return true
 }
 
+export function checkRequestBody(r: PackedRequestData, schemaKeys: string[]) {
+    const { client, req } = r
+    const reqBodyKeys = Object.keys(req.body)
+    for (let i = 0; i < reqBodyKeys.length; i++) {
+        if (!schemaKeys.includes(reqBodyKeys[i])) {
+            console.log(
+                `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties\n`
+            )
+            respond(r, 400)
+            return false
+        }
+    }
+
+    return true
+}
+
+export function checkSuppliedId(r: PackedRequestData) {
+    const { req } = r
+
+    return typeof req.body._id !== "string"
+}
+
 export function respond(r: PackedRequestData, code: number) {
     const { client, res } = r
 
     console.log(`[${client}] is to be responded with: ${HRC[code]}`)
     res.status(code).end()
+}
+
+export function sendUpdateResultResponse(r: PackedRequestData, res: UpdateResult) {
+    const { client, req } = r
+    const { matchedCount, modifiedCount } = res
+
+    if (matchedCount <= 0) {
+        console.log(
+            `[${client}]'s request to PUT _id ${req.body._id} failed because it does not exist`
+        )
+        respond(r, 404)
+        return
+    }
+
+    if (matchedCount !== modifiedCount) {
+        console.log(
+            `[${client}]'s request to PUT _id ${req.body._id} succeeded but did not modify anything`
+        )
+        respond(r, 200)
+        return
+    }
+
+    sendTotalSuccessResponse(r)
+}
+
+function sendTotalSuccessResponse(r: PackedRequestData) {
+    const { client, req } = r
+
+    console.log(`[${client}]'s request has been fulfilled`)
+    respond(r, 200)
+}
+
+export function sendMultipleSuppliedIdsErrorResponse(
+    r: PackedRequestData,
+    idType: string,
+    idFormat: string
+) {
+    const { client } = r
+    console.log(
+        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single ${idType} ID, which has the format ${idFormat}\n`
+    )
+    respond(r, 400)
+    return
+}
+
+export function sendIllegalMethodResponse(r: PackedRequestData) {
+    const { client, req } = r
+
+    console.log(`[${client}] asked to ${req.method}, which is illegal here`)
+    respond(r, 405)
+    return
 }
