@@ -9,6 +9,7 @@ import {
     PackedRequestData,
     printRequest,
     respond,
+    sendGenericMalformedRequestBodyResponse,
     sendIllegalMethodResponse,
     sendMultipleSuppliedIdsErrorResponse,
     sendUpdateResultResponse,
@@ -68,14 +69,19 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
                 if (!checkRequestBody(r, eventSchemaKeys)) return
 
-                sendUpdateResultResponse(
-                    r,
-                    await Event.updateMany(
-                        { _id: req.body._id },
-                        { $set: req.body },
-                        { runValidators: true }
-                    )
-                )
+				try {
+					sendUpdateResultResponse(
+						r,
+						await Event.updateMany(
+							{ _id: req.body._id },
+							{ $set: req.body },
+							{ runValidators: true }
+						)
+					)
+				} catch (err: any) {
+					sendGenericMalformedRequestBodyResponse(r, err.message)
+					return
+				}
             }
             break
 
