@@ -12,6 +12,7 @@ import {
     sendGenericMalformedRequestBodyResponse,
     sendIllegalMethodResponse,
     sendMultipleSuppliedIdsErrorResponse,
+    sendTotalSuccessResponse,
     sendUpdateResultResponse,
 } from "../../libs/apiHandling"
 import connect from "../../libs/database"
@@ -43,12 +44,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 try {
                     await Event.create(req.body)
                 } catch (err: any) {
-                    console.log(`[${client}]'s Request Body is malformed:\n\n> ${err.message}\n`)
-                    resp(400)
+                    sendGenericMalformedRequestBodyResponse(r, err.message)
                     return
                 }
 
-                console.log(`[${client}]'s request has been fulfilled`)
+                sendTotalSuccessResponse(r)
                 resp(201)
                 return
             }
@@ -101,7 +101,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     return
                 }
 
-                console.log(`[${client}]'s request has been fulfilled`)
+                sendTotalSuccessResponse(r)
                 resp(200)
                 return
             }

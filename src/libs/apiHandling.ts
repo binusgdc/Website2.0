@@ -110,13 +110,13 @@ export function sendUpdateResultResponse(r: PackedRequestData, res: UpdateResult
     }
 
     sendTotalSuccessResponse(r)
+    respond(r, 200)
 }
 
-function sendTotalSuccessResponse(r: PackedRequestData) {
-    const { client, req } = r
+export function sendTotalSuccessResponse(r: PackedRequestData) {
+    const { client } = r
 
     console.log(`[${client}]'s request has been fulfilled`)
-    respond(r, 200)
 }
 
 export function sendMultipleSuppliedIdsErrorResponse(
