@@ -133,11 +133,11 @@ export function sendMultipleSuppliedIdsErrorResponse(
 }
 
 export function sendGenericMalformedRequestBodyResponse(r: PackedRequestData, msg: string) {
-	const { client } = r
+    const { client } = r
 
-	console.log(`[${client}]'s Request Body is malformed:\n\n> ${msg}\n`)
-	respond(r, 400)
-	return
+    console.log(`[${client}]'s Request Body is malformed:\n\n> ${msg}\n`)
+    respond(r, 400)
+    return
 }
 
 function sendMissingBodyPropertiesResponse(r: PackedRequestData) {
