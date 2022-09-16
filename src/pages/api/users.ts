@@ -9,9 +9,11 @@ import {
     PackedRequestData,
     printRequest,
     respond,
+    sendDeleteResultResponse,
     sendGenericMalformedRequestBodyResponse,
     sendIllegalMethodResponse,
     sendMultipleSuppliedIdsErrorResponse,
+    sendTotalSuccessResponse,
     sendUpdateResultResponse,
 } from "../../libs/apiHandling"
 import connect from "../../libs/database"
@@ -32,7 +34,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     switch (req.method) {
         case "POST":
             {
-                //
+                if (!checkRequestHeader(r, ContentType.JSON)) return
+                printRequest(r)
+
+                if (!checkSuppliedId(r)) {
+                    sendMultipleSuppliedIdsErrorResponse(r, "User", "/^U\\d+$/g")
+                    return
+                }
+
+                try {
+                    await User.create(req.body)
+                } catch (err: any) {
+                    sendGenericMalformedRequestBodyResponse(r, err.message)
+                    return
+                }
+
+                sendTotalSuccessResponse(r)
+                resp(201)
+                return
             }
             break
 
@@ -66,7 +85,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         case "DELETE":
             {
-                //
+                if (!checkRequestHeader(r, ContentType.JSON)) return
+                printRequest(r)
+
+                if (!checkSuppliedId(r)) {
+                    sendMultipleSuppliedIdsErrorResponse(r, "User", "/^U\\d+$/g")
+                    return
+                }
+
+                sendDeleteResultResponse(r, await User.deleteMany({ _id: req.body._id }))
+                return
             }
             break
 
