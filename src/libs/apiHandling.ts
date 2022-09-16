@@ -1,4 +1,4 @@
-import { UpdateResult } from "mongodb"
+import { DeleteResult, UpdateResult } from "mongodb"
 import { NextApiRequest, NextApiResponse } from "next"
 
 export interface PackedRequestData {
@@ -106,6 +106,22 @@ export function sendUpdateResultResponse(r: PackedRequestData, res: UpdateResult
             `[${client}]'s request to PUT _id ${req.body._id} succeeded but did not modify anything`
         )
         respond(r, 200)
+        return
+    }
+
+    sendTotalSuccessResponse(r)
+    respond(r, 200)
+}
+
+export function sendDeleteResultResponse(r: PackedRequestData, res: DeleteResult) {
+    const { client, req } = r
+    const { deletedCount } = res
+
+    if (~~deletedCount <= 0) {
+        console.log(
+            `[${client}]'s request to DELETE _id ${req.body._id} failed because it does not exist`
+        )
+        respond(r, 404)
         return
     }
 

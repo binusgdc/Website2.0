@@ -9,6 +9,7 @@ import {
     PackedRequestData,
     printRequest,
     respond,
+    sendDeleteResultResponse,
     sendGenericMalformedRequestBodyResponse,
     sendIllegalMethodResponse,
     sendMultipleSuppliedIdsErrorResponse,
@@ -92,17 +93,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     return
                 }
 
-                const { deletedCount } = await Event.deleteMany({ _id: req.body._id })
-                if (~~deletedCount <= 0) {
-                    console.log(
-                        `[${client}]'s request to DELETE _id ${req.body._id} failed because it does not exist`
-                    )
-                    resp(404)
-                    return
-                }
-
-                sendTotalSuccessResponse(r)
-                resp(200)
+                sendDeleteResultResponse(r, await Event.deleteMany({ _id: req.body._id }))
                 return
             }
             break
