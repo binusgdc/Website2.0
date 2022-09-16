@@ -79,7 +79,7 @@ export function checkRequestBody(r: PackedRequestData, schemaKeys: string[]) {
 export function checkSuppliedId(r: PackedRequestData) {
     const { req } = r
 
-    return typeof req.body._id !== "string"
+    return typeof req.body._id === "string"
 }
 
 export function respond(r: PackedRequestData, code: number) {
@@ -130,6 +130,14 @@ export function sendMultipleSuppliedIdsErrorResponse(
     )
     respond(r, 400)
     return
+}
+
+export function sendGenericMalformedRequestBodyResponse(r: PackedRequestData, msg: string) {
+	const { client } = r
+
+	console.log(`[${client}]'s Request Body is malformed:\n\n> ${msg}\n`)
+	respond(r, 400)
+	return
 }
 
 function sendMissingBodyPropertiesResponse(r: PackedRequestData) {
