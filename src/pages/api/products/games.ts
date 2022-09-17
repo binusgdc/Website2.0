@@ -15,10 +15,10 @@ import {
     sendMultipleSuppliedIdsErrorResponse,
     sendTotalSuccessResponse,
     sendUpdateResultResponse,
-} from "../../libs/apiHandling"
-import connect from "../../libs/database"
+} from "../../../libs/apiHandling"
+import connect from "../../../libs/database"
 
-import Game_kami, { gameKamiSchemaKeys } from "../../model/game_kami"
+import Game, { gameSchemaKeys } from "../../../model/game"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     await connect()
@@ -38,12 +38,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Game", "/^G\\d+$/g")
                     return
                 }
 
                 try {
-                    await Game_kami.create(req.body)
+                    await Game.create(req.body)
                 } catch (err: any) {
                     sendGenericMalformedRequestBodyResponse(r, err.message)
                     return
@@ -61,16 +61,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Game", "/^G\\d+$/g")
                     return
                 }
 
-                if (!checkRequestBody(r, gameKamiSchemaKeys)) return
+                if (!checkRequestBody(r, gameSchemaKeys)) return
 
                 try {
                     sendUpdateResultResponse(
                         r,
-                        await Game_kami.updateMany(
+                        await Game.updateMany(
                             { _id: req.body._id },
                             { $set: req.body },
                             { runValidators: true }
@@ -89,11 +89,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Game", "/^G\\d+$/g")
                     return
                 }
 
-                sendDeleteResultResponse(r, await Game_kami.deleteMany({ _id: req.body._id }))
+                sendDeleteResultResponse(r, await Game.deleteMany({ _id: req.body._id }))
                 return
             }
             break

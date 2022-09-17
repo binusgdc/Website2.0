@@ -6,10 +6,10 @@ const rawSchema = {
         required: true,
         validate: {
             validator: function (input: string) {
-                return /^E\d+$/g.test(input)
+                return /^G\d+$/g.test(input)
             },
 
-            message: "Game Kami IDs must have the format /^E\\d+$/g",
+            message: "Game IDs must have the format /^G\\d+$/g",
         },
     },
 
@@ -34,10 +34,8 @@ const rawSchema = {
     }
 }
 
-const gameKamiSchema = new Schema(rawSchema)
-const gameKamiSchemaKeys = Object.keys(rawSchema)
+const gameSchema = new Schema(rawSchema)
+const gameSchemaKeys = Object.keys(rawSchema)
 
-export default mongoose.models.Game_kami || mongoose.model("Game_kami", gameKamiSchema, "Game_kami")
-export { gameKamiSchemaKeys }
-
-// pls fix my naming convention if it's doo doo
+export default mongoose.models.Game || mongoose.model("Game", gameSchema, "Games")
+export { gameSchemaKeys }
