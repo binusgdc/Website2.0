@@ -6,14 +6,14 @@ const rawSchema = {
         required: true,
         validate: {
             validator: function (input: string) {
-                return /^E\d+$/g.test(input)
+                return /^T\d+$/g.test(input)
             },
 
-            message: "Comment IDs must have the format /^E\\d+$/g",
+            message: "Testimony IDs must have the format /^T\\d+$/g",
         },
     },
 
-    userId: {
+    authorId: {
         type: String,
         required: true,
         validate: {
@@ -21,7 +21,7 @@ const rawSchema = {
                 return /^U\d+$/g.test(input)
             },
 
-            message: "User ID must have the format /^U\\d+$/g",
+            message: "Author IDs are User IDs, which must have the format /^U\\d+$/g",
         },
     },
 
@@ -30,19 +30,19 @@ const rawSchema = {
         required: true,
     },
 
-    createdDate: {
+    creationDate: {
         type: Date,
         required: true,
     },
 
-    updateDate: {
+    lastUpdatedDate: {
         type: Date,
         required: false,
     }
 }
 
-const commentSchema = new Schema(rawSchema)
-const commentSchemaKeys = Object.keys(rawSchema)
+const testimonySchema = new Schema(rawSchema)
+const testimonySchemaKeys = Object.keys(rawSchema)
 
-export default mongoose.models.Comment || mongoose.model("Comment", commentSchema, "Comments")
-export { commentSchemaKeys }
+export default mongoose.models.Testimony || mongoose.model("Testimony", testimonySchema, "Testimonies")
+export { testimonySchemaKeys }

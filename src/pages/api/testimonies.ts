@@ -18,7 +18,7 @@ import {
 } from "../../libs/apiHandling"
 import connect from "../../libs/database"
 
-import Comment, { commentSchemaKeys } from "../../model/comment"
+import Testimony, { testimonySchemaKeys } from "../../model/testimony"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     await connect()
@@ -38,12 +38,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Testimony", "/^T\\d+$/g")
                     return
                 }
 
                 try {
-                    await Comment.create(req.body)
+                    await Testimony.create(req.body)
                 } catch (err: any) {
                     sendGenericMalformedRequestBodyResponse(r, err.message)
                     return
@@ -61,16 +61,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Testimony", "/^T\\d+$/g")
                     return
                 }
 
-                if (!checkRequestBody(r, commentSchemaKeys)) return
+                if (!checkRequestBody(r, testimonySchemaKeys)) return
 
                 try {
                     sendUpdateResultResponse(
                         r,
-                        await Comment.updateMany(
+                        await Testimony.updateMany(
                             { _id: req.body._id },
                             { $set: req.body },
                             { runValidators: true }
@@ -89,11 +89,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Event", "/^E\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Testimony", "/^T\\d+$/g")
                     return
                 }
 
-                sendDeleteResultResponse(r, await Comment.deleteMany({ _id: req.body._id }))
+                sendDeleteResultResponse(r, await Testimony.deleteMany({ _id: req.body._id }))
                 return
             }
             break
