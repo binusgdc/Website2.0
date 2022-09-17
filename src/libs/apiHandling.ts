@@ -48,10 +48,11 @@ export function checkRequestHeader(r: PackedRequestData, contentType: ContentTyp
 
     const requestContentType = req.headers["content-type"]
     if (requestContentType !== contentType) {
-        log(
-            `[${client}] sent "${requestContentType}", but we are expecting Content-Type "${contentType}"`
-        )
-        respond(r, 415)
+        const msg = `[${client}] sent "${requestContentType}", but we are expecting Content-Type "${contentType}"`
+        const shortMsg = `Expecting Content-Type ${contentType}, got ${requestContentType}`
+
+        log(msg)
+        respond(r, 415, shortMsg)
         return false
     }
 
@@ -64,13 +65,13 @@ export function checkRequestBody(r: PackedRequestData, schemaKeys: string[]) {
     const reqBodyKeys = Object.keys(req.body)
 
     if (reqBodyKeys.length <= 0) {
-        sendMissingBodyPropertiesResponse(r)
+        sendMissingOrIllegalBodyPropertiesResponse(r)
         return false
     }
 
     for (let i = 0; i < reqBodyKeys.length; i++) {
         if (!schemaKeys.includes(reqBodyKeys[i])) {
-            sendMissingBodyPropertiesResponse(r)
+            sendMissingOrIllegalBodyPropertiesResponse(r)
             return false
         }
     }
@@ -84,11 +85,16 @@ export function checkSuppliedId(r: PackedRequestData) {
     return typeof req.body._id === "string"
 }
 
-export function respond(r: PackedRequestData, code: number) {
+export function respond(r: PackedRequestData, code: number, errMsg?: string) {
     const { client, res } = r
 
+    const response = {
+        response: HRC[code],
+        msg: errMsg ? errMsg : "none",
+    }
+
     log(`[${client}] is to be responded with: ${HRC[code]}`)
-    res.status(code).end()
+    res.status(code).json(response)
 }
 
 export function sendUpdateResultResponse(r: PackedRequestData, res: UpdateResult) {
@@ -96,18 +102,20 @@ export function sendUpdateResultResponse(r: PackedRequestData, res: UpdateResult
     const { matchedCount, modifiedCount } = res
 
     if (matchedCount <= 0) {
-        log(
-            `[${client}]'s request to PUT _id ${req.body._id} failed because it does not exist`
-        )
-        respond(r, 404)
+        const msg = `[${client}]'s request to PUT _id ${req.body._id} failed because it does not exist`
+        const shortMsg = `Cannot PUT non-existent _id ${req.body._id}`
+
+        log(msg)
+        respond(r, 404, shortMsg)
         return
     }
 
     if (matchedCount !== modifiedCount) {
-        log(
-            `[${client}]'s request to PUT _id ${req.body._id} succeeded but did not modify anything`
-        )
-        respond(r, 200)
+        const msg = `[${client}]'s request to PUT _id ${req.body._id} succeeded but did not modify anything`
+        const shortMsg = "Request succeeded but did not modify anything"
+
+        log(msg)
+        respond(r, 200, shortMsg)
         return
     }
 
@@ -120,10 +128,11 @@ export function sendDeleteResultResponse(r: PackedRequestData, res: DeleteResult
     const { deletedCount } = res
 
     if (~~deletedCount <= 0) {
-        log(
-            `[${client}]'s request to DELETE _id ${req.body._id} failed because it does not exist`
-        )
-        respond(r, 404)
+        const msg = `[${client}]'s request to DELETE _id ${req.body._id} failed because it does not exist`
+        const shortMsg = `Cannot DELETE non-existent _id ${req.body._id}`
+
+        log(msg)
+        respond(r, 404, shortMsg)
         return
     }
 
@@ -143,35 +152,44 @@ export function sendMultipleSuppliedIdsErrorResponse(
     idFormat: string
 ) {
     const { client } = r
-    log(
-        `[${client}]'s Request Body is malformed:\n\n> _id field must be a single ${idType} ID, which has the format ${idFormat}\n`
-    )
-    respond(r, 400)
+
+    const msg = `[${client}]'s Request Body is malformed:\n\n> _id field must be a single ${idType} ID, which has the format ${idFormat}\n`
+    const shortMsg = `Missing ${idType} ID _id (shell-escaped format: ${idFormat})`
+
+    log(msg)
+    respond(r, 400, shortMsg)
     return
 }
 
 export function sendGenericMalformedRequestBodyResponse(r: PackedRequestData, msg: string) {
     const { client } = r
 
-    log(`[${client}]'s Request Body is malformed:\n\n> ${msg}\n`)
-    respond(r, 400)
+    const errMsg = `[${client}]'s Request Body is malformed:\n\n> ${msg}\n`
+    const shortErrMsg = `Request body is malformed: ${msg}`
+
+    log(errMsg)
+    respond(r, 400, shortErrMsg)
     return
 }
 
-function sendMissingBodyPropertiesResponse(r: PackedRequestData) {
+function sendMissingOrIllegalBodyPropertiesResponse(r: PackedRequestData) {
     const { client } = r
 
-    log(
-        `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties\n`
-    )
-    respond(r, 400)
+    const msg = `[${client}]'s Request Body is malformed:\n\n> Request body is missing required properties or contains illegal properties\n`
+    const shortMsg = "Request body is missing required properties or contains illegal properties"
+
+    log(msg)
+    respond(r, 400, shortMsg)
     return
 }
 
 export function sendIllegalMethodResponse(r: PackedRequestData) {
     const { client, req } = r
 
-    log(`[${client}] asked to ${req.method}, which is illegal here`)
-    respond(r, 405)
+    const msg = `[${client}] asked to ${req.method}, which is illegal here`
+    const shortMsg = `Request method ${req.method} is illegal here`
+
+    log(msg)
+    respond(r, 405, shortMsg)
     return
 }
