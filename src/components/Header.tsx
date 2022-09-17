@@ -1,19 +1,18 @@
-import styles from '../styles/Header.module.scss'
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineCloseSquare } from "react-icons/ai";
-import { useState } from 'react';
-import React from "react";
+import styles from "../styles/Header.module.scss"
+import { BiMenuAltRight } from "react-icons/bi"
+import { AiOutlineCloseSquare } from "react-icons/ai"
+import { useState } from "react"
+import React from "react"
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-    const menuToggler = () => setMenuOpen((p) => !p);
+    const [menuOpen, setMenuOpen] = useState(false)
+    const menuToggler = () => setMenuOpen((p) => !p)
 
     return (
         <div className={styles.header}>
             <div className={styles.header__content}>
                 <div className={styles.logo}>
-                    <img className={styles.image} src ="/logo.png" >
-                </img>
+                    <img className={styles.image} src="/logo.png"></img>
                 </div>
                 <div>
                     <nav className={`${styles.nav} ${menuOpen ? styles[`nav-open`] : {}}`}>
@@ -33,7 +32,7 @@ const Header = () => {
                             About Us
                         </a>
                         <a className={styles.nav__item} href={"/"}>
-                           Contact Us
+                            Contact Us
                         </a>
                         <div className={styles.nav__button__container}>
                             <Button />
@@ -50,13 +49,12 @@ const Header = () => {
                 </div>
             </div>
         </div>
-        
-    );
-};
+    )
+}
 
 const Button = () => {
-    return <button className={styles.button}>Login</button>;
-};
+    return <button className={styles.button}>Login</button>
+}
 
 // const Header = () => {
 //     return (
@@ -65,4 +63,4 @@ const Button = () => {
 //         </Header>
 //         );
 //     }
-    export default Header;
+export default Header

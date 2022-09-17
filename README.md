@@ -3,13 +3,13 @@
 Here is how you can run the project locally:
 
 1. Clone the repository
-    
+
     ```
     git clone https://github.com/binusgdc/Website2.0.git && cd Website2.0
     ```
 
 2. Install dependencies
-    
+
     ```
     npm install
     ```
