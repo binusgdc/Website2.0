@@ -31,7 +31,7 @@ const rawSchema = {
     itchLink: {
         type: String,
         required: true,
-    }
+    },
 }
 
 const gameSchema = new Schema(rawSchema)

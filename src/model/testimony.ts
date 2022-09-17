@@ -38,11 +38,12 @@ const rawSchema = {
     lastUpdatedDate: {
         type: Date,
         required: false,
-    }
+    },
 }
 
 const testimonySchema = new Schema(rawSchema)
 const testimonySchemaKeys = Object.keys(rawSchema)
 
-export default mongoose.models.Testimony || mongoose.model("Testimony", testimonySchema, "Testimonies")
+export default mongoose.models.Testimony ||
+    mongoose.model("Testimony", testimonySchema, "Testimonies")
 export { testimonySchemaKeys }
