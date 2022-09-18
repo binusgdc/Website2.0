@@ -9,7 +9,7 @@ const rawSchema = {
                 return /^B\d+$/g.test(input)
             },
 
-            message: "Blog IDs must have the format /^B\\d+$/g",
+            message: "Blog Post IDs must have the format /^B\\d+$/g",
         },
     },
 
@@ -46,8 +46,8 @@ const rawSchema = {
     },
 }
 
-const blogSchema = new Schema(rawSchema)
-const blogSchemaKeys = Object.keys(rawSchema)
+const blogPostSchema = new Schema(rawSchema)
+const blogPostSchemaKeys = Object.keys(rawSchema)
 
-export default mongoose.models.Blog || mongoose.model("Blog", blogSchema, "Blogs")
-export { blogSchemaKeys }
+export default mongoose.models.BlogPost || mongoose.model("BlogPost", blogPostSchema, "BlogPosts")
+export { blogPostSchemaKeys }

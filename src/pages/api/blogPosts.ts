@@ -18,7 +18,7 @@ import {
 } from "../../libs/apiHandling"
 import connect from "../../libs/database"
 
-import Blog, { blogSchemaKeys } from "../../model/blog"
+import BlogPost, { blogPostSchemaKeys } from "../../model/blogPost"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     await connect()
@@ -38,12 +38,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Blog", "/^B\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Blog Post", "/^B\\d+$/g")
                     return
                 }
 
                 try {
-                    await Blog.create(req.body)
+                    await BlogPost.create(req.body)
                 } catch (err: any) {
                     sendGenericMalformedRequestBodyResponse(r, err.message)
                     return
@@ -61,16 +61,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Blog", "/^B\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Blog Post", "/^B\\d+$/g")
                     return
                 }
 
-                if (!checkRequestBody(r, blogSchemaKeys)) return
+                if (!checkRequestBody(r, blogPostSchemaKeys)) return
 
                 try {
                     sendUpdateResultResponse(
                         r,
-                        await Blog.updateMany(
+                        await BlogPost.updateMany(
                             { _id: req.body._id },
                             { $set: req.body },
                             { runValidators: true }
@@ -89,11 +89,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 printRequest(r)
 
                 if (!checkSuppliedId(r)) {
-                    sendMultipleSuppliedIdsErrorResponse(r, "Blog", "/^B\\d+$/g")
+                    sendMultipleSuppliedIdsErrorResponse(r, "Blog Post", "/^B\\d+$/g")
                     return
                 }
 
-                sendDeleteResultResponse(r, await Blog.deleteMany({ _id: req.body._id }))
+                sendDeleteResultResponse(r, await BlogPost.deleteMany({ _id: req.body._id }))
                 return
             }
             break
