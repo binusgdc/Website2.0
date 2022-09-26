@@ -26,4 +26,4 @@ class EventApiHandler extends TemplateApiHandler {
     }
 }
 
-export default EventApiHandler.handle
+export default EventApiHandler.handle.bind(EventApiHandler)
