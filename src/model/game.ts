@@ -13,18 +13,18 @@ const rawSchema = {
         },
     },
 
-    gameTitle: {
+    title: {
         type: String,
         required: true,
     },
 
-    publishDate: {
+	description: {
+		type: String,
+		required: true,
+	},
+
+    publishedDate: {
         type: Date,
-        required: true,
-    },
-
-    gameDescription: {
-        type: String,
         required: true,
     },
 
