@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <footer className="   dark:bg-neutral-700 p-20 pt-24 lg:p-16">
+            <footer className="   bg-neutral-700 p-20 pt-24 lg:p-16">
                 <div className=" lg:flex  justify-center ">
                     <div className="hidden lg:block">
                         <div className="grid grid-cols-3 gap-3">
@@ -16,7 +16,7 @@ const Footer = () => {
                             </div>
 
                             <div className="ml-14 ">
-                                <ul className="text-white dark:text-white text-xs min-w-max">
+                                <ul className="text-white text-xs min-w-max">
                                     <li className="mb-1">
                                         <a>Jl. K. H. Syahdan No. 9, Kemanggisan,</a>
                                     </li>
@@ -30,7 +30,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className="ml-14">
-                                <ul className="text-white dark:text-white text-xs font-medium ">
+                                <ul className="text-white  text-xs font-medium ">
                                     <li className="mb-1">
                                         <a href="#" className="hover:underline">
                                             Privacy
@@ -52,7 +52,7 @@ const Footer = () => {
                         </div>
 
                         <div className="mt-12">
-                            <span className="static text-white lg:text-center dark:text-white text-xs">
+                            <span className="static lg:text-center text-xs">
                                 Copyright © 2021. Binus Game Development Club . All Rights Reserved.
                             </span>
                         </div>
@@ -76,10 +76,7 @@ const Footer = () => {
                         </div>
 
                         <div className="flex space-x-7 lg:mt-12 lg:space-x-4 mt-6">
-                            <a
-                                href="#"
-                                className="text-white hover:text-gray-900 dark:hover:text-white"
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
                                     className="w-7 h-7 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -95,10 +92,7 @@ const Footer = () => {
                                 <span className="sr-only">Instagram page</span>
                             </a>
 
-                            <a
-                                href="#"
-                                className="text-white hover:text-gray-900 dark:hover:text-white"
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
                                     className="w-7 h-7 lg:w-5 lg:h-5"
                                     fill="currentColor"
@@ -114,10 +108,7 @@ const Footer = () => {
                                 <span className="sr-only">Itch</span>
                             </a>
 
-                            <a
-                                href="#"
-                                className="text-white hover:text-gray-900 dark:hover:text-white"
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
                                     className="w-7 h-7 lg:w-5 lg:h-5"
                                     fill="currentColor"
@@ -133,10 +124,7 @@ const Footer = () => {
                                 <span className="sr-only">LinkedIn Page</span>
                             </a>
 
-                            <a
-                                href="#"
-                                className="text-white hover:text-gray-900 dark:hover:text-white"
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
                                     className="w-7 h-7 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -152,10 +140,7 @@ const Footer = () => {
                                 <span className="sr-only">YouTube Page</span>
                             </a>
 
-                            <a
-                                href="#"
-                                className="text-white hover:text-gray-900 dark:hover:text-white"
-                            >
+                            <a href="#" className="text-white hover:text-gray-900">
                                 <svg
                                     className="w-7 h-7 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -167,10 +152,7 @@ const Footer = () => {
                                 <span className="sr-only">Twitter page</span>
                             </a>
 
-                            <a
-                                href="#"
-                                className="text-white hover:text-gray-900 dark:hover:text-white"
-                            >
+                            <a href="#" className="text-white hover:text-gray-900">
                                 <svg
                                     className="w-7 h-7 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -188,7 +170,7 @@ const Footer = () => {
                         </div>
 
                         <div className="lg:hidden mt-10 ">
-                            <ul className="text-white dark:text-white text-lg min-w-max">
+                            <ul className="text-white text-lg min-w-max">
                                 <li className="">
                                     <a>Jl. K. H. Syahdan No. 9, Kemanggisan,</a>
                                 </li>
@@ -206,7 +188,7 @@ const Footer = () => {
                             </div>
 
                             <div className="grid grid-cols-2 gap-32 ">
-                                <ul className="text-white dark:text-white text-lg min-w-max">
+                                <ul className="text-white text-lg min-w-max">
                                     <li className="mb-2">
                                         <a href="#" className="hover:underline">
                                             About Us
@@ -229,7 +211,7 @@ const Footer = () => {
                                         </a>
                                     </li>
                                 </ul>
-                                <ul className="text-white dark:text-white text-lg min-w-max">
+                                <ul className="text-white text-lg min-w-max">
                                     <li className="mb-2">
                                         <a href="#" className="hover:underline">
                                             Registration

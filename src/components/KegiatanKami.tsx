@@ -89,7 +89,7 @@ const Kegiatan = () => {
                     </div>
 
                     <div className="text-center ">
-                        <p className="text-sm md:text-base font-bold">Staffs</p>
+                        <p className="text-sm md:text-base font-bold">Staff</p>
                         <h1 className="m-4 font-bold break-normal text-3xl md:text-5xl  text-transparent bg-clip-text bg-gradient-to-br from-start-gradient to-end-gradient">
                             46
                         </h1>
