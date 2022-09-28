@@ -1,41 +1,29 @@
 import { NextApiRequest, NextApiResponse } from "next"
 
-import connect from "../../libs/database"
+import { TemplateApiHandler } from "../../templates/template-api-path"
 
 import Event from "../../model/event"
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    if (req.headers["content-type"] !== "application/json")
-        return res.status(415).json({ status: "error", msg: "Unsupported content type" })
-
-    await connect()
-    switch (req.method) {
-        case "POST":
-            try {
-                const data = await Event.create(req.body)
-                res.status(201).json({ status: "OK", msg: "Event created", data: data })
-            } catch (err) {
-                res.status(500).json({ status: "Error", msg: (err as Error).message })
-            }
-            return
-        case "PUT":
-            try {
-                await Event.updateOne({ _id: req.body._id }, req.body, {
-                    runValidators: true,
-                })
-                res.status(201).json({ status: "OK", data: req.body })
-            } catch (err) {
-                res.status(500).json({ status: "Error", msg: (err as Error).message })
-            }
-            return
-        case "DELETE":
-            try {
-                await Event.deleteOne({ _id: req.body._id })
-                res.status(201).json({ status: "OK", msg: "Event deleted" })
-            } catch (err) {
-                res.status(500).json({ status: "Error", msg: (err as Error).message })
-            }
-            return
+class EventApiHandler extends TemplateApiHandler {
+    public static override handle(req: NextApiRequest, res: NextApiResponse) {
+        super.handle(req, res)
     }
-    return res.status(405).json({ status: "Error", msg: "Method not allowed" })
+
+    protected static override getExpectedContentType() {
+        return "application/json"
+    }
+
+    protected static override getAcceptableMethods() {
+        return [
+            { method: "POST", handler: this.defaultHandlePost },
+            { method: "PUT", handler: this.defaultHandlePut },
+            { method: "DELETE", handler: this.defaultHandleDelete },
+        ]
+    }
+
+    protected static override getModelledObject() {
+        return Event
+    }
 }
+
+export default EventApiHandler.handle.bind(EventApiHandler)
