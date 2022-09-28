@@ -156,7 +156,7 @@ abstract class TemplateApiHandler {
     }
 
     private static handleUnknown(req: NextApiRequest, res: NextApiResponse) {
-        const acceptableMethods = this.getAcceptableMethods().map(am => am.method)
+        const acceptableMethods = this.getAcceptableMethods().map((am) => am.method)
         res.status(405).json({
             status: "405 Method Not Allowed",
             message: `Acceptable request methods include [${acceptableMethods}], received ${req.method}`,
