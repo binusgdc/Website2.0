@@ -60,3 +60,7 @@ To learn more about used dependencies take a look at the following resources:
 - [Tailwind CSS](https://tailwindcss.com/docs/installation-CSS)
 - [SCSS](https://sass-lang.com/documentation)
 - [Mongoose](https://mongoosejs.com/)
+
+## API Endpoints and Documentation
+
+[The following document](https://docs.google.com/spreadsheets/d/1S7p6zPIyBLdY8MuZhdMzbUOUBYxOoN3X_4A3K6rDLQA/edit#gid=0) serves as documentation regarding available API endpoints and their parameters.
