@@ -43,7 +43,7 @@ const rawSchema = {
     campusRegion: {
         type: String,
         required: true,
-        enum: ["KMG"],
+        enum: ["KMG", "ALS", "BKS", "OL", "BDG", "MLG", "SNY"],
     },
 
     major: {
