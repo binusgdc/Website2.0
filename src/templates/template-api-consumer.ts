@@ -15,7 +15,8 @@ class TemplateApiConsumerHandler extends TemplateApiHandler {
 
     protected static override getAcceptableMethods() {
         return [
-            { method: "POST", handler: this.defaultHandlePost.bind(TemplateApiConsumerHandler) },
+            // bind is required since passing a function losses the this context, which is required here
+			{ method: "POST", handler: this.defaultHandlePost.bind(TemplateApiConsumerHandler) },
         ]
     }
 
@@ -24,4 +25,5 @@ class TemplateApiConsumerHandler extends TemplateApiHandler {
     }
 }
 
+// the this context is also lost here
 export default TemplateApiConsumerHandler.handle.bind(TemplateApiConsumerHandler)
