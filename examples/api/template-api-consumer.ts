@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
 
-import { TemplateApiHandler } from "./template-api-path"
+import { TemplateApiHandler } from "../../src/templates/template-api-path"
 
 import TemplateApiConsumerModel from "./template-api-consumer-model"
 
