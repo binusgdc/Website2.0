@@ -49,7 +49,7 @@ const rawSchema = {
     major: {
         type: String,
         required: true,
-        enum: ["GAT"],
+        enum: ["GAT", "CS", "DKV"],
     },
 
     rank: {
