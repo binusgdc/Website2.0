@@ -15,9 +15,9 @@ class GameApiHandler extends TemplateApiHandler {
 
     protected static override getAcceptableMethods() {
         return [
-            { method: "POST", handler: this.defaultHandlePost },
-            { method: "PUT", handler: this.defaultHandlePut },
-            { method: "DELETE", handler: this.defaultHandleDelete },
+            { method: "POST", handler: this.defaultHandlePost.bind(GameApiHandler) },
+            { method: "PUT", handler: this.defaultHandlePut.bind(GameApiHandler) },
+            { method: "DELETE", handler: this.defaultHandleDelete.bind(GameApiHandler) },
         ]
     }
 

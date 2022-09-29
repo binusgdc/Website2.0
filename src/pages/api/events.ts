@@ -15,9 +15,9 @@ class EventApiHandler extends TemplateApiHandler {
 
     protected static override getAcceptableMethods() {
         return [
-            { method: "POST", handler: this.defaultHandlePost },
-            { method: "PUT", handler: this.defaultHandlePut },
-            { method: "DELETE", handler: this.defaultHandleDelete },
+            { method: "POST", handler: this.defaultHandlePost.bind(EventApiHandler) },
+            { method: "PUT", handler: this.defaultHandlePut.bind(EventApiHandler) },
+            { method: "DELETE", handler: this.defaultHandleDelete.bind(EventApiHandler) },
         ]
     }
 

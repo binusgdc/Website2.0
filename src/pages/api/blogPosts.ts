@@ -15,9 +15,9 @@ class BlogPostApiHandler extends TemplateApiHandler {
 
     protected static override getAcceptableMethods() {
         return [
-            { method: "POST", handler: this.defaultHandlePost },
-            { method: "PUT", handler: this.defaultHandlePut },
-            { method: "DELETE", handler: this.defaultHandleDelete },
+            { method: "POST", handler: this.defaultHandlePost.bind(BlogPostApiHandler) },
+            { method: "PUT", handler: this.defaultHandlePut.bind(BlogPostApiHandler) },
+            { method: "DELETE", handler: this.defaultHandleDelete.bind(BlogPostApiHandler) },
         ]
     }
 
