@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose"
 
-const rawSchema = {
+const eventSchema = new Schema({
     _id: {
         type: String,
         required: true,
@@ -44,10 +44,6 @@ const rawSchema = {
             message: "PIC IDs are User IDs, which must have the format /^U\\d+$/g",
         },
     },
-}
-
-const eventSchema = new Schema(rawSchema)
-const eventSchemaKeys = Object.keys(rawSchema)
+})
 
 export default mongoose.models.Event || mongoose.model("Event", eventSchema, "Events")
-export { eventSchemaKeys }

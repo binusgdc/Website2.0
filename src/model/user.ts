@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose"
 
-const rawSchema = {
+const userSchema = new Schema({
     _id: {
         type: String,
         required: true,
@@ -57,10 +57,6 @@ const rawSchema = {
         required: true,
         enum: ["STAFF", "ACTIVIST", "MEMBER", "EXTERNAL_PARTNER"],
     },
-}
-
-const userSchema = new Schema(rawSchema)
-const userSchemaKeys = Object.keys(rawSchema)
+})
 
 export default mongoose.models.User || mongoose.model("User", userSchema, "Users")
-export { userSchemaKeys }

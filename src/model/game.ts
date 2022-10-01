@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose"
 
-const rawSchema = {
+const gameSchema = new Schema({
     _id: {
         type: String,
         required: true,
@@ -32,10 +32,6 @@ const rawSchema = {
         type: String,
         required: true,
     },
-}
-
-const gameSchema = new Schema(rawSchema)
-const gameSchemaKeys = Object.keys(rawSchema)
+})
 
 export default mongoose.models.Game || mongoose.model("Game", gameSchema, "Games")
-export { gameSchemaKeys }
