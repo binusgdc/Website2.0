@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose"
 
-const rawSchema = {
+const blogPostSchema = new Schema({
     _id: {
         type: String,
         required: true,
@@ -44,10 +44,6 @@ const rawSchema = {
         type: Date,
         required: false,
     },
-}
-
-const blogPostSchema = new Schema(rawSchema)
-const blogPostSchemaKeys = Object.keys(rawSchema)
+})
 
 export default mongoose.models.BlogPost || mongoose.model("BlogPost", blogPostSchema, "BlogPosts")
-export { blogPostSchemaKeys }

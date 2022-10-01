@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose"
 
-const rawSchema = {
+const testimonySchema = new Schema({
     _id: {
         type: String,
         required: true,
@@ -39,11 +39,7 @@ const rawSchema = {
         type: Date,
         required: false,
     },
-}
-
-const testimonySchema = new Schema(rawSchema)
-const testimonySchemaKeys = Object.keys(rawSchema)
+})
 
 export default mongoose.models.Testimony ||
     mongoose.model("Testimony", testimonySchema, "Testimonies")
-export { testimonySchemaKeys }

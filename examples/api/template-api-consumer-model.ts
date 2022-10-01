@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose"
 
-const rawSchema = {
+const templateSchema = new Schema({
     _id: {
         type: String,
         required: true,
@@ -12,10 +12,6 @@ const rawSchema = {
             message: "Template IDs must have the format format",
         },
     },
-}
-
-const templateSchema = new Schema(rawSchema)
-const templateSchemaKeys = Object.keys(rawSchema)
+})
 
 export default mongoose.models.Template || mongoose.model("Template", templateSchema, "Templates")
-export { templateSchemaKeys }
