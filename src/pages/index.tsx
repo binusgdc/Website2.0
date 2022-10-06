@@ -7,6 +7,7 @@ import Kegiatan from "../components/KegiatanKami"
 import JoinBGDC from "../components/JoinBGDC"
 import Footer from "../components/Footer"
 import ContactUs from "../components/ContactUs"
+
 function App() {
     return (
         <>

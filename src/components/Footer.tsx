@@ -52,7 +52,7 @@ const Footer = () => {
                         </div>
 
                         <div className="mt-12">
-                            <span className="static lg:text-center text-xs">
+                            <span className="static lg:text-center text-xs text-white">
                                 Copyright © 2021. Binus Game Development Club . All Rights Reserved.
                             </span>
                         </div>
@@ -241,13 +241,13 @@ const Footer = () => {
                         <div className="flex justify-between content-center h-2 mt-12 mb-12 lg:mt-0 lg:mb-0">
                             <div className="lg:hidden">
                                 <a>
-                                    <img src="/binus1.png" className="h-16 max-w-min" alt="" />
+                                    <img src="/binus1.png" className="h-12 max-w-min" alt="" />
                                 </a>
                             </div>
 
                             <div className="lg:hidden">
                                 <a>
-                                    <img src="/binus2.png" className="h-12 max-w-min " alt="" />
+                                    <img src="/binus2.png" className="h-10 max-w-min " alt="" />
                                 </a>
                             </div>
                         </div>
