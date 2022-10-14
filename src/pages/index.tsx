@@ -6,7 +6,6 @@ import Acara from "../components/Acara"
 import Kegiatan from "../components/KegiatanKami"
 import JoinBGDC from "../components/JoinBGDC"
 import Footer from "../components/Footer"
-import ContactUs from "../components/ContactUs_GetTouch"
 import GameBGDC from "../components/GameKami"
 function App() {
     return (
@@ -17,7 +16,6 @@ function App() {
             <GameBGDC />
             <Acara />
             <JoinBGDC />
-            <ContactUs />
             <Footer />
         </>
     )
