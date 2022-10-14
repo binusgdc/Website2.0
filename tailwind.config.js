@@ -2,9 +2,6 @@
 module.exports = {
     content: ["./src/**/*.{ts,tsx}"],
     theme: {
-<<<<<<< Updated upstream
-        extend: {},
-=======
         screens: {
             sm: "640px",
             // => @media (min-width: 640px) { ... }
@@ -32,7 +29,6 @@ module.exports = {
                 alt_background: "#F9F9F9",
             },
         },
->>>>>>> Stashed changes
     },
     plugins: [],
 }

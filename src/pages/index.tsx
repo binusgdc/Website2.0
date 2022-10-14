@@ -1,15 +1,4 @@
 import type { NextPage } from "next"
-<<<<<<< Updated upstream
-
-import Comments from "../components/Comments"
-
-const dat2 = {
-    name: "Audrey L",
-    title: "Aktivis Community Development",
-    testimoni:
-        "Proin pretium luctus ligula eget tempor. Vivamus pharetra elementum dui non posuere. Phasellus tristique dolor massa, sit amet cursus purus tincidunt quis. Duis tempus ante sit amet eros tempor, quis consequat enim imperdiet.",
-    img: "/images/Ellipse.png",
-=======
 import Head from "next/head"
 import styles from "../styles/Home.module.scss"
 import Header from "../components/Header"
@@ -32,16 +21,10 @@ function App() {
             <Footer />
         </>
     )
->>>>>>> Stashed changes
 }
 
 const Home: NextPage = () => {
     return (
-<<<<<<< Updated upstream
-        <>
-            <Comments commentdata={dat2} />
-        </>
-=======
         <div className={styles.gradient}>
             <Head>
                 <title>Binus Game Development Club</title>
@@ -109,8 +92,7 @@ const Home: NextPage = () => {
                 </svg>
             </div>
         </div>
->>>>>>> Stashed changes
     )
 }
 
-export default Home
+export default App

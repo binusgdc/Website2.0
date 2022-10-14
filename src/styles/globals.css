@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< Updated upstream
-=======
 html {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -24,4 +22,3 @@ a {
 * {
     box-sizing: border-box;
 }
->>>>>>> Stashed changes
