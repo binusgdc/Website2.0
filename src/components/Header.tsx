@@ -29,7 +29,7 @@ const Header = () => {
                         <a className={styles.nav__item} href={"/blog"}>
                             Blog
                         </a>
-                        <a className={styles.nav__item} href={"/aboutus"}>
+                        <a className={styles.nav__item} href={"/about-us"}>
                             About Us
                         </a>
                         <a className={styles.nav__item} href={"/contactus"}>

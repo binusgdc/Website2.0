@@ -49,7 +49,7 @@ const Kegiatan = () => {
                         <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
                             BGDC Class
                         </h1>
-                        <p className="text-sm md:text-sm font-bold">
+                        <p className="text-sm md:text-sm font-semibold">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua
                         </p>
@@ -59,7 +59,7 @@ const Kegiatan = () => {
                         <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
                             Talent Group
                         </h1>
-                        <p className="text-sm md:text-sm font-bold">
+                        <p className="text-sm md:text-sm font-semibold">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua
                         </p>
@@ -69,7 +69,7 @@ const Kegiatan = () => {
                         <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
                             Networking
                         </h1>
-                        <p className="text-sm md:text-sm font-bold">
+                        <p className="text-sm md:text-sm font-semibold">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua
                         </p>
@@ -79,7 +79,7 @@ const Kegiatan = () => {
                         <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
                             Gathering Sosial
                         </h1>
-                        <p className="text-sm md:text-sm font-bold">
+                        <p className="text-sm md:text-sm font-semibold">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua
                         </p>
@@ -89,7 +89,7 @@ const Kegiatan = () => {
                         <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
                             Game Time
                         </h1>
-                        <p className="text-sm md:text-sm font-bold">
+                        <p className="text-sm md:text-sm font-semibold">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua
                         </p>
@@ -99,7 +99,7 @@ const Kegiatan = () => {
                         <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
                             Event Organizing
                         </h1>
-                        <p className="text-sm md:text-sm font-bold">
+                        <p className="text-sm md:text-sm font-semibold">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua
                         </p>
@@ -108,7 +108,7 @@ const Kegiatan = () => {
 
                 <div className="align-top grid grid-cols-3 divide-x mt-8 md:mt-16">
                     <div className="text-center ">
-                        <p className="text-sm md:text-base font-bold">Courses</p>
+                        <p className="text-sm md:text-base font-semibold">Courses</p>
                         <h1 className="m-4 font-bold break-normal text-3xl md:text-5xl  text-transparent bg-clip-text bg-gradient-to-br from-start-gradient to-end-gradient">
                             5
                         </h1>

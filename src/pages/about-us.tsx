@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import VisiMisi from "../components/About_VisiMisi"
 import Aktivitas from "../components/About_Aktivitas"
+import PengurusBGDC from "../components/About_Pengurus"
 function About() {
     return (
         <>
@@ -11,6 +12,7 @@ function About() {
             <AboutPage />
             <VisiMisi />
             <Aktivitas />
+            <PengurusBGDC />
             <Footer />
         </>
     )
