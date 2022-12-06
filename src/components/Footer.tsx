@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <footer className="   bg-neutral-700 p-20 pt-24 lg:p-16">
+            <footer className="   bg-neutral-700 p-16 pt-24 pb-40 sm:p-16">
                 <div className=" lg:flex  justify-center ">
                     <div className="hidden lg:block">
                         <div className="grid grid-cols-3 gap-3">
@@ -238,16 +238,20 @@ const Footer = () => {
                             <div className="mt-12 border-rounded border border-amber-400 border-t-2 border-l-0 border-r-0 border-b-0 min-w-max "></div>
                         </div>
 
-                        <div className="flex justify-between content-center h-2 mt-12 mb-12 lg:mt-0 lg:mb-0">
+                        <div className="flex justify-between items-center  h-2 mt-12 mb-12 lg:mt-0 lg:mb-0 sm:flex-row sm:items-start flex-col">
                             <div className="lg:hidden">
                                 <a>
-                                    <img src="/binus1.png" className="h-12 max-w-min" alt="" />
+                                    <img src="/binus1.png" className="h-20 max-w-min" alt="" />
                                 </a>
                             </div>
 
                             <div className="lg:hidden">
                                 <a>
-                                    <img src="/binus2.png" className="h-10 max-w-min " alt="" />
+                                    <img
+                                        src="/binus2.png"
+                                        className="h-12 max-w-min mt-12 sm:mt-2"
+                                        alt=""
+                                    />
                                 </a>
                             </div>
                         </div>
