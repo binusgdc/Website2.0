@@ -56,8 +56,7 @@ const Connect = () => {
                             </label>
                             <textarea
                                 id="message"
-                                rows="4"
-                                class="block p-2.5 w-full  text-neutral-700 bg-gray-50 rounded-3xl   "
+                                className="block p-2.5 w-full  text-neutral-700 bg-gray-50 rounded-3xl   "
                             ></textarea>
                         </div>
                         <div className=" flex justify-center ">
