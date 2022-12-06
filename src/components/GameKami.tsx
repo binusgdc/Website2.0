@@ -6,7 +6,7 @@ export default function GameKami() {
         display: '"flex"',
         backgroundColor: "#F9F9F9",
         height: "2000px",
-        overflow: "hidden",
+        overflow: "hidden"
     }
 
     return (
