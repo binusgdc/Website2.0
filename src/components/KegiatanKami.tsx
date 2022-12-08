@@ -50,7 +50,7 @@ const Kegiatan = () => {
                     <div className="text-center pt-8 ">
                         <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
                             <Image
-                                src={"/images/Hat.png"}
+                                src={"/images/hat.png"}
                                 className="rounded-xl object-cover max-h-64"
                                 alt="where image"
                                 width={64}
@@ -67,7 +67,7 @@ const Kegiatan = () => {
                     <div className="text-center pt-8 ">
                         <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
                             <Image
-                                src={"/images/Sparkle.png"}
+                                src={"/images/sparkle.png"}
                                 className="rounded-xl object-cover max-h-64"
                                 alt="where image"
                                 width={64}
@@ -86,7 +86,7 @@ const Kegiatan = () => {
                     <div className="text-center pt-8 ">
                         <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
                             <Image
-                                src={"/images/Globe.png"}
+                                src={"/images/globe.png"}
                                 className="rounded-xl object-cover max-h-64"
                                 alt="where image"
                                 width={64}
@@ -105,7 +105,7 @@ const Kegiatan = () => {
                     <div className="text-center pt-8 ">
                         <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
                             <Image
-                                src={"/images/Controller.png"}
+                                src={"/images/controller.png"}
                                 className="rounded-xl object-cover max-h-64"
                                 alt="where image"
                                 width={64}
@@ -121,7 +121,7 @@ const Kegiatan = () => {
                     <div className="text-center pt-8 ">
                         <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
                             <Image
-                                src={"/images/Trophy.png"}
+                                src={"/images/trophy.png"}
                                 className="rounded-xl object-cover max-h-64"
                                 alt="where image"
                                 width={64}
@@ -137,7 +137,7 @@ const Kegiatan = () => {
                     <div className="text-center pt-8">
                         <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
                             <Image
-                                src={"/images/Calendar.png"}
+                                src={"/images/calendar.png"}
                                 className="rounded-xl object-cover max-h-64"
                                 alt="where image"
                                 width={64}
