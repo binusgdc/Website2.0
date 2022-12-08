@@ -1,3 +1,4 @@
+import Image from "next/image"
 const Kegiatan = () => {
     return (
         <>
@@ -5,21 +6,21 @@ const Kegiatan = () => {
                 <div className="hidden lg:grid lg:max-w-3xl max-w-xs  text-center mx-auto items-center  grid-cols-2 lg:grid-cols-4 gap-4 mb-20 mt-12">
                     <a
                         type="button"
-                        className="inline-block px-3 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                        className="inline-block px-4 py-5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                         href="#BGDC_Kegiatan"
                     >
                         Kegiatan Kami
                     </a>
                     <a
                         type="button"
-                        className="inline-block px-3 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
-                        href="#"
+                        className="inline-block px-4 py-5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                        href="#BGDC_GameKami"
                     >
                         Game BGDC
                     </a>
                     <a
                         type="button"
-                        className="inline-block px-3 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                        className="inline-block px-4 py-5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                         href="#BGDC_Acara"
                     >
                         Acara Kami
@@ -27,14 +28,15 @@ const Kegiatan = () => {
 
                     <a
                         type="button"
-                        className="inline-block px-3 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                        className="inline-block px-4 py-5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                         href="#BGDC_Join"
                     >
                         Join Member BGDC!
                     </a>
                 </div>
             </div>
-            <div className="container max-w-8xl mx-auto m-8" id="BGDC_Kegiatan">
+            <div id="BGDC_Kegiatan"></div>
+            <div className="container max-w-6xl mx-auto m-8">
                 <div className=" px-8 lg:px-auto text-center m-4">
                     <h1 className="mb-8 font-bold break-normal text-3xl md:text-5xl text-gray-800 ">
                         Kegiatan Kami
@@ -45,63 +47,106 @@ const Kegiatan = () => {
                 </div>
 
                 <div className="px-8 lg:px-auto m-4 grid grid-cols-2 gap-8 sm:grid-cols-3 ">
-                    <div className="text-center pt-8 md:pt-16">
-                        <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
-                            BGDC Class
-                        </h1>
+                    <div className="text-center pt-8 ">
+                        <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
+                            <Image
+                                src={"/images/Hat.png"}
+                                className="rounded-xl object-cover max-h-64"
+                                alt="where image"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <a className="mb-4 font-semibold break-normal text-xs">Ikuti</a>
+                        <h1 className="mb-4 font-bold break-normal text-lg ">BGDC Class</h1>
                         <p className="text-sm md:text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua
+                            Kelas rutin game development untuk pelajar.
                         </p>
                     </div>
 
-                    <div className="text-center pt-8 md:pt-16">
-                        <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
-                            Talent Group
-                        </h1>
+                    <div className="text-center pt-8 ">
+                        <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
+                            <Image
+                                src={"/images/Sparkle.png"}
+                                className="rounded-xl object-cover max-h-64"
+                                alt="where image"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <a className="mb-4 font-semibold break-normal text-xs">
+                            Bikin Game Bersama
+                        </a>
+                        <h1 className="mb-4 font-bold break-normal text-lg ">Talent Group</h1>
                         <p className="text-sm md:text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua
+                            Program mentoring untuk membuat game dengan kelompok.
                         </p>
                     </div>
 
-                    <div className="text-center pt-8 md:pt-16">
-                        <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
-                            Networking
-                        </h1>
+                    <div className="text-center pt-8 ">
+                        <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
+                            <Image
+                                src={"/images/Globe.png"}
+                                className="rounded-xl object-cover max-h-64"
+                                alt="where image"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <a className="mb-4 font-semibold break-normal text-xs">
+                            Berpartisipasi Dalam
+                        </a>
+                        <h1 className="mb-4 font-bold break-normal text-lg ">Networking</h1>
                         <p className="text-sm md:text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua
+                            Kenalan dengan orang-orang di industri game development.
                         </p>
                     </div>
 
-                    <div className="text-center pt-8 md:pt-16">
-                        <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
-                            Gathering Sosial
-                        </h1>
+                    <div className="text-center pt-8 ">
+                        <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
+                            <Image
+                                src={"/images/Controller.png"}
+                                className="rounded-xl object-cover max-h-64"
+                                alt="where image"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <h1 className="mb-4 font-bold break-normal text-lg ">Gathering</h1>
                         <p className="text-sm md:text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua
+                            Kumpul bareng sesama member BGDC.
                         </p>
                     </div>
 
-                    <div className="text-center pt-8 md:pt-16">
-                        <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
-                            Game Time
-                        </h1>
+                    <div className="text-center pt-8 ">
+                        <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
+                            <Image
+                                src={"/images/Trophy.png"}
+                                className="rounded-xl object-cover max-h-64"
+                                alt="where image"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <h1 className="mb-4 font-bold break-normal text-lg ">Game Time</h1>
                         <p className="text-sm md:text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua
+                            Kelompok lomba gamejam BGDC untuk event internasional.
                         </p>
                     </div>
 
-                    <div className="text-center pt-8 md:pt-16">
-                        <h1 className="mb-4 font-bold break-normal text-lg md:text-lg">
-                            Event Organizing
-                        </h1>
+                    <div className="text-center pt-8">
+                        <div className="pb-4 ml-auto mr-auto max-w-xs max-h-xs bg-white grid place-items-center">
+                            <Image
+                                src={"/images/Calendar.png"}
+                                className="rounded-xl object-cover max-h-64"
+                                alt="where image"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <h1 className="mb-4 font-bold break-normal text-lg ">Public Events</h1>
                         <p className="text-sm md:text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua
+                            Menjadi panitia membantu menyelenggarakan acara umum.
                         </p>
                     </div>
                 </div>

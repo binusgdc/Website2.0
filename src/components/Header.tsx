@@ -17,7 +17,7 @@ const Header = () => {
                 </a>
                 <div>
                     <nav className={`${styles.nav} ${menuOpen ? styles[`nav-open`] : {}}`}>
-                        <a className={styles.nav__item} href={"/"}>
+                        {/* <a className={styles.nav__item} href={"/"}>
                             Registration
                         </a>
                         <a className={styles.nav__item} href={"/"}>
@@ -25,25 +25,24 @@ const Header = () => {
                         </a>
                         <a className={styles.nav__item} href={"/"}>
                             Calendars
+                        </a> */}
+                        <a className={styles.nav__item} href={"/"}>
+                            Home
                         </a>
-                        <a className={styles.nav__item} href={"/blog"}>
+                        {/* <a className={styles.nav__item} href={"/blog"}>
                             Blog
-                        </a>
+                        </a> */}
                         <a className={styles.nav__item} href={"/about-us"}>
                             About Us
                         </a>
                         <a className={styles.nav__item} href={"/contactus"}>
                             Contact Us
                         </a>
-                        <div className={styles.nav__button__container}>
-                            <Button />
-                        </div>
+                        <div className={styles.nav__button__container}>{/* <Button /> */}</div>
                     </nav>
                 </div>
                 <div>
-                    <div className={styles.header__button__container}>
-                        <Button />
-                    </div>
+                    <div className={styles.header__button__container}>{/* <Button /> */}</div>
                     <button className={styles.header__toggler} onClick={menuToggler}>
                         {!menuOpen ? <BiMenuAltRight /> : <AiOutlineCloseSquare />}
                     </button>
@@ -53,8 +52,8 @@ const Header = () => {
     )
 }
 
-const Button = () => {
-    return <button className={styles.button}>Login</button>
-}
+// const Button = () => {
+//     return <button className={styles.button}>Login</button>
+// }
 
 export default Header

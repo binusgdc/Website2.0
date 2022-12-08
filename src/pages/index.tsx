@@ -53,10 +53,10 @@ const Home: NextPage = () => {
                         </p>
                         <div className="max-w-sm md:max-w-md gap-4">
                             <a
-                                type="button"
-                                className="inline-block px-6 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                                href={"/about-us"}
+                                className="inline-block px-12 py-5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                             >
-                                Tentang BGDC
+                                Tentang BGDC →
                             </a>
                         </div>
                     </div>

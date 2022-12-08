@@ -71,6 +71,7 @@
     &__item {
         display: block;
         padding: 2;
+        font-weight: bold;
         text-decoration: none;
         color: inherit;
         height: 100%;
@@ -90,7 +91,7 @@
     @include breakpoint(md) {
         position: static;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         background: initial;
         width: auto;
         padding: 0;

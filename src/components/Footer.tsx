@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
 
                 <div className=" flex justify-center ">
-                    <button className="flex justify-center bg-gradient-to-b from-amber-500 via-yellow-400 to-yellow-300 text-white text-sm font-medium py-1.5 px-4 rounded-3xl">
+                    <button className="flex justify-center bg-gradient-to-b from-amber-500 via-yellow-400 to-yellow-300 text-white text-sm font-medium py-4 px-8 rounded-3xl">
                         Contact Us
                     </button>
                 </div>

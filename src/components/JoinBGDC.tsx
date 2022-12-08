@@ -2,7 +2,7 @@ const JoinBGDC = () => {
     return (
         <>
             <section className="bg-alt_background">
-                <div className="container max-w-5xl mx-auto mt-8" id="BGDC_Join">
+                <div className="pt-10 container max-w-5xl mx-auto mt-8" id="BGDC_Join">
                     <div className="text-center m-4">
                         <h1 className="m-8 font-bold break-normal text-3xl md:text-5xl text-gray-800 ">
                             Join Member BGDC
@@ -11,7 +11,7 @@ const JoinBGDC = () => {
                             Sekali join member BGDC, selamanya menjadi member BGDC!!!
                         </p>
                     </div>
-                    <div className="container:md mx-auto m-4  ">
+                    {/* <div className="container:md mx-auto m-4">
                         <div className="max-w-sm md:max-w-md text-center mx-auto items-center grid grid-cols-2  gap-4">
                             <a
                                 type="button"
@@ -27,8 +27,8 @@ const JoinBGDC = () => {
                                 Untuk Binusian
                             </a>
                         </div>
-                    </div>
-                    <section className="alt_background border-b py-8">
+                    </div> */}
+                    <section className="alt_background border-b pb-8">
                         <div className="container max-w-5xl mx-auto m-8">
                             <div className="flex flex-wrap flex-col-reverse sm:flex-row-reverse">
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
@@ -48,7 +48,8 @@ const JoinBGDC = () => {
                                             <div>
                                                 <a
                                                     type="button"
-                                                    className="inline-block px-6 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                                                    className="inline-block px-4 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                                                    href="https://binusgdc.com/discord"
                                                 >
                                                     Join Discord Server BGDC!
                                                 </a>
@@ -80,7 +81,7 @@ const JoinBGDC = () => {
                                             <div>
                                                 <a
                                                     type="button"
-                                                    className="inline-block px-6 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                                                    className="inline-block px-4 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                                                 >
                                                     Lihat Kurikulum BGDC!
                                                 </a>
@@ -106,7 +107,7 @@ const JoinBGDC = () => {
                                             <div>
                                                 <a
                                                     type="button"
-                                                    className="inline-block px-6 py-2.5 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                                                    className="inline-block px-4 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                                                 >
                                                     Baca Lebih Lanjut
                                                 </a>
