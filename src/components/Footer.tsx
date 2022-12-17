@@ -67,7 +67,7 @@ const Footer = () => {
                             </a>
                         </div>
 
-                        <div className="flex space-x-5 lg:mt-12 lg:space-x-4 mt-6">
+                        <div className="flex space-x-1 lg:mt-12 sm:space-x-4 lg:space-x-4 mt-6">
                             <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "

@@ -2,7 +2,7 @@ const Connect = () => {
     return (
         <>
             <div className=" pt-4 pb-10">
-                <h1 className="mb-10 m-auto font-bold text-neutral-700 p-10 w-max text-4xl">
+                <h1 className="mb-10 m-auto font-bold text-neutral-700 p-10 w-max lg:text-4xl text-xl">
                     Connect with us
                 </h1>
                 <div className="flex content-center justify-center">

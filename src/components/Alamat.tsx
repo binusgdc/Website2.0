@@ -2,14 +2,14 @@ const Alamat = () => {
     return (
         <>
             <div className=" pt-4 pb-20">
-                <h1 className="m-auto font-bold text-neutral-700 p-10 w-max text-4xl">
+                <h1 className="m-auto font-bold text-neutral-700 p-10 w-max lg:text-4xl text-xl">
                     Alamat BGDC
                 </h1>
 
-                <div className="flex lg:flex-row flex-col  justify-center mt-16 items-center items-auto">
-                    <div className=" lg:w-auto w-1/3">
+                <div className="flex lg:flex-row flex-col  justify-center mt-16 sm:items-center  ">
+                    <div className=" lg:w-auto ">
                         <div className="place-content-center">
-                            <div className="flex ">
+                            <div className="flex sm:ml-0 ml-8">
                                 <a>
                                     <img
                                         src="/phone.png"
@@ -24,7 +24,7 @@ const Alamat = () => {
 
                             <h1 className="ml-11  mt-4 lg:text-sm text-xs">021 – 2977 9100</h1>
 
-                            <div className="flex mt-14">
+                            <div className="flex mt-14 sm:ml-0 ml-8">
                                 <img
                                     src="/maps.png"
                                     className=" lg:w-7 lg:h-7 w-5 h-5 max-w-min"
@@ -44,23 +44,7 @@ const Alamat = () => {
                         <div className="flex mt-14 ml-10 flex-col lg:mb-0 mb-20">
                             <h1 className="text-lg font-bold text-neutral-700 ">Other Socials</h1>
 
-                            <div className="flex mt-3  space-x-4 ">
-                                <a href="#" className="text-gray-900 ">
-                                    <svg
-                                        className="w-5 h-5 "
-                                        fill="currentColor"
-                                        viewBox="0 0 28 28"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                    <span className="sr-only">Instagram page</span>
-                                </a>
-
+                            <div className="flex mt-3  lg:space-x-4 space-x-2">
                                 <a href="#" className="text-gray-900 ">
                                     <svg
                                         className="w-5 h-5 "
@@ -142,7 +126,7 @@ const Alamat = () => {
                     <div>
                         <a>
                             <iframe
-                                style={{ width: "140%", height: "400px" }}
+                                style={{ width: "100%", height: "320px" }}
                                 className="gmap_iframe border rounded-3xl "
                                 frameBorder="0"
                                 scrolling="yes"

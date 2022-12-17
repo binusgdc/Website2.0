@@ -3,7 +3,7 @@ const ContactUs = () => {
         <>
             <main className=" flex  content-center bg-neutral-700">
                 <div className=" pt-28 pb-32">
-                    <h1 className="m-auto font-bold text-white p-10 w-max text-5xl">
+                    <h1 className="m-auto font-bold text-white p-10 w-max lg:text-5xl text-xl">
                         Get in Touch
                     </h1>
                     <div className="pt-10 flex justify-center lg:flex-row flex-col  items-center ">
