@@ -1,19 +1,19 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import styles from "../styles/Home.module.scss"
-import Header from "../components/Header"
+import Header from "../components/"
 import Acara from "../components/Acara"
 import Kegiatan from "../components/KegiatanKami"
 import JoinBGDC from "../components/JoinBGDC"
 import Footer from "../components/Footer"
-import GameBGDC from "../components/GameKami"
+import GameKami from "../components/GameKami"
 function App() {
     return (
         <>
             <Header />
             <Home />
             <Kegiatan />
-            <GameBGDC />
+            <GameKami />
             <Acara />
             <JoinBGDC />
             <Footer />
