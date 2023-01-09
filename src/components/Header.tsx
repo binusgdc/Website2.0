@@ -1,6 +1,5 @@
 import styles from "../styles/Header.module.scss"
 import { BiMenuAltRight } from "react-icons/bi"
-
 import { AiOutlineCloseSquare } from "react-icons/ai"
 import { useState } from "react"
 import React from "react"
@@ -51,9 +50,5 @@ const Header = () => {
         </div>
     )
 }
-
-// const Button = () => {
-//     return <button className={styles.button}>Login</button>
-// }
 
 export default Header

@@ -1,37 +1,17 @@
 const Footer = () => {
     return (
         <>
-            <div className="  p-16 dark:bg-neutral-800  justify-center  font-body content-c">
-                <div className=" flex text-3xl justify-center text-white font-bold ">
-                    Any Questions?
-                </div>
-
-                <div className="flex-initial justify-center mt-6 mb-6 text-xs text-white text-center  ">
-                    Untuk pertanyaan mengenai pendaftaran, kerja sama dan lainnya silahkan hubungi
-                    kami di link dibawah ini!
-                </div>
-
-                <div className=" flex justify-center ">
-                    <button className="flex justify-center bg-gradient-to-b from-amber-500 via-yellow-400 to-yellow-300 text-white text-sm font-medium py-4 px-8 rounded-3xl">
-                        Contact Us
-                    </button>
-                </div>
-            </div>
-            <footer className="  bg-neutral-700 p-20 pt-24 lg:p-16">
+            <footer className="   bg-neutral-700 p-16 pt-24 pb-40 sm:p-16">
                 <div className=" lg:flex  justify-center ">
                     <div className="hidden lg:block">
                         <div className="grid grid-cols-3 gap-3">
                             <div>
                                 <a>
-                                    <img
-                                        src="/images/binus2.png"
-                                        className="mt-1 mr-4 w-15 h-12 max-w-min"
-                                        alt=""
-                                    />
+                                    <img src="/binus2.png" className="mt-1 mr-4 w-15 h-12" alt="" />
                                 </a>
                             </div>
 
-                            <div className="mml-14 ">
+                            <div className="ml-14 ">
                                 <ul className="text-white text-xs min-w-max">
                                     <li className="mb-1">
                                         <a>Jl. K. H. Syahdan No. 9, Kemanggisan,</a>
@@ -68,7 +48,7 @@ const Footer = () => {
                         </div>
 
                         <div className="mt-12">
-                            <span className="text-white static lg:text-center text-xs">
+                            <span className="static lg:text-center text-xs text-white">
                                 Copyright © 2021. Binus Game Development Club . All Rights Reserved.
                             </span>
                         </div>
@@ -77,24 +57,20 @@ const Footer = () => {
                     <div>
                         <div className="hidden justify-end lg:flex">
                             <a>
-                                <img src="/images/binus1.png" className="h-16 max-w-min" alt="" />
+                                <img src="/binus1.png" className="h-16 " alt="" />
                             </a>
                         </div>
 
                         <div className="lg:hidden">
                             <a>
-                                <img
-                                    src="/images/playobservedevelop.png"
-                                    className="h-36 max-w-min"
-                                    alt=""
-                                />
+                                <img src="/playobservedevelop.png" className="h-36 " alt="" />
                             </a>
                         </div>
 
-                        <div className="flex space-x-7 lg:mt-12 lg:space-x-4 mt-6">
+                        <div className="flex space-x-1 lg:mt-12 sm:space-x-4 lg:space-x-4 mt-6">
                             <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
-                                    className="w-7 h-7 lg:w-5 lg:h-5 "
+                                    className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -108,12 +84,9 @@ const Footer = () => {
                                 <span className="sr-only">Instagram page</span>
                             </a>
 
-                            <a
-                                href="https://bgdc.itch.io/"
-                                className="text-white hover:text-gray-900 "
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
-                                    className="w-7 h-7 lg:w-5 lg:h-5"
+                                    className="w-6 h-6 lg:w-5 lg:h-5"
                                     fill="currentColor"
                                     viewBox="0 0 512 512"
                                     aria-hidden="true"
@@ -127,12 +100,9 @@ const Footer = () => {
                                 <span className="sr-only">Itch</span>
                             </a>
 
-                            <a
-                                href="https://www.linkedin.com/company/binus-game-development-club/"
-                                className="text-white hover:text-gray-900 "
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
-                                    className="w-7 h-7 lg:w-5 lg:h-5"
+                                    className="w-6 h-6 lg:w-5 lg:h-5"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -146,12 +116,9 @@ const Footer = () => {
                                 <span className="sr-only">LinkedIn Page</span>
                             </a>
 
-                            <a
-                                href="https://www.youtube.com/channel/UCdDgF6FOjsIfKinPaorLF4Q"
-                                className="text-white hover:text-gray-900 "
-                            >
+                            <a href="#" className="text-white hover:text-gray-900 ">
                                 <svg
-                                    className="w-7 h-7 lg:w-5 lg:h-5 "
+                                    className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
@@ -167,7 +134,7 @@ const Footer = () => {
 
                             <a href="#" className="text-white hover:text-gray-900">
                                 <svg
-                                    className="w-7 h-7 lg:w-5 lg:h-5 "
+                                    className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -179,7 +146,7 @@ const Footer = () => {
 
                             <a href="#" className="text-white hover:text-gray-900">
                                 <svg
-                                    className="w-7 h-7 lg:w-5 lg:h-5 "
+                                    className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -195,7 +162,7 @@ const Footer = () => {
                         </div>
 
                         <div className="lg:hidden mt-10 ">
-                            <ul className="text-white text-lg min-w-max">
+                            <ul className="text-white text-lg ">
                                 <li className="">
                                     <a>Jl. K. H. Syahdan No. 9, Kemanggisan,</a>
                                 </li>
@@ -208,12 +175,12 @@ const Footer = () => {
                                 <i className="fa-brands fa-itch-io"></i>
                             </ul>
 
-                            <div className="mt-12 text-amber-300 text-lg min-w-max mb-2">
+                            <div className="mt-12 text-amber-300 text-lg  mb-2">
                                 <p>BGDC</p>
                             </div>
 
-                            <div className="grid grid-cols-2 gap-32 ">
-                                <ul className="text-white text-lg min-w-max">
+                            <div className="grid grid-cols-2  ">
+                                <ul className="text-white text-lg ">
                                     <li className="mb-2">
                                         <a href="#" className="hover:underline">
                                             About Us
@@ -236,7 +203,7 @@ const Footer = () => {
                                         </a>
                                     </li>
                                 </ul>
-                                <ul className="text-white text-lg min-w-max">
+                                <ul className="text-white text-lg">
                                     <li className="mb-2">
                                         <a href="#" className="hover:underline">
                                             Registration
@@ -260,25 +227,21 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="mt-12 border-rounded border border-amber-400 border-t-2 border-l-0 border-r-0 border-b-0 min-w-max "></div>
+                            <div className="mt-12 border-rounded border border-amber-400 border-t-2 border-l-0 border-r-0 border-b-0  "></div>
                         </div>
 
-                        <div className="flex justify-between content-center h-2 mt-12 mb-12 lg:mt-0 lg:mb-0">
+                        <div className="flex justify-between items-center  h-2 mt-12 mb-12 lg:mt-0 lg:mb-0 sm:flex-row sm:items-start flex-col">
                             <div className="lg:hidden">
                                 <a>
-                                    <img
-                                        src="/images/binus1.png"
-                                        className="h-16 max-w-min"
-                                        alt=""
-                                    />
+                                    <img src="/binus1.png" className="h-20 " alt="" />
                                 </a>
                             </div>
 
                             <div className="lg:hidden">
                                 <a>
                                     <img
-                                        src="/images/binus2.png"
-                                        className="h-12 max-w-min "
+                                        src="/binus2.png"
+                                        className="h-12 max-w-min mt-12 sm:mt-2"
                                         alt=""
                                     />
                                 </a>

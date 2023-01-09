@@ -1,10 +1,7 @@
 @import "../styles/variables.scss";
 .header {
     height: $header-height;
-    background: #323232;
-    @include breakpoint(md) {
-        background: #fff;
-    }
+    background: $bg2;
     color: $texts;
     position: fixed;
     z-index: 1000;
@@ -66,7 +63,6 @@
     &-open {
         transition: 0.2s ease right;
         right: 0;
-        margin-top: 4px;
     }
     &__item {
         display: block;
@@ -79,10 +75,6 @@
         &:hover {
             color: $primary;
         }
-        margin-top: 1rem;
-        @include breakpoint(md) {
-            margin-top: 0;
-        }
         margin-bottom: 1rem;
     }
      :last-of-type {
@@ -91,7 +83,7 @@
     @include breakpoint(md) {
         position: static;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         background: initial;
         width: auto;
         padding: 0;
