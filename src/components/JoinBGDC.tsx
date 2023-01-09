@@ -121,7 +121,7 @@ const JoinBGDC = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden md:inline-block md:box-border max-w-7xl mx-4  lg:columns-3 xl:columns-3">
+                        <div className="md:inline-block md:box-border max-w-7xl mx-4  lg:columns-3 xl:columns-3">
                             <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
                                 <p className="">
                                     I am not a gamer, nor a player. How can I work at two-award

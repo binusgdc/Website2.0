@@ -109,13 +109,13 @@ export default function GameKami() {
 
             <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
-                    <div className="flex flex-shrink-0 w-[450px] hidden lg:block justify-center flex-col items-center mt-[-300px] ml-[1480px]">
+                    <div className="flex flex-shrink-0 w-[450px] lg:block justify-center flex-col items-center mt-[-300px] ml-[1480px]">
                         <Image
                             src={"/images/hex1.png"}
                             alt="photo"
                             width={507}
                             height={507}
-                            className=""
+                            className="bg-icon"
                         />
                     </div>
                 </div>
@@ -123,13 +123,13 @@ export default function GameKami() {
 
             <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
-                    <div className="flex flex-shrink-0 w-[270px] hidden lg:block justify-center flex-col items-center mt-[120px] ml-[-1550px]">
+                    <div className="flex flex-shrink-0 w-[270px] lg:block justify-center flex-col items-center mt-[120px] ml-[-1550px]">
                         <Image
                             src={"/images/hex2.png"}
                             alt="photo"
                             width={320}
                             height={320}
-                            className=""
+                            className="bg-icon"
                         />
                     </div>
                 </div>
@@ -137,13 +137,13 @@ export default function GameKami() {
 
             <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
-                    <div className="flex flex-shrink-0 w-[450px] hidden lg:block justify-center flex-col items-center mt-[410px] ml-[1530px]">
+                    <div className="flex flex-shrink-0 w-[450px] lg:block justify-center flex-col items-center mt-[410px] ml-[1530px]">
                         <Image
                             src={"/images/hex1.png"}
                             alt="photo"
                             width={446}
                             height={446}
-                            className=""
+                            className="bg-icon"
                         />
                     </div>
                 </div>

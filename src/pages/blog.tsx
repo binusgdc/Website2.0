@@ -1,18 +1,12 @@
-import type { NextPage } from "next"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import MainLayout from "../layouts/MainLayouts"
 import BlogComp from "../components/BlogComp"
+
 function Blog() {
     return (
-        <>
-            <Header />
+        <MainLayout title="Blog">
             <BlogComp />
-            <Footer />
-        </>
+        </MainLayout>
     )
 }
 
-const BlogPage: NextPage = () => {
-    return <div></div>
-}
 export default Blog
