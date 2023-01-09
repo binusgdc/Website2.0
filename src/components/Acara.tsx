@@ -5,7 +5,7 @@ const Acara = () => {
     return (
         <>
             <section className="bg-white ">
-                <div className="container max-w-5xl mx-auto m-8" id="BGDC_Acara">
+                <div className="pt-10 container max-w-5xl mx-auto m-8" id="BGDC_Acara">
                     <div className="text-center m-4 ">
                         <h1 className="mb-8 font-bold break-normal text-3xl md:text-5xl text-gray-800">
                             Acara BGDC

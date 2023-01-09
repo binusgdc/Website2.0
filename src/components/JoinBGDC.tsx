@@ -62,8 +62,8 @@ const JoinBGDC = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-wrap flex-col sm:flex-row-reverse">
-                                <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <div className="m-8 flex flex-wrap flex-col sm:flex-row-reverse">
+                                <div className="w-full sm:w-1/2 p-6 ">
                                     <img src="/images/join2.png" alt="bgdjam test" />
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6 ">
@@ -82,6 +82,7 @@ const JoinBGDC = () => {
                                                 <a
                                                     type="button"
                                                     className="inline-block px-4 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                                                    href="https://binusgdc.com/kurikulum2022"
                                                 >
                                                     Lihat Kurikulum BGDC!
                                                 </a>
@@ -91,8 +92,8 @@ const JoinBGDC = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-wrap flex-col-reverse sm:flex-row-reverse">
-                                <div className="w-full sm:w-1/2 p-6 mt-6 ">
+                            <div className="m-8 flex flex-wrap flex-col-reverse sm:flex-row-reverse">
+                                <div className="w-full sm:w-1/2 p-6 ">
                                     <div className="align-middle">
                                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                             Pengalaman Berorganisasi
@@ -123,10 +124,13 @@ const JoinBGDC = () => {
                         <div className="hidden md:inline-block md:box-border max-w-7xl mx-4  lg:columns-3 xl:columns-3">
                             <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
                                 <p className="">
-                                    Proin pretium luctus ligula eget tempor. Vivamus pharetra
-                                    elementum dui non posuere. Phasellus tristique dolor massa, sit
-                                    amet cursus purus tincidunt quis. Duis tempus ante sit amet eros
-                                    tempor, quis consequat enim imperdiet.
+                                    I am not a gamer, nor a player. How can I work at two-award
+                                    winning Indie Games Studio and part of the organizer of GameDev
+                                    Community? As a marketer, I am happy to expand the Game to the
+                                    International Market that will help to drive sales. Thanks to
+                                    BGDC to introduce me the basic about GameDev, another level of
+                                    my Marketing is unlocked! Hope will have a Marketing curriculum
+                                    there to making more impact on the product.
                                 </p>
 
                                 <div className="flex pb-6 items-center justify-between">
@@ -134,7 +138,7 @@ const JoinBGDC = () => {
                                         <a className="inline-block mr-4" href="#">
                                             <img
                                                 className="rounded-full max-w-none w-12 h-12"
-                                                src="https://randomuser.me/api/portraits/men/35.jpg"
+                                                src="images/testimony_img/Arfiana Maulina.jpeg"
                                             />
                                         </a>
                                         <div className="flex flex-col">
@@ -143,19 +147,19 @@ const JoinBGDC = () => {
                                                     className="inline-block text-lg font-bold "
                                                     href="#"
                                                 >
-                                                    Name Here
+                                                    Arfiana Maulina
                                                 </a>
                                             </div>
-                                            <div className="text-slate-500">Position Here</div>
+                                            <div className="text-slate-500">Community Member</div>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
+                            <article className="text-gray-600 break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
                                 <p className="">
-                                    Proin pretium luctus ligula eget tempor. Vivamus pharetra
-                                    elementum dui non posuere.
+                                    Talent group seru banget, makin banyak yang ikut ya biar makin
+                                    goks!!
                                 </p>
 
                                 <div className="flex pb-6 items-center justify-between">
@@ -163,7 +167,7 @@ const JoinBGDC = () => {
                                         <a className="inline-block mr-4" href="#">
                                             <img
                                                 className="rounded-full max-w-none w-12 h-12"
-                                                src="https://randomuser.me/api/portraits/men/35.jpg"
+                                                src="images/testimony_img/Or1on.jpg"
                                             />
                                         </a>
                                         <div className="flex flex-col">
@@ -172,48 +176,23 @@ const JoinBGDC = () => {
                                                     className="inline-block text-lg font-bold "
                                                     href="#"
                                                 >
-                                                    Name Here
+                                                    Vanessa Angelique Wiria
                                                 </a>
                                             </div>
-                                            <div className="text-slate-500">Position Here</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    ras egestas metus lorem, eget porttitor nisi facilisis et. Sed
-                                    eros elit, scelerisque eget massa nec, pellentesque vulputate
-                                    quam. Praesent augue nisi, dictum in tortor nec,
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="https://randomuser.me/api/portraits/men/35.jpg"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Name Here
-                                                </a>
+                                            <div className="text-slate-500">
+                                                Talent Group Member
                                             </div>
-                                            <div className="text-slate-500">Position Here</div>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                             <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
                                 <p className="">
-                                    volutpat mauris. Vestibulum porttitor quam non nisl suscipit
-                                    finibus nec eu elit. Integer viverra tortor scelerisque augue
-                                    elementum imperdiet.
+                                    Kelas BGDC sangat membantu saya dalam memahami hal-hal mengenai
+                                    game development. Saya sendiri mengikuti kelas 2D Art BGDC dan
+                                    menurut saya, kelas tersebut seru dan membantu saya dalam
+                                    memahami konsep-konsep 2D Art, terutama 2D Art untuk
+                                    pengembangan game.
                                 </p>
 
                                 <div className="flex pb-6 items-center justify-between">
@@ -221,7 +200,7 @@ const JoinBGDC = () => {
                                         <a className="inline-block mr-4" href="#">
                                             <img
                                                 className="rounded-full max-w-none w-12 h-12"
-                                                src="https://randomuser.me/api/portraits/men/35.jpg"
+                                                src="/images/pengurus_img/Robertus Eric 2.jpg"
                                             />
                                         </a>
                                         <div className="flex flex-col">
@@ -230,21 +209,20 @@ const JoinBGDC = () => {
                                                     className="inline-block text-lg font-bold "
                                                     href="#"
                                                 >
-                                                    Name Here
+                                                    Robertus Eric
                                                 </a>
                                             </div>
-                                            <div className="text-slate-500">Position Here</div>
+                                            <div className="text-slate-500">BGDC Class Member</div>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                             <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
                                 <p className="">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    rutrum pretium consectetur. Nunc imperdiet mollis cursus. Nulla
-                                    a laoreet diam. Duis maximus justo sit amet accumsan placerat.
-                                    In id dolor porttitor, dignissim justo ut, finibus felis. Nullam
-                                    dictum, dolor id faucibus varius,”
+                                    Saya dari Tim PR NC sangat senang selama ini bekerja sama dengan
+                                    BGDC dan untuk sejauh ini tim kami belum pernah mengalami
+                                    masalah saat bekerja sama dengan BGDC, kami berharap kedepannya
+                                    NC dan BGDC dapat bekerja sama lagi.
                                 </p>
 
                                 <div className="flex pb-6 items-center justify-between">
@@ -252,7 +230,7 @@ const JoinBGDC = () => {
                                         <a className="inline-block mr-4" href="#">
                                             <img
                                                 className="rounded-full max-w-none w-12 h-12"
-                                                src="https://randomuser.me/api/portraits/men/35.jpg"
+                                                src="images/testimony_img/Mordsven.jpg"
                                             />
                                         </a>
                                         <div className="flex flex-col">
@@ -261,18 +239,19 @@ const JoinBGDC = () => {
                                                     className="inline-block text-lg font-bold "
                                                     href="#"
                                                 >
-                                                    Name Here
+                                                    Arkannabil Pratama
                                                 </a>
                                             </div>
-                                            <div className="text-slate-500">Position Here</div>
+                                            <div className="text-slate-500">Partner</div>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                             <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
                                 <p className="">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    rutrum pretium consectetur.”
+                                    Dengan adanya talent group, saya dapat mengenali banyak koneksi
+                                    serta cara kerja time crunch dalam mengerjakan projek dengan tim
+                                    saya.
                                 </p>
 
                                 <div className="flex pb-6 items-center justify-between">
@@ -280,7 +259,7 @@ const JoinBGDC = () => {
                                         <a className="inline-block mr-4" href="#">
                                             <img
                                                 className="rounded-full max-w-none w-12 h-12"
-                                                src="https://randomuser.me/api/portraits/men/35.jpg"
+                                                src="images/testimony_img/copium.png"
                                             />
                                         </a>
                                         <div className="flex flex-col">
@@ -289,10 +268,45 @@ const JoinBGDC = () => {
                                                     className="inline-block text-lg font-bold "
                                                     href="#"
                                                 >
-                                                    Name Here
+                                                    Pom-Pom
                                                 </a>
                                             </div>
-                                            <div className="text-slate-500">Position Here</div>
+                                            <div className="text-slate-500">
+                                                Talent Group Member
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
+                                <p className="">
+                                    Jadi saya suka bebek dan karena saya bikin game bebek, saya
+                                    sudah bisa bikin model bebek-bebek keren. Sebagai bonus saya
+                                    dapat membuat animasi bebek. Aku senang sekali bisa membuat
+                                    bebek di blender dan melihat bebek saya bergerak di dalam game
+                                    😳😳👍
+                                </p>
+
+                                <div className="flex pb-6 items-center justify-between">
+                                    <div className="flex mt-8 ">
+                                        <a className="inline-block mr-4" href="#">
+                                            <img
+                                                className="rounded-full max-w-none w-12 h-12"
+                                                src="/images/pengurus_img/Vetri Marvel Budiman 2 edited.png"
+                                            />
+                                        </a>
+                                        <div className="flex flex-col">
+                                            <div>
+                                                <a
+                                                    className="inline-block text-lg font-bold "
+                                                    href="#"
+                                                >
+                                                    Vetri Marvel Budiman
+                                                </a>
+                                            </div>
+                                            <div className="text-slate-500">
+                                                Talent Group Member
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

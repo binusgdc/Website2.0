@@ -12,7 +12,7 @@ export default function GameKami() {
     return (
         <div className="relative" style={gamekami}>
             <div id="BGDC_GameKami"></div>
-            <div className="pt-10">
+            <div className="pt-10 mt-8">
                 <div className="flex items-center justify-center text-4xl font-bold">Game Kami</div>
                 <div className="flex items-center justify-center mt-5">
                     Game yang kami buat untuk game jam serta game dari hasil Talent
@@ -42,9 +42,13 @@ export default function GameKami() {
                         Brackeys Game Jam 2020.2
                     </p>
                     <div className="flex px-8 pb-8 items-center">
-                        <button className="bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 font-medium py-2 px-4 rounded-full">
+                        <a
+                            type="button"
+                            href="https://bgdc.itch.io/chaos-weekly"
+                            className="bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 font-medium py-2 px-4 rounded-full"
+                        >
                             Lihat di Itch.io
-                        </button>
+                        </a>
                         <Image
                             src={"/images/unity.png"}
                             alt="photo"
@@ -104,9 +108,13 @@ export default function GameKami() {
                     <p className="overflow-hidden pl-8 font-bold text-amber-400">
                         GMTK Game Jam 2021
                     </p>
-                    <button className="bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 ml-8 mb-10 font-medium py-2 px-4 rounded-full mt-[20px]">
+                    <a
+                        type="button"
+                        href="https://bgdc.itch.io/the-cursed-wheep"
+                        className="bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 ml-8 mb-10 font-medium py-2 px-4 rounded-full mt-[20px]"
+                    >
                         Lihat di Itch.io
-                    </button>
+                    </a>
 
                     <div className="absolute top-1/2 ml-[230px] mt-[40px]">
                         <Image
@@ -163,9 +171,13 @@ export default function GameKami() {
                     <p className="overflow-hidden pl-8 font-bold text-yellow-400">
                         Talent Group BGDC Batch 2
                     </p>
-                    <button className="absolute bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 ml-8 mt-[20px]  font-medium py-2 px-4 rounded-full">
+                    <a
+                        href="https://bgdc.itch.io/hell-dodge"
+                        type="button"
+                        className="absolute bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 ml-8 mt-[20px]  font-medium py-2 px-4 rounded-full"
+                    >
                         Lihat di Itch.io
-                    </button>
+                    </a>
                     <div className="ml-[240px]">
                         <Image
                             src={"/images/unity.png"}

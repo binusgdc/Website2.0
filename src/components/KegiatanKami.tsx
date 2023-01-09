@@ -2,7 +2,7 @@ import Image from "next/image"
 const Kegiatan = () => {
     return (
         <>
-            <div className="container:md mx-auto m-8  ">
+            <div className="pt-10 container:md mx-auto mt-8  ">
                 <div className="hidden lg:grid lg:max-w-3xl max-w-xs  text-center mx-auto items-center  grid-cols-2 lg:grid-cols-4 gap-4 mb-20 mt-12">
                     <a
                         type="button"

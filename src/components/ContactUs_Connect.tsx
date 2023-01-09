@@ -6,7 +6,12 @@ const Connect = () => {
                     Connect with us
                 </h1>
                 <div className="flex content-center justify-center">
-                    <form action="#" className="space-y-4 lg:w-2/5 w-2/3">
+                    <form
+                        action="mailto:binusgdc.com?subject=FeedbackBGDC"
+                        className="space-y-4 lg:w-2/5 w-2/3"
+                        method="GET"
+                        encType="text/plain"
+                    >
                         <div className="lg:w-3/5 w-3/5 min-w-max">
                             <label
                                 htmlFor="subject"
@@ -20,7 +25,6 @@ const Connect = () => {
                                 className="block p-2 w-full  text-neutral-700 bg-gray-50 rounded-3xl "
                             />
                         </div>
-
                         <div className="lg:w-3/5 w-3/5 min-w-max">
                             <label
                                 htmlFor="email"
