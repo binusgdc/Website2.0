@@ -7,14 +7,14 @@ export default function GameKami() {
         backgroundColor: "#F9F9F9",
         height: "2000px",
         overflow: "hidden",
+        
     }
-
     return (
-        <div className="relative" style={gamekami}>
+        <div className="relative font-ubu" style={gamekami}>
             <div className="pt-10 flex justify-center lg:flex-row flex-col  items-center align-top">
                 <div className="mr-8 ml-8 w-[350px] lg:w-[500px] flex justify-center flex-col items-center text-center">
-                    <h1 className="text-[24pt] font-bold ">Game Kami</h1>
-                    <p className="">
+                    <h1 className="text-[24pt] font-bold text-[#494949]">Game Kami</h1>
+                    <p className="text-[#494949]">
                         Game yang kami buat untuk game jam serta game dari hasil Talent Group BGDC
                     </p>
                 </div>
@@ -33,19 +33,19 @@ export default function GameKami() {
                     </div>
                 </div>
 
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-96 -translate-y-1/2 mt-[100px] lg:mt-[225px] lg:ml-[0px] ml-[240px] lg:w-[440px] w-[290px] overflow-hidden text-sm bg-white rounded-3xl ">
-                    <p className="overflow-hidden pl-8 pt-[40px] lg:pt-16 lg:ml-[0px] ml-[80px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-96 -translate-y-1/2 mt-[100px] lg:mt-[225px] lg:ml-[0px] ml-[240px] lg:w-[440px] w-[290px] overflow-hidden text-sm bg-white rounded-3xl text-[#5A5A5A]">
+                    <p className="overflow-hidden pl-8 pt-[40px] lg:pt-16 lg:ml-[0px] ml-[80px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold font-neu">
                         CHAOS WEEKLY
                     </p>
-                    <p className="hidden lg:block overflow-hidden pl-8 pt-5 w-[370px]">
+                    <p className="hidden lg:block overflow-hidden pl-8 pt-5 w-[370px] text-[#5A5A5A]">
                         Play as a magazine ediot, trying to get money by making covers and
                         headlines. Make the world chaotic with the power of hoax for raking in the
                         cash, but going overboard will get you in trouble!
                     </p>
-                    <p className="overflow-hidden pl-[113px] lg:pl-8 mt-[-70px] lg:mt-4 font-bold">
+                    <p className="overflow-hidden pl-[113px] lg:pl-8 mt-[-70px] lg:mt-4 font-bold text-[#5A5A5A]">
                         Game dibuat untuk:
                     </p>
-                    <p className="overflow-hidden text-[10pt] lg:text-[11pt] pl-[113px] mb-[90px] lg:mb[0px] lg:pl-8 font-bold text-yellow-400">
+                    <p className="overflow-hidden text-[10pt] lg:text-[11pt] pl-[113px] mb-[90px] lg:mb[0px] lg:pl-8 font-bold text-[#FEC54D]">
                         Brackeys Game Jam 2020.2
                     </p>
                     <div className="flex px-8 pb-3 items-center">
@@ -163,17 +163,17 @@ export default function GameKami() {
                 </div>
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-96 -translate-y-1/2 mt-[40px] lg:mt-[-1075px] lg:ml-[380px] ml-[240px] lg:w-[440px] w-[290px] overflow-hidden text-sm bg-white rounded-3xl">
-                    <p className="overflow-hidden pl-8 pt-[40px] lg:pt-16 lg:ml-[0px] ml-[-20px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold">
+                    <p className="overflow-hidden pl-8 pt-[40px] lg:pt-16 lg:ml-[0px] ml-[-20px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold text-[#5A5A5A]">
                         The Cursed Wheep
                     </p>
-                    <p className="overflow-hidden hidden lg:block pl-8 pt-5 w-[350px]">
+                    <p className="overflow-hidden hidden lg:block pl-8 pt-5 w-[350px] text-[#5A5A5A]">
                         Help the Wolf and the Sheep break the curse in the mysterious forest, in
                         this simple yet amusing platformer developed by BGDC.
                     </p>
-                    <p className="overflow-hidden pl-8 pt-4 font-bold ml-[-20px] lg:ml-[0px] mt-[-90px] lg:mt-[0px]">
+                    <p className="overflow-hidden pl-8 pt-4 font-bold ml-[-20px] lg:ml-[0px] mt-[-90px] lg:mt-[0px] text-[#5A5A5A]">
                         Game dibuat untuk:
                     </p>
-                    <p className="overflow-hidden pl-8 ml-[-20px] lg:ml-[0px] pb-[110px] lg:pb-[0px] font-bold text-amber-400">
+                    <p className="overflow-hidden pl-8 ml-[-20px] lg:ml-[0px] pb-[110px] lg:pb-[0px] font-bold text-[#FEC54D]">
                         GMTK Game Jam 2021
                     </p>
                     <button className="hidden lg:block bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-8 mb-10 font-bold py-2 px-4 rounded-full mt-[20px]">
@@ -248,19 +248,19 @@ export default function GameKami() {
                 </div>
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-96 -translate-y-1/2 mt-[45px] lg:mt-[-560px] lg:ml-[130px] ml-[240px] lg:w-[400px] w-[290px] overflow-hidden text-sm bg-white rounded-3xl">
-                    <p className="overflow-hidden pl-8 pt-[40px] lg:pt-14 lg:ml-[0px] ml-[85px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold">
+                    <p className="overflow-hidden pl-8 pt-[40px] lg:pt-14 lg:ml-[0px] ml-[85px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold text-[#5A5A5A]">
                         Hell Dodge
                     </p>
-                    <p className="overflow-hidden hidden lg:block pl-8 pt-5 w-[350px]">
+                    <p className="overflow-hidden hidden lg:block pl-8 pt-5 w-[350px] text-[#5A5A5A]">
                         Hell Dodge is an event organized by Satan and sponsored by God Himself!
                         Participants will need to endure the rains of arrows and cannonballs for as
                         long as they can. Whoever last the longest would win and be bestowed upon a
                         reward that their heart desires.
                     </p>
-                    <p className="overflow-hidden pl-[117px] lg:pl-8 pt-[0px] lg:pt-4 mt-[-75px] lg:mt-[0px] font-bold">
+                    <p className="overflow-hidden pl-[117px] lg:pl-8 pt-[0px] lg:pt-4 mt-[-75px] lg:mt-[0px] font-bold text-[#5A5A5A]">
                         Game dibuat untuk:
                     </p>
-                    <p className="overflow-hidden pl-8 pb-[120px] lg:pb-[70px] ml-[85px] text-[9pt] lg:ml-[0px] font-bold text-yellow-400">
+                    <p className="overflow-hidden pl-8 pb-[120px] lg:pb-[70px] ml-[85px] text-[9pt] lg:ml-[0px] font-bold text-[#FEC54D]">
                         Talent Group BGDC Batch 2
                     </p>
 
@@ -320,10 +320,6 @@ export default function GameKami() {
                         </div>
                     </div>
                 </div>
-
-                {/* <button className="hidden lg:block bg-gradient-to-b from-yellow-500 to-yellow-400 text-white mr-24 ml-8 mb-10 font-bold py-2 px-4 rounded-full mt-[-45px]">
-                        Lihat di Itch.io
-                    </button> */}
 
                 <div className="absolute left-1/2 transform -translate-x-1/2 mt-[-350px]">
                     <button className="flex-shrink-0 text-[10pt] lg:text-[12pt] w-[170px] lg:w-[200px] bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-[100px] lg:ml-8 mt-[450px] lg:mt-10  font-bold pl-6 pr-6 py-4 px-4 rounded-3xl">

@@ -11,6 +11,10 @@ module.exports = {
                 "end-gradient": "#FFD644",
                 alt_background: "#F9F9F9",
             },
+            fontFamily: {
+                ubu: ["Ubuntu", "sans-serif"],
+                neu: ["Bebas-Neue", "cursive"],
+            },
         },
     },
     plugins: [],
