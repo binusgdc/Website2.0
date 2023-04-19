@@ -5,7 +5,7 @@ export type TestimonialProps = {
     statement: string
 }
 
-export const Testimonial = ({
+const Testimonial = ({
     personName,
     personTitle,
     profileImagePath,
@@ -44,3 +44,5 @@ export const Testimonial = ({
         </>
     )
 }
+
+export default Testimonial

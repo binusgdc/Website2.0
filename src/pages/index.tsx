@@ -4,7 +4,8 @@ import Image from "next/image"
 import CSS from "csstype"
 import AgateImg from "/public/images/agate.png"
 import H2LImg from "/public/images/h2l.png"
-import { Testimonial, TestimonialProps } from "../components/Testimonial"
+import { TestimonialProps } from "../components/Testimonial"
+import Testimonial from "../components/Testimonial"
 
 const gameKamiCssProperties: CSS.Properties = {
     display: '"flex"',
