@@ -13,7 +13,7 @@ const gameKamiCssProperties: CSS.Properties = {
     overflow: "hidden",
 }
 
-const testimonials: TestimonialProps[] = [
+const testimonialsStatic: TestimonialProps[] = [
     {
         personName: "Arfiana Maulina",
         personTitle: "Community Member",
@@ -895,7 +895,7 @@ export default function App() {
                             </div>
                         </div>
                         <div className="md:inline-block md:box-border max-w-7xl mx-4  lg:columns-3 xl:columns-3">
-                            {testimonials.map((el, i) => (
+                            {testimonialsStatic.map((el, i) => (
                                 <Testimonial key={i} {...el}></Testimonial>
                             ))}
                         </div>
