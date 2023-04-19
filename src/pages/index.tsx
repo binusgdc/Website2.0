@@ -4,6 +4,7 @@ import Image from "next/image"
 import CSS from "csstype"
 import AgateImg from "/public/images/agate.png"
 import H2LImg from "/public/images/h2l.png"
+import { Testimonial, TestimonialProps } from "../components/Testimonial"
 
 const gameKamiCssProperties: CSS.Properties = {
     display: '"flex"',
@@ -11,6 +12,65 @@ const gameKamiCssProperties: CSS.Properties = {
     height: "2000px",
     overflow: "hidden",
 }
+
+const testimonials: TestimonialProps[] = [
+    {
+        personName: "Arfiana Maulina",
+        personTitle: "Community Member",
+        profileImagePath: "/images/testimony_img/Arfiana Maulina.jpeg",
+        statement: `I am not a gamer, nor a player. How can I work at two-award
+        winning Indie Games Studio and part of the organizer of GameDev
+        Community? As a marketer, I am happy to expand the Game to the
+        International Market that will help to drive sales. Thanks to
+        BGDC to introduce me the basic about GameDev, another level of
+        my Marketing is unlocked! Hope will have a Marketing curriculum
+        there to making more impact on the product.`,
+    },
+    {
+        personName: "Vanessa Angelique Wiria",
+        personTitle: "Talent Group Member",
+        profileImagePath: "/images/testimony_img/Or1on.jpg",
+        statement: `Talent group seru banget, makin banyak yang ikut ya biar makin
+        goks!!`,
+    },
+    {
+        personName: "Robertus Eric",
+        personTitle: "BGDC Class Member",
+        profileImagePath: "/images/pengurus_img/Robertus Eric 2.jpg",
+        statement: `Kelas BGDC sangat membantu saya dalam memahami hal-hal mengenai
+        game development. Saya sendiri mengikuti kelas 2D Art BGDC dan
+        menurut saya, kelas tersebut seru dan membantu saya dalam
+        memahami konsep-konsep 2D Art, terutama 2D Art untuk
+        pengembangan game.`,
+    },
+    {
+        personName: "Arkannabil Pratama",
+        personTitle: "Partner",
+        profileImagePath: "/images/testimony_img/Mordsven.jpg",
+        statement: `Saya dari Tim PR NC sangat senang selama ini bekerja sama dengan
+        BGDC dan untuk sejauh ini tim kami belum pernah mengalami
+        masalah saat bekerja sama dengan BGDC, kami berharap kedepannya
+        NC dan BGDC dapat bekerja sama lagi.`,
+    },
+    {
+        personName: "Pom-Pom",
+        personTitle: "Talent Group Member",
+        profileImagePath: "/images/testimony_img/copium.png",
+        statement: `Dengan adanya talent group, saya dapat mengenali banyak koneksi
+        serta cara kerja time crunch dalam mengerjakan projek dengan tim
+        saya.`,
+    },
+    {
+        personName: "Vetri Marvel Budiman",
+        personTitle: "Talent Group Member",
+        profileImagePath: "/images/pengurus_img/Vetri Marvel Budiman 2 edited.png",
+        statement: `Jadi saya suka bebek dan karena saya bikin game bebek, saya
+        sudah bisa bikin model bebek-bebek keren. Sebagai bonus saya
+        dapat membuat animasi bebek. Aku senang sekali bisa membuat
+        bebek di blender dan melihat bebek saya bergerak di dalam game
+        😳😳👍`,
+    },
+]
 
 export default function App() {
     return (
@@ -835,204 +895,12 @@ export default function App() {
                             </div>
                         </div>
                         <div className="md:inline-block md:box-border max-w-7xl mx-4  lg:columns-3 xl:columns-3">
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    I am not a gamer, nor a player. How can I work at two-award
-                                    winning Indie Games Studio and part of the organizer of GameDev
-                                    Community? As a marketer, I am happy to expand the Game to the
-                                    International Market that will help to drive sales. Thanks to
-                                    BGDC to introduce me the basic about GameDev, another level of
-                                    my Marketing is unlocked! Hope will have a Marketing curriculum
-                                    there to making more impact on the product.
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="images/testimony_img/Arfiana Maulina.jpeg"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Arfiana Maulina
-                                                </a>
-                                            </div>
-                                            <div className="text-slate-500">Community Member</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article className="text-gray-600 break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    Talent group seru banget, makin banyak yang ikut ya biar makin
-                                    goks!!
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="images/testimony_img/Or1on.jpg"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Vanessa Angelique Wiria
-                                                </a>
-                                            </div>
-                                            <div className="text-slate-500">
-                                                Talent Group Member
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    Kelas BGDC sangat membantu saya dalam memahami hal-hal mengenai
-                                    game development. Saya sendiri mengikuti kelas 2D Art BGDC dan
-                                    menurut saya, kelas tersebut seru dan membantu saya dalam
-                                    memahami konsep-konsep 2D Art, terutama 2D Art untuk
-                                    pengembangan game.
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="/images/pengurus_img/Robertus Eric 2.jpg"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Robertus Eric
-                                                </a>
-                                            </div>
-                                            <div className="text-slate-500">BGDC Class Member</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    Saya dari Tim PR NC sangat senang selama ini bekerja sama dengan
-                                    BGDC dan untuk sejauh ini tim kami belum pernah mengalami
-                                    masalah saat bekerja sama dengan BGDC, kami berharap kedepannya
-                                    NC dan BGDC dapat bekerja sama lagi.
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="images/testimony_img/Mordsven.jpg"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Arkannabil Pratama
-                                                </a>
-                                            </div>
-                                            <div className="text-slate-500">Partner</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    Dengan adanya talent group, saya dapat mengenali banyak koneksi
-                                    serta cara kerja time crunch dalam mengerjakan projek dengan tim
-                                    saya.
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="images/testimony_img/copium.png"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Pom-Pom
-                                                </a>
-                                            </div>
-                                            <div className="text-slate-500">
-                                                Talent Group Member
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article className="break-inside mb-4 p-6 rounded-xl bg-white  flex flex-col bg-clip-border">
-                                <p className="">
-                                    Jadi saya suka bebek dan karena saya bikin game bebek, saya
-                                    sudah bisa bikin model bebek-bebek keren. Sebagai bonus saya
-                                    dapat membuat animasi bebek. Aku senang sekali bisa membuat
-                                    bebek di blender dan melihat bebek saya bergerak di dalam game
-                                    😳😳👍
-                                </p>
-
-                                <div className="flex pb-6 items-center justify-between">
-                                    <div className="flex mt-8 ">
-                                        <a className="inline-block mr-4" href="#">
-                                            <img
-                                                className="rounded-full max-w-none w-12 h-12"
-                                                src="/images/pengurus_img/Vetri Marvel Budiman 2 edited.png"
-                                            />
-                                        </a>
-                                        <div className="flex flex-col">
-                                            <div>
-                                                <a
-                                                    className="inline-block text-lg font-bold "
-                                                    href="#"
-                                                >
-                                                    Vetri Marvel Budiman
-                                                </a>
-                                            </div>
-                                            <div className="text-slate-500">
-                                                Talent Group Member
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+                            {testimonials.map((el, i) => (
+                                <Testimonial key={i} {...el}></Testimonial>
+                            ))}
                         </div>
                     </section>
                 </div>
-                <style jsx>{`
-                    .break-inside {
-                        -moz-column-break-inside: avoid;
-                        break-inside: avoid;
-                    }
-                `}</style>
             </section>
         </MainLayout>
     )
