@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export type TestimonialProps = {
     personName: string
     personTitle: string
@@ -19,9 +21,12 @@ const Testimonial = ({
                 <div className="flex pb-6 items-center justify-between">
                     <div className="flex mt-8 ">
                         <a className="inline-block mr-4" href="#">
-                            <img
+                            <Image
                                 className="rounded-full max-w-none w-12 h-12"
                                 src={profileImagePath}
+                                width={48}
+                                height={48}
+                                alt={`profile picture of ${personName}`}
                             />
                         </a>
                         <div className="flex flex-col">
