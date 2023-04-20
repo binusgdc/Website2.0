@@ -1,5 +1,4 @@
 import MainLayout from "../layouts/MainLayouts"
-import Image from "next/image"
 
 function Contact() {
     return (
@@ -11,7 +10,7 @@ function Contact() {
                     </h1>
                     <div className="pt-10 flex justify-center lg:flex-row flex-col  items-center lg:items-start align-top">
                         <div className="mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-center flex-col items-center text-center">
-                            <Image src="/discord.png" className="h-14 max-w-min" alt="" />
+                            <img src="/discord.png" className="h-14 max-w-min" alt="" />
                             <h1 className="mt-1 text-white font-bold">Community </h1>
                             <p className="mt-2 text-white text-xs font-light">
                                 Tempat dimana para game developer bertemu dan berbincang tentang
@@ -20,7 +19,7 @@ function Contact() {
                             </p>
                         </div>
                         <div className="lg:mt-0 mt-20 mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-center flex-col items-center text-center">
-                            <Image src="/line.png" className="h-14 max-w-min" alt="" />
+                            <img src="/line.png" className="h-14 max-w-min" alt="" />
                             <h1 className="mt-1 text-white font-bold">Line </h1>
                             <p className="mt-2 text-white text-xs font-light">
                                 Tempat dimana para game developer bertemu dan berbincang tentang
@@ -29,7 +28,7 @@ function Contact() {
                             </p>
                         </div>
                         <div className="lg:mt-0 mt-20 mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-top flex-col items-center text-center">
-                            <Image src="/email.png" className="h-14 max-w-min" alt="" />
+                            <img src="/email.png" className="h-14 max-w-min" alt="" />
                             <h1 className="mt-1 text-white font-bold">Email </h1>
                             <p className="mt-2 text-white text-xs text-center font-light">
                                 Bagi yang ingin berkolaborasi dan urusan penting lainnya bisa
@@ -49,7 +48,7 @@ function Contact() {
                         <div className="place-content-center">
                             <div className="flex sm:ml-0 ml-8">
                                 <a>
-                                    <Image
+                                    <img
                                         src="/phone.png"
                                         className=" lg:w-7 lg:h-7 w-5 h-5 max-w-min"
                                         alt=""
@@ -63,7 +62,7 @@ function Contact() {
                             <h1 className="ml-11  mt-4 lg:text-sm text-xs">021 – 2977 9100</h1>
 
                             <div className="flex mt-14 sm:ml-0 ml-8">
-                                <Image
+                                <img
                                     src="/maps.png"
                                     className=" lg:w-7 lg:h-7 w-5 h-5 max-w-min"
                                     alt=""
