@@ -113,7 +113,7 @@ function About() {
                             </div>
                         </div>
                         <div className="w-full sm:w-1/2 p-6 mt-6">
-                            <img src="/images/cheer.png" alt="bgdjam test" />
+                            <Image src="/images/cheer.png" alt="bgdjam test" />
                         </div>
                     </div>
                 </div>
@@ -207,13 +207,13 @@ function About() {
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/images/gameclass.png" alt="bgdjam test" />
+                        <Image src="/images/gameclass.png" alt="bgdjam test" />
                     </div>
                 </div>
 
                 <div className="flex flex-wrap flex-col sm:flex-row-reverse">
                     <div className="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/images/talentgroup.png" alt="bgdjam test" />
+                        <Image src="/images/talentgroup.png" alt="bgdjam test" />
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6 ">
                         <div className="align-middle">
@@ -243,7 +243,7 @@ function About() {
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/images/gathering.png" alt="bgdjam test" />
+                        <Image src="/images/gathering.png" alt="bgdjam test" />
                     </div>
                 </div>
             </div>

@@ -85,7 +85,7 @@ export default function App() {
                             </p>
                             <div className=" tracking-loose w-full mt-4">
                                 <a>
-                                    <img
+                                    <Image
                                         src="/images/playobservedevelop.png"
                                         className="h-36 max-w-min"
                                         alt=""
@@ -110,9 +110,10 @@ export default function App() {
                         </div>
 
                         <div className="flex w-full mx-auto md:w-3/5 py-6 justify-end">
-                            <img
+                            <Image
                                 className="w-full md:w-1/2 z-50 mx-auto"
                                 src="/images/Sticker_1.png"
+                                alt="BGDC Mascots Sticker"
                             />
                         </div>
                     </div>
@@ -832,13 +833,13 @@ export default function App() {
                                     </div>
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
-                                    <img src="/images/join1.png" alt="bgdjam test" />
+                                    <Image src="/images/join1.png" alt="bgdjam test" />
                                 </div>
                             </div>
 
                             <div className="m-8 flex flex-wrap flex-col sm:flex-row-reverse">
                                 <div className="w-full sm:w-1/2 p-6 ">
-                                    <img src="/images/join2.png" alt="bgdjam test" />
+                                    <Image src="/images/join2.png" alt="bgdjam test" />
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6 ">
                                     <div className="align-middle">
@@ -891,7 +892,7 @@ export default function App() {
                                     </div>
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
-                                    <img src="/images/join3.png" alt="bgdjam test" />
+                                    <Image src="/images/join3.png" alt="bgdjam test" />
                                 </div>
                             </div>
                         </div>
