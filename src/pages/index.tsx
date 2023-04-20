@@ -770,8 +770,8 @@ export default function App() {
                         <p className="text-base font-bold">Partner Lampau BGDC</p>
                     </div>
                     <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 grid grid-cols-2 md:max-w-screen-md max-w-xs ">
-                        <Image width={200} height={200} src={AgateImg} />
-                        <Image src={H2LImg} />
+                        <Image width={200} height={200} src={AgateImg} alt="Agate" />
+                        <Image src={H2LImg} alt="H2L" />
                     </div>
                 </div>
             </section>
@@ -832,13 +832,23 @@ export default function App() {
                                     </div>
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
-                                    <img src="/images/join1.png" alt="bgdjam test" />
+                                    <Image
+                                        src="/images/join1.png"
+                                        alt="BGDC Discord Community"
+                                        width={464}
+                                        height={270}
+                                    />
                                 </div>
                             </div>
 
                             <div className="m-8 flex flex-wrap flex-col sm:flex-row-reverse">
                                 <div className="w-full sm:w-1/2 p-6 ">
-                                    <img src="/images/join2.png" alt="bgdjam test" />
+                                    <Image
+                                        src="/images/join2.png"
+                                        alt="Discord Online Classes"
+                                        width={432}
+                                        height={387}
+                                    />
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6 ">
                                     <div className="align-middle">
@@ -891,7 +901,12 @@ export default function App() {
                                     </div>
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
-                                    <img src="/images/join3.png" alt="bgdjam test" />
+                                    <Image
+                                        src="/images/join3.png"
+                                        alt="Team To-do List"
+                                        width={432}
+                                        height={338.5}
+                                    />
                                 </div>
                             </div>
                         </div>
