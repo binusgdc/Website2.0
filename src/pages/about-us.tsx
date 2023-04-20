@@ -113,7 +113,12 @@ function About() {
                             </div>
                         </div>
                         <div className="w-full sm:w-1/2 p-6 mt-6">
-                            <img src="/images/cheer.png" alt="bgdjam test" />
+                            <Image
+                                src="/images/cheer.png"
+                                alt="bgdjam test"
+                                width={450}
+                                height={236}
+                            />
                         </div>
                     </div>
                 </div>
@@ -137,14 +142,14 @@ function About() {
                             Play, Observe, Develop!
                         </h5>
                     </div>
-                    <div className="px-8 lg:px-auto m-4 md:grid  gap-8 grid-cols-3 ">
+                    <div className="px-8 lg:px-auto m-4 lg:grid gap-8 grid-cols-3 align-middle">
                         <div className="text-center pt-8 ">
                             <div className="w-full  bg-white grid place-items-center">
                                 <Image
                                     width={200}
                                     height={150}
                                     src="/images/playing.png"
-                                    alt="bgdjam test"
+                                    alt="Person on a computer"
                                 />
                             </div>
                             <p className="text-gray-600 mt-8">
@@ -159,7 +164,7 @@ function About() {
                                     width={200}
                                     height={150}
                                     src="/images/achieve.png"
-                                    alt="bgdjam test"
+                                    alt="Achieving together"
                                 />
                             </div>
                             <p className="text-gray-600 mt-8">
@@ -174,7 +179,7 @@ function About() {
                                     width={200}
                                     height={150}
                                     src="/images/together.png"
-                                    alt="bgdjam test"
+                                    alt="Hands together"
                                 />
                             </div>
                             <p className="text-gray-600 mt-8">
@@ -207,13 +212,23 @@ function About() {
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/images/gameclass.png" alt="bgdjam test" />
+                        <Image
+                            src="/images/gameclass.png"
+                            alt="Online game development class"
+                            width={288}
+                            height={174.3}
+                        />
                     </div>
                 </div>
 
                 <div className="flex flex-wrap flex-col sm:flex-row-reverse">
                     <div className="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/images/talentgroup.png" alt="bgdjam test" />
+                        <Image
+                            src="/images/talentgroup.png"
+                            alt="Kanban board"
+                            width={288}
+                            height={184.23}
+                        />
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6 ">
                         <div className="align-middle">
@@ -243,7 +258,12 @@ function About() {
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/images/gathering.png" alt="bgdjam test" />
+                        <Image
+                            src="/images/gathering.png"
+                            alt="Group voice call"
+                            width={288}
+                            height={269.2}
+                        />
                     </div>
                 </div>
             </div>
