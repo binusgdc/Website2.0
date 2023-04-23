@@ -34,7 +34,7 @@ const Header = () => {
                         <a className={styles.nav__item} href={"/about-us"}>
                             About Us
                         </a>
-                        <a className={styles.nav__item} href={"/contactus"}>
+                        <a className={styles.nav__item} href={"/contact-us"}>
                             Contact Us
                         </a>
                         <div className={styles.nav__button__container}>{/* <Button /> */}</div>
