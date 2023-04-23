@@ -86,10 +86,12 @@ export default function App() {
                             </p>
                             <div className=" tracking-loose w-full mt-4">
                                 <a>
-                                    <img
+                                    <Image
                                         src="/images/playobservedevelop.png"
                                         className="h-36 max-w-min"
                                         alt=""
+                                        width={221}
+                                        height={144}
                                     />
                                 </a>
                             </div>
@@ -110,10 +112,12 @@ export default function App() {
                             </div>
                         </div>
 
-                        <div className="flex w-full mx-auto md:w-3/5 py-6 justify-end">
-                            <img
+                        <div className="flex w-full mx-auto md:w-3/5 py-6 justify-center">
+                            <Image
                                 className="w-full md:w-1/2 z-50 mx-auto"
                                 src="/images/Sticker_1.png"
+                                width={454}
+                                height={454}
                             />
                         </div>
                     </div>
