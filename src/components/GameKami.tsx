@@ -5,7 +5,9 @@ export default function GameKami() {
     const gamekami: CSS.Properties = {
         display: '"flex"',
         backgroundColor: "#F9F9F9",
-        height: "2000px",
+        height: "fit-content",
+        minHeight: "1260px",
+        // height: "2000px",
         overflow: "hidden",
     }
 
@@ -20,7 +22,6 @@ export default function GameKami() {
                 </div>
             </div>
 
-            {/* Game 1 */}
             <div className="relative">
                 <div className="flex flex-shrink-0 w-full h-full justify-center lg:flex-row flex-col  items-center align-top">
                     <div className="flex flex-shrink-0 w-full h-full justify-center flex-col items-center mt-[120px] lg:mt-[90px] mr-[160px] lg:mr-[620px]">
@@ -34,7 +35,7 @@ export default function GameKami() {
                     </div>
                 </div>
 
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-96 -translate-y-1/2 mt-[100px] lg:ml-[0px] ml-[240px] lg:w-[440px] w-[290px] overflow-hidden text-sm bg-white rounded-3xl ">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-96 -translate-y-1/2 mt-[100px] lg:mt-[225px] lg:ml-[0px] ml-[240px] lg:w-[440px] w-[290px] overflow-hidden text-sm bg-white rounded-3xl ">
                     <p className="overflow-hidden pl-8 pt-[40px] lg:pt-16 lg:ml-[0px] ml-[80px] lg:pb-[0px] pb-[80px] lg:text-3xl text-[12pt] font-bold">
                         CHAOS WEEKLY
                     </p>
@@ -64,7 +65,9 @@ export default function GameKami() {
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
                     <div className="flex w-[140px] lg:w-full justify-center flex-col items-center mt-[-5px] lg:mt-[-120px] ml-[-140px] lg:ml-[100px]">
                         <Image
@@ -76,7 +79,9 @@ export default function GameKami() {
                         />
                     </div>
                 </div>
+            </div>
 
+            <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
                     <div className="flex w-[216px] lg:w-full justify-center flex-col items-center mt-[-87px] lg:mt-[-45px] ml-[70px] lg:ml-80 pl-20">
                         <Image
@@ -92,7 +97,21 @@ export default function GameKami() {
 
             <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
-                    <div className="flex flex-shrink-0 w-[450px] lg:block justify-center flex-col items-center mt-[-300px] ml-[1480px]">
+                    <div className="flex w-[216px] lg:hidden justify-center flex-col items-center mt-[-305px] ml-[150px] pl-20">
+                        <Image
+                            src={"/images/shop.png"}
+                            alt="photo"
+                            width={27}
+                            height={23}
+                            className=""
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative">
+                <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
+                    <div className="flex flex-shrink-0 w-[450px] lg:block hidden justify-center flex-col items-center mt-[-300px] ml-[1480px]">
                         <Image
                             src={"/images/hex1.png"}
                             alt="photo"
@@ -106,7 +125,7 @@ export default function GameKami() {
 
             <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
-                    <div className="flex flex-shrink-0 w-[270px] lg:block justify-center flex-col items-center mt-[120px] ml-[-1550px]">
+                    <div className="flex flex-shrink-0 w-[270px] lg:block hidden justify-center flex-col items-center mt-[120px] ml-[-1550px]">
                         <Image
                             src={"/images/hex2.png"}
                             alt="photo"
@@ -120,7 +139,7 @@ export default function GameKami() {
 
             <div className="relative">
                 <div className="flex justify-center lg:flex-row flex-col  items-center align-top">
-                    <div className="flex flex-shrink-0 w-[450px] lg:block justify-center flex-col items-center mt-[410px] ml-[1530px]">
+                    <div className="flex flex-shrink-0 w-[450px] lg:block hidden justify-center flex-col items-center mt-[410px] ml-[1530px]">
                         <Image
                             src={"/images/hex1.png"}
                             alt="photo"
@@ -132,7 +151,6 @@ export default function GameKami() {
                 </div>
             </div>
 
-            {/* Game 2 */}
             <div className="relative">
                 <div className="flex flex-shrink-0 w-full h-full justify-center lg:flex-row flex-col  items-center align-top">
                     <div className="absolute left-1/2 mt-[290px] lg:mt-[-2455px] ml-[40px] lg:ml-[10px]">
@@ -218,7 +236,6 @@ export default function GameKami() {
                 </div>
             </div>
 
-            {/* Game 3 */}
             <div className="relative">
                 <div className="flex flex-shrink-0 w-full h-full justify-center lg:flex-row flex-col  items-center align-top">
                     <div className="flex flex-shrink-0 w-full h-full justify-center flex-col items-center mt-[90px] lg:mt-[-1490px] mr-[160px] lg:mr-[370px]">
