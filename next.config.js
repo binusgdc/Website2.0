@@ -25,6 +25,7 @@ const nextConfig = {
             })
             .filter((e) => e !== undefined)
     },
+    output: "standalone",
 }
 
 module.exports = nextConfig
