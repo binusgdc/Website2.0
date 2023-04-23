@@ -21,7 +21,7 @@ const nextConfig = {
                     return
                 }
 
-                return { source: data[0], destination: data[1], permanent: true }
+                return { source: data[0], destination: data[1], permanent: false }
             })
             .filter((e) => e !== undefined)
     },
