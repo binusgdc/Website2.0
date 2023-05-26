@@ -73,6 +73,8 @@ const Footer = () => {
                             <a
                                 href="https://instagram.com/binusgdc"
                                 className="text-white hover:text-gray-900 "
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
@@ -92,6 +94,8 @@ const Footer = () => {
                             <a
                                 href="https://bgdc.itch.io/"
                                 className="text-white hover:text-gray-900 "
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <FaItchIo className="w-5 h-5" />
                                 <span className="sr-only">Itch</span>
@@ -100,6 +104,8 @@ const Footer = () => {
                             <a
                                 href="https://www.linkedin.com/company/binus-game-development-club/"
                                 className="text-white hover:text-gray-900 "
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5"
@@ -119,6 +125,8 @@ const Footer = () => {
                             <a
                                 href="https://www.youtube.com/channel/UCdDgF6FOjsIfKinPaorLF4Q"
                                 className="text-white hover:text-gray-900 "
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
@@ -138,6 +146,8 @@ const Footer = () => {
                             <a
                                 href="https://twitter.com/Binusgdc"
                                 className="text-white hover:text-gray-900"
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
@@ -153,6 +163,8 @@ const Footer = () => {
                             <a
                                 href="https://www.facebook.com/BinusGDC/"
                                 className="text-white hover:text-gray-900"
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
