@@ -70,7 +70,10 @@ const Footer = () => {
                         </div>
 
                         <div className="flex space-x-1 lg:mt-12 sm:space-x-4 lg:space-x-4 mt-6">
-                            <a href="#" className="text-white hover:text-gray-900 ">
+                            <a
+                                href="https://instagram.com/binusgdc"
+                                className="text-white hover:text-gray-900 "
+                            >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -86,12 +89,18 @@ const Footer = () => {
                                 <span className="sr-only">Instagram page</span>
                             </a>
 
-                            <a href="#" className="text-white hover:text-gray-900 ">
+                            <a
+                                href="https://bgdc.itch.io/"
+                                className="text-white hover:text-gray-900 "
+                            >
                                 <FaItchIo className="w-5 h-5" />
                                 <span className="sr-only">Itch</span>
                             </a>
 
-                            <a href="#" className="text-white hover:text-gray-900 ">
+                            <a
+                                href="https://www.linkedin.com/company/binus-game-development-club/"
+                                className="text-white hover:text-gray-900 "
+                            >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5"
                                     fill="currentColor"
@@ -107,7 +116,10 @@ const Footer = () => {
                                 <span className="sr-only">LinkedIn Page</span>
                             </a>
 
-                            <a href="#" className="text-white hover:text-gray-900 ">
+                            <a
+                                href="https://www.youtube.com/channel/UCdDgF6FOjsIfKinPaorLF4Q"
+                                className="text-white hover:text-gray-900 "
+                            >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -123,7 +135,10 @@ const Footer = () => {
                                 <span className="sr-only">YouTube Page</span>
                             </a>
 
-                            <a href="#" className="text-white hover:text-gray-900">
+                            <a
+                                href="https://twitter.com/Binusgdc"
+                                className="text-white hover:text-gray-900"
+                            >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -135,7 +150,10 @@ const Footer = () => {
                                 <span className="sr-only">Twitter page</span>
                             </a>
 
-                            <a href="#" className="text-white hover:text-gray-900">
+                            <a
+                                href="https://www.facebook.com/BinusGDC/"
+                                className="text-white hover:text-gray-900"
+                            >
                                 <svg
                                     className="w-6 h-6 lg:w-5 lg:h-5 "
                                     fill="currentColor"
@@ -173,47 +191,21 @@ const Footer = () => {
                             <div className="grid grid-cols-2  ">
                                 <ul className="text-white text-lg ">
                                     <li className="mb-2">
-                                        <a href="#" className="hover:underline">
+                                        <a href={"/about-us"} className="hover:underline">
                                             About Us
                                         </a>
                                     </li>
-
                                     <li className="mb-2">
-                                        <a href="#" className="hover:underline">
-                                            Events
-                                        </a>
-                                    </li>
-                                    <li className="mb-2">
-                                        <a href="#" className="hover:underline">
-                                            Products
-                                        </a>
-                                    </li>
-                                    <li className="mb-2">
-                                        <a href="#" className="hover:underline">
-                                            Blogs
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul className="text-white text-lg">
-                                    <li className="mb-2">
-                                        <a href="#" className="hover:underline">
-                                            Registration
-                                        </a>
-                                    </li>
-                                    <li className="mb-2">
-                                        <a href="#" className="hover:underline">
-                                            Partnership
-                                        </a>
-                                    </li>
-                                    <li className="mb-2">
-                                        <a href="#" className="hover:underline">
+                                        <a href={"/contact-us"} className="hover:underline">
                                             Contact Us
                                         </a>
                                     </li>
-
                                     <li className="mb-2">
-                                        <a href="#" className="hover:underline">
-                                            Binus Page
+                                        <a
+                                            href="https://student-activity.binus.ac.id/bgdc/"
+                                            className="hover:underline"
+                                        >
+                                            BINUS Page
                                         </a>
                                     </li>
                                 </ul>
