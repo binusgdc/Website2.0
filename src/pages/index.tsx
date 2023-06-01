@@ -636,9 +636,14 @@ export default function App() {
                     </button> */}
 
                     <div className="absolute left-1/2 transform -translate-x-1/2 mt-[-350px]">
-                        <button className="flex-shrink-0 text-[10pt] lg:text-[12pt] w-[170px] lg:w-[200px] bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-[100px] lg:ml-8 mt-[450px] lg:mt-10  font-bold pl-6 pr-6 py-4 px-4 rounded-3xl">
-                            Lihat Game Kami →
-                        </button>
+                        <div className="flex-shrink-0 w-[170px] lg:w-[200px] mr-24 ml-[100px] lg:ml-8 mt-[450px] lg:mt-10">
+                            <a
+                                className="text-[10pt] lg:text-[12pt] bg-gradient-to-b from-orange-400 to-yellow-400 text-white  font-bold pl-6 pr-6 py-4 px-4 rounded-3xl"
+                                href="https://bgdc.itch.io/"
+                            >
+                                Lihat Game Kami →
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
