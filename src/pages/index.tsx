@@ -359,8 +359,8 @@ export default function App() {
                             Brackeys Game Jam 2020.2
                         </p>
                         <div className="flex px-8 pb-3 items-center">
-                            <button className="w-[150px] hidden lg:block h-full flex-shrink-0 bg-gradient-to-b from-orange-400 to-yellow-400 text-white mt-[-100px] font-bold py-2 px-4 rounded-full">
-                                Lihat di Itch.io
+                            <button className="w-[150px] hidden lg:block h-full flex-shrink-0 bg-gradient-to-b from-orange-400 to-yellow-400 text-white mt-[-100px] font-bold px-4 rounded-full">
+                                {/* Lihat di Itch.io */}
                             </button>
                             <div className="hidden lg:block w-full h-full flex-shrink-0 mt-[-180px] ml-[70px]">
                                 <Image
@@ -486,8 +486,8 @@ export default function App() {
                         <p className="overflow-hidden pl-8 ml-[-20px] lg:ml-[0px] pb-[110px] lg:pb-[0px] font-bold text-amber-400">
                             GMTK Game Jam 2021
                         </p>
-                        <button className="hidden lg:block bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-8 mb-10 font-bold py-2 px-4 rounded-full mt-[20px]">
-                            Lihat di Itch.io
+                        <button className="hidden lg:block bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-8 mb-10 font-bold px-4 rounded-full mt-[20px]">
+                            {/* Lihat di Itch.io */}
                         </button>
 
                         <div className="relative">
@@ -574,8 +574,8 @@ export default function App() {
                             Talent Group BGDC Batch 2
                         </p>
 
-                        <button className="hidden lg:block bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-8 mb-10 font-bold py-2 px-4 rounded-full mt-[-45px]">
-                            Lihat di Itch.io
+                        <button className="hidden lg:block bg-gradient-to-b from-orange-400 to-yellow-400 text-white mr-24 ml-8 mb-10 font-bold px-4 rounded-full mt-[-45px]">
+                            {/* Lihat di Itch.io */}
                         </button>
 
                         <div className="absolute top-1/2 ml-[190px] mt-[62px] hidden lg:block">
