@@ -27,26 +27,6 @@ const Footer = () => {
                                     <i className="fa-brands fa-itch-io"></i>
                                 </ul>
                             </div>
-                            <div className="ml-14">
-                                <ul className="text-white  text-xs font-medium ">
-                                    <li className="mb-1">
-                                        <a href="#" className="hover:underline">
-                                            Privacy
-                                        </a>
-                                    </li>
-
-                                    <li className="mb-1">
-                                        <a href="#" className="hover:underline">
-                                            Brand Guidelines
-                                        </a>
-                                    </li>
-                                    <li className="mb-1">
-                                        <a href="#" className="hover:underline">
-                                            Sitemap
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
 
                         <div className="mt-12">
