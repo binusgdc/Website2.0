@@ -728,16 +728,6 @@ export default function App() {
                             <p className="md:text-lg text-gray-500 text-base">Event Date</p>
                         </div>
                     </div> */}
-                    <div className="flex space-x-2 justify-center m-8 ">
-                        <div>
-                            <button
-                                type="button"
-                                className="inline-block px-8 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
-                            >
-                                Baca Berita Acara →
-                            </button>
-                        </div>
-                    </div>
 
                     <div className="text-center m-8 ">
                         <p className="text-base font-bold">Program Kerja BGDC</p>
