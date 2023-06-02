@@ -883,16 +883,7 @@ export default function App() {
                                             akan mendapatkan banyak pengalaman terutama terkait soft
                                             skills dan hard skills.
                                         </p>
-                                        <div className="flex space-x-2 justify-center md:justify-start">
-                                            <div>
-                                                <a
-                                                    type="button"
-                                                    className="inline-block px-4 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
-                                                >
-                                                    Baca Lebih Lanjut
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <div className="flex space-x-2 justify-center md:justify-start"></div>
                                     </div>
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
