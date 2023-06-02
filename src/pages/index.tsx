@@ -735,9 +735,6 @@ export default function App() {
                     <div className="container:md mx-auto m-8  ">
                         <div className="md:max-w-screen-lg max-w-xs  text-center mx-auto items-center grid grid-cols-2 lg:grid-cols-5 gap-4 m-8">
                             <div className="inline-block px-6 py-2.5 bg-light_yellow text-txt_yellow font-medium text-xs leading-tight rounded-full shadow-md">
-                                Programs here
-                            </div>
-                            <div className="inline-block px-6 py-2.5 bg-light_yellow text-txt_yellow font-medium text-xs leading-tight rounded-full shadow-md">
                                 Game Convention
                             </div>
                             <div className="inline-block px-6 py-2.5 bg-light_yellow text-txt_yellow font-medium text-xs leading-tight rounded-full shadow-md">
