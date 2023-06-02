@@ -77,8 +77,9 @@ const testimonialsStatic: TestimonialProps[] = [
 export default function App() {
     return (
         <MainLayout title="Binus Game Development Club">
-            <div className={styles.gradient}>
-                <div className="pt-24">
+            <div className="relative">
+                <div className={`-z-20 absolute w-full h-full ${styles.gradient}`}></div>
+                <div className={`pt-24 pb-12`}>
                     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                         <div className="px-8 lg:px-auto flex flex-col w-full md:w-2/5 justify-center items-start  md:text-left">
                             <p className="text-white  font-bold tracking-loose w-full my-4">
@@ -122,7 +123,10 @@ export default function App() {
                         </div>
                     </div>
                 </div>
-                <div className="relative -mt-12 lg:-mt-24">
+                <div
+                    // className="relative -mt-12 lg:-mt-24"
+                    className="-z-10 absolute bottom-0 w-full"
+                >
                     <svg
                         viewBox="0 0 1428 174"
                         version="1.1"
