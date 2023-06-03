@@ -4,56 +4,52 @@ import Image from "next/image"
 function Contact() {
     return (
         <MainLayout title="Contact Us | BGDC">
-            <main className=" flex  content-center bg-neutral-700">
-                <div className=" pt-28 pb-32 ">
+            <main className="flex content-center bg-neutral-700">
+                <div className="w-full pt-28 pb-32 ">
                     <h1 className="m-auto font-bold text-white p-10 w-max lg:text-5xl text-3xl ">
                         Get in Touch
                     </h1>
-                    <div className="pt-10 flex justify-center lg:flex-row flex-col  items-center lg:items-start align-top">
-                        <div className="mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-center flex-col items-center text-center">
-                            <Image
-                                src="/discord.png"
-                                className="h-14 max-w-min"
-                                alt="Discord"
-                                width={56}
-                                height={56}
-                            />
-                            <h1 className="mt-1 text-white font-bold">Community </h1>
-                            <p className="mt-2 text-white text-xs font-light">
-                                Tempat dimana para game developer bertemu dan berbincang tentang
-                                hobi masing-masing. Terdapat banyak sub komunitas juga yang
-                                mencakupi berbagai interest.
-                            </p>
-                        </div>
-                        <div className="lg:mt-0 mt-20 mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-center flex-col items-center text-center">
-                            <Image
-                                src="/line.png"
-                                className="h-14 max-w-min"
-                                alt="LINE"
-                                width={56}
-                                height={56}
-                            />
-                            <h1 className="mt-1 text-white font-bold">Line </h1>
-                            <p className="mt-2 text-white text-xs font-light">
-                                Tempat dimana para game developer bertemu dan berbincang tentang
-                                hobi masing-masing. Terdapat banyak sub komunitas juga yang
-                                mencakupi berbagai interest.
-                            </p>
-                        </div>
-                        <div className="lg:mt-0 mt-20 mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-top flex-col items-center text-center">
-                            <Image
-                                src="/email.png"
-                                className="h-14 max-w-min"
-                                alt="Email"
-                                width={56}
-                                height={56}
-                            />
-                            <h1 className="mt-1 text-white font-bold">Email </h1>
-                            <p className="mt-2 text-white text-xs text-center font-light">
-                                Bagi yang ingin berkolaborasi dan urusan penting lainnya bisa
-                                langsung menghubungi email kami di bgdc@binus.ac.id
-                            </p>
-                        </div>
+                    <div className="pt-10 flex justify-center lg:flex-row flex-col gap-10 items-center lg:items-start align-top">
+                        {[
+                            {
+                                src: "/discord.png",
+                                alt: "Discord",
+                                title: "Community",
+                                description:
+                                    "Tempat dimana para game developer bertemu dan berbincang tentang hobi masing-masing. Terdapat banyak sub komunitas juga yang mencakupi berbagai interest.",
+                            },
+                            {
+                                src: "/line.png",
+                                alt: "LINE",
+                                title: "Line",
+                                description:
+                                    "Tempat dimana para game developer bertemu dan berbincang tentang hobi masing-masing. Terdapat banyak sub komunitas juga yang mencakupi berbagai interest.",
+                            },
+                            {
+                                src: "/email.png",
+                                alt: "Email",
+                                title: "Email",
+                                description:
+                                    "Bagi yang ingin berkolaborasi dan urusan penting lainnya bisa langsung menghubungi email kami di bgdc@binus.ac.id.",
+                            },
+                        ].map((e) => (
+                            <div
+                                key={e.alt}
+                                className="lg:mt-0 mr-8 ml-8 lg:w-1/6 w-2/5 flex justify-center flex-col items-center text-center"
+                            >
+                                <Image
+                                    src={e.src}
+                                    className="h-14 max-w-min"
+                                    alt={e.alt}
+                                    width={56}
+                                    height={56}
+                                />
+                                <h1 className="mt-1 text-white font-bold">{e.title}</h1>
+                                <p className="mt-2 text-white text-xs font-light">
+                                    {e.description}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </main>
