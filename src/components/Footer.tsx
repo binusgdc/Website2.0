@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { FaItchIo } from "react-icons/fa"
 
 const Footer = () => {
@@ -8,9 +9,13 @@ const Footer = () => {
                     <div className="hidden lg:block">
                         <div className="grid grid-cols-3 gap-3">
                             <div>
-                                <a>
-                                    <img src="/binus2.png" className="mt-1 mr-4 w-15 h-12" alt="" />
-                                </a>
+                                <Image
+                                    src="/binus2.png"
+                                    width={220}
+                                    height={50}
+                                    className="mt-1 mr-4 w-15 h-12"
+                                    alt="binus game development club logo"
+                                />
                             </div>
 
                             <div className="ml-14 ">
@@ -38,9 +43,13 @@ const Footer = () => {
 
                     <div>
                         <div className="hidden justify-end lg:flex">
-                            <a>
-                                <img src="/binus1.png" className="h-16 " alt="" />
-                            </a>
+                            <Image
+                                width={130}
+                                height={80}
+                                src="/binus1.png"
+                                className="h-16 "
+                                alt="binus university logo"
+                            />
                         </div>
 
                         <div className="lg:hidden">
@@ -205,21 +214,25 @@ const Footer = () => {
                             <div className="mt-12 border-rounded border border-amber-400 border-t-2 border-l-0 border-r-0 border-b-0  "></div>
                         </div>
 
-                        <div className="flex justify-between items-center  h-2 mt-12 mb-12 lg:mt-0 lg:mb-0 sm:flex-row sm:items-start flex-col">
-                            <div className="lg:hidden">
-                                <a>
-                                    <img src="/binus1.png" className="h-20 " alt="" />
-                                </a>
+                        <div className="flex justify-between h-60 sm:h-32 items-center mt-5 mb-5 lg:mt-0 lg:mb-0 sm:flex-row flex-col">
+                            <div className="lg:hidden w-full sm:w-auto h-full flex items-center justify-center p-1">
+                                <Image
+                                    width={130}
+                                    height={80}
+                                    src="/binus1.png"
+                                    className="h-20 "
+                                    alt="binus university logo"
+                                />
                             </div>
 
-                            <div className="lg:hidden">
-                                <a>
-                                    <img
-                                        src="/binus2.png"
-                                        className="h-12 max-w-min mt-12 sm:mt-2"
-                                        alt=""
-                                    />
-                                </a>
+                            <div className="lg:hidden w-full sm:w-auto h-full flex items-center justify-center p-1">
+                                <Image
+                                    src="/binus2.png"
+                                    width={220}
+                                    height={50}
+                                    className="h-12 max-w-min mt-12 sm:mt-2"
+                                    alt="binus game development club logo"
+                                />
                             </div>
                         </div>
                     </div>
