@@ -5,6 +5,9 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Redirect | { error: string }>
 ) {
+    if (req.method !== "GET") {
+        return res.status(404)
+    }
     const sourcePath = req.query.sourcePath
 
     if (typeof sourcePath !== "string") {
