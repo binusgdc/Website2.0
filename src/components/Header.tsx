@@ -12,7 +12,7 @@ const Header = () => {
         <div className={styles.header}>
             <div className={styles.header__content}>
                 <a className={styles.logo} href={"/"}>
-                    <img className={styles.image} src="/images/logo.png"></img>
+                    <img className={styles.image} src="/images/logo.png" alt="BGDC Logo"></img>
                 </a>
                 <div>
                     <nav className={`${styles.nav} ${menuOpen ? styles[`nav-open`] : {}}`}>

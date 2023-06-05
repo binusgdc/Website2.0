@@ -54,7 +54,11 @@ const Footer = () => {
 
                         <div className="lg:hidden">
                             <a>
-                                <img src="/playobservedevelop.png" className="h-36 " alt="" />
+                                <img
+                                    src="/playobservedevelop.png"
+                                    className="h-36 "
+                                    alt="Slogan: Play, Observe, Develop"
+                                />
                             </a>
                         </div>
 
