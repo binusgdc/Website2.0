@@ -98,7 +98,7 @@ export default function App() {
                                     <Image
                                         src="/images/playobservedevelop.png"
                                         className="h-36 max-w-min"
-                                        alt=""
+                                        alt="Slogan: Play, Observe, Develop"
                                         width={221}
                                         height={144}
                                     />
@@ -127,6 +127,7 @@ export default function App() {
                                 src="/images/Sticker_1.png"
                                 width={454}
                                 height={454}
+                                alt="Hero image of BGDC mascots"
                             />
                         </div>
                     </div>
