@@ -47,10 +47,8 @@ const testimonialsStatic: TestimonialProps[] = [
         personName: "Arkannabil Pratama",
         personTitle: "Partner",
         profileImagePath: "/images/testimony_img/Mordsven.jpg",
-        statement: `Saya dari Tim PR NC sangat senang selama ini bekerja sama dengan
-        BGDC dan untuk sejauh ini tim kami belum pernah mengalami
-        masalah saat bekerja sama dengan BGDC, kami berharap kedepannya
-        NC dan BGDC dapat bekerja sama lagi.`,
+        statement: `Saya dari Tim PR Nippon Club senang bekerja sama dengan BGDC. 
+        Kami berharap kedepannya Nippon Club dan BGDC dapat bekerja sama lagi.`,
     },
     {
         personName: "Pom-Pom",
