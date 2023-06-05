@@ -19,15 +19,13 @@ const testimonialsStatic: TestimonialProps[] = [
     {
         personName: "Arfiana Maulina",
         personTitle: "Community Member",
-        profileImagePath: "/images/testimony_img/Arfiana Maulina.jpeg",
-        statement: `I am not a gamer, nor a player. How can I work at two-award
-        winning Indie Games Studio and part of the organizer of GameDev
-        Community? As a marketer, I am happy to expand the Game to the
-        International Market that will help to drive sales. Thanks to
-        BGDC to introduce me the basic about GameDev, another level of
-        my Marketing is unlocked! Hope will have a Marketing curriculum
-        there to making more impact on the product.`,
+        profileImagePath: "/images/testimony_img/Arfiana Maulina.jpg",
+        statement: `I am not a gamer, nor a player. How can I work at two-award winning indie games studios and being an organizer at Indie Games Group Indonesia?
+        As a marketer, I am happy to expand and support many local games to the international market. 
+        Thanks BGDC to helps me learn about GameDev, another level of Marketing is unlocked!
+        Hope we will have a Marketing curriculum in BGDC to build more market-oriented games.`,
     },
+
     {
         personName: "Vanessa Angelique Wiria",
         personTitle: "Talent Group Member",
