@@ -199,6 +199,7 @@ function Contact() {
                     <div>
                         <a>
                             <iframe
+                                title="Syahdan Campus on Google Maps"
                                 style={{ width: "100%", height: "320px" }}
                                 className="gmap_iframe border rounded-3xl "
                                 frameBorder="0"
