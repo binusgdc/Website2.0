@@ -176,18 +176,18 @@ const Footer = () => {
                         </div>
 
                         <div className="lg:hidden mt-10 ">
-                            <ul className="text-white text-lg ">
-                                <li className="">
-                                    <a>Jl. K. H. Syahdan No. 9, Kemanggisan,</a>
-                                </li>
-                                <li className="">
-                                    <a>Palmerah Jakarta 11480</a>
-                                </li>
-                                <li className="">
-                                    <a>Indonesia</a>
-                                </li>
+                            <div className="text-white text-lg">
+                                <div className="">
+                                    <span>Jl. K. H. Syahdan No. 9, Kemanggisan,</span>
+                                </div>
+                                <div className="">
+                                    <span>Palmerah Jakarta 11480</span>
+                                </div>
+                                <div className="">
+                                    <span>Indonesia</span>
+                                </div>
                                 <i className="fa-brands fa-itch-io"></i>
-                            </ul>
+                            </div>
 
                             <div className="mt-12 text-amber-300 text-lg  mb-2">
                                 <p>BGDC</p>

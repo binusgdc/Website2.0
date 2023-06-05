@@ -687,9 +687,9 @@ export default function App() {
                                     Gamejam
                                 </div>
                             </div>
-                            <h3 className="font-black text-gray-800 md:text-3xl text-xl">
+                            <h2 className="font-black text-gray-800 md:text-3xl text-xl">
                                 BGDJam 2021
-                            </h3>
+                            </h2>
                             <p className="md:text-lg text-gray-500 text-base">19 Aug 2021</p>
                         </div>
                     </div>
@@ -709,9 +709,9 @@ export default function App() {
                                     Webinar with Fahmi ツ
                                 </div>
                             </div>
-                            <h3 className="font-black text-gray-800 md:text-3xl text-xl">
+                            <h2 className="font-black text-gray-800 md:text-3xl text-xl">
                                 How to Start Learning and Developing a Game
-                            </h3>
+                            </h2>
                             <p className="md:text-lg text-gray-500 text-base">28 May 2021</p>
                         </div>
                     </div>
@@ -803,9 +803,9 @@ export default function App() {
                             <div className="flex flex-wrap flex-col-reverse sm:flex-row-reverse">
                                 <div className="w-full sm:w-1/2 p-6 mt-6">
                                     <div className="align-middle">
-                                        <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                        <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                             Komunitas Gaul
-                                        </h3>
+                                        </h2>
                                         <p className="text-gray-600 mb-8">
                                             BGDC memakai Discord sebagai tempat untuk para game
                                             developer untuk bertemu dan ngobrol tentang hobi mereka.
@@ -848,9 +848,9 @@ export default function App() {
                                 </div>
                                 <div className="w-full sm:w-1/2 p-6 mt-6 ">
                                     <div className="align-middle">
-                                        <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                        <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                             Kelas Online + Rekaman
-                                        </h3>
+                                        </h2>
                                         <p className="text-gray-600 mb-8">
                                             Untuk member yang juga ingin belajar game development,
                                             BGDC juga menyediakan berbagai kelas game development.
@@ -875,9 +875,9 @@ export default function App() {
                             <div className="m-8 flex flex-wrap flex-col-reverse sm:flex-row-reverse">
                                 <div className="w-full sm:w-1/2 p-6 ">
                                     <div className="align-middle">
-                                        <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                        <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                             Pengalaman Berorganisasi
-                                        </h3>
+                                        </h2>
                                         <p className="text-gray-600 mb-8">
                                             Member BGDC bisa apply menjadi aktivis dimana mereka
                                             bisa belajar cara mengurus sebuah organisasi. Aktivis
