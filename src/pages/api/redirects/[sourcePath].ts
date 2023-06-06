@@ -6,16 +6,14 @@ export default async function handler(
     res: NextApiResponse<Redirect | { error: string }>
 ) {
     if (req.method !== "GET") {
-        return res.status(405).send({ error: "Method Not Allowed" })
-    }
-    if (redirectsService === undefined) {
-        return res.status(404).send({ error: "Redirect Not Found" })
+        return res.status(404)
     }
     const sourcePath = req.query.sourcePath
 
     if (typeof sourcePath !== "string") {
         return res.status(400)
     }
+
     const result = await redirectsService.getRedirectFor(sourcePath)
     return result
         ? res.status(200).json(result)

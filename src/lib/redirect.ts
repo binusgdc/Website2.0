@@ -141,17 +141,10 @@ export class RedirectsAirtable implements RedirectsData, RedirectsAuthData {
     }
 }
 
-function init(): RedirectsService | undefined {
-    if (env.ENABLE_REDIRECTS === "false") {
-        return undefined
-    }
-    const base = new Airtable({ apiKey: env.AIRTABLE_KEY! }).base(env.AIRTABLE_BASE_ID!)
-    const redirectsData: RedirectsAirtable = new RedirectsAirtable(
-        base,
-        env.AIRTABLE_REDIRECTS_TABLE_ID!,
-        env.AIRTABLE_AUTHORIZED_TABLE_ID!
-    )
-    return new RedirectsService(redirectsData, redirectsData)
-}
-
-export const redirectsService = init()
+const base = new Airtable({ apiKey: env.AIRTABLE_KEY }).base(env.AIRTABLE_BASE_ID as string)
+const redirectsData: RedirectsAirtable = new RedirectsAirtable(
+    base,
+    env.AIRTABLE_REDIRECTS_TABLE_ID,
+    env.AIRTABLE_AUTHORIZED_TABLE_ID
+)
+export const redirectsService = new RedirectsService(redirectsData, redirectsData)
