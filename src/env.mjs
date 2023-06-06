@@ -3,8 +3,8 @@ import { z } from "zod"
 const envSchema = z.object({
     NODE_ENV: z.enum(["development", "test", "production"]),
     NEXTAUTH_SECRET: z.string().optional(),
+    CANONICAL_BASE_URL: z.string().url(),
     ENABLE_REDIRECTS: z.enum(["true", "false"]).default("false"),
-    CANONICAL_BASE_URL: z.string().url().optional(),
     AIRTABLE_KEY: z.string().optional(),
     AIRTABLE_BASE_ID: z.string().optional(),
     AIRTABLE_REDIRECTS_TABLE_ID: z.string().optional(),
@@ -54,9 +54,6 @@ if (env.NODE_ENV === "production" && env.NEXTAUTH_SECRET === undefined) {
 
 if (env.ENABLE_REDIRECTS === "true") {
     const redirectErr = []
-    if (!env.CANONICAL_BASE_URL) {
-        redirectErr.push(new Error("❌ Missing: CANONICAL_BASE_URL"))
-    }
     if (!env.AIRTABLE_KEY) {
         redirectErr.push(new Error("❌ Missing: AIRTABLE_KEY"))
     }
