@@ -2,7 +2,7 @@ import { z } from "zod"
 
 const envSchema = z.object({
     NODE_ENV: z.enum(["development", "test", "production"]),
-    NEXTAUTH_SECRET: z.string(),
+    NEXTAUTH_SECRET: z.string().optional(),
     CANONICAL_BASE_URL: z.string().url(),
     ENABLE_REDIRECTS: z.enum(["true", "false"]).default("false"),
     AIRTABLE_KEY: z.string().optional(),
@@ -46,26 +46,38 @@ if (!parsed.success) {
 
 const env = parsed.data
 
+const err = []
+
+if (env.NODE_ENV === "production" && env.NEXTAUTH_SECRET === undefined) {
+    err.push(new Error("❌ Missing: NEXTAUTH_SECRET"))
+}
+
 if (env.ENABLE_REDIRECTS === "true") {
-    const err = []
+    const redirectErr = []
     if (!env.AIRTABLE_KEY) {
-        err.push(new Error("Missing: AIRTABLE_KEY"))
+        redirectErr.push(new Error("❌ Missing: AIRTABLE_KEY"))
     }
     if (!env.AIRTABLE_BASE_ID) {
-        err.push(new Error("Missing: AIRTABLE_BASE_ID"))
+        redirectErr.push(new Error("❌ Missing: AIRTABLE_BASE_ID"))
     }
     if (!env.AIRTABLE_REDIRECTS_TABLE_ID) {
-        err.push(new Error("Missing: AIRTABLE_REDIRECTS_TABLE_ID"))
+        redirectErr.push(new Error("❌ Missing: AIRTABLE_REDIRECTS_TABLE_ID"))
     }
     if (!env.AIRTABLE_AUTHORIZED_TABLE_ID) {
-        err.push(new Error("Missing: AIRTABLE_AUTHORIZED_TABLE_ID"))
+        redirectErr.push(new Error("❌ Missing: AIRTABLE_AUTHORIZED_TABLE_ID"))
     }
-    if (err.length > 0) {
-        throw new Error(
-            'Redirects are enabled but missing required environment variables": \n' +
-                err.map((e) => `❌ ${e.message}`).join("\n")
-        )
+    if (redirectErr.length > 0) {
+        err.push(new Error("- Redirects are enabled but missing required environment variables"))
+        err.push(...redirectErr)
     }
 }
+
+if (err.length > 0) {
+    throw new Error(
+        "Environment variables are invalid:\n" + err.map((e) => `${e.message}`).join("\n")
+    )
+}
+
+console.log(env.NODE_ENV)
 
 export { env }
