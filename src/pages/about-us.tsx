@@ -98,12 +98,12 @@ function About() {
                     <div className="flex flex-wrap flex-col-reverse sm:flex-row-reverse">
                         <div className="w-full sm:w-1/2 p-6 mt-6">
                             <div className="align-middle md:text-left text-center">
-                                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                     Siapa BGDC?
-                                </h3>
-                                <h5 className="text-xl text-gray-800 font-semibold leading-none mb-3">
+                                </h2>
+                                <h3 className="text-xl text-gray-800 font-semibold leading-none mb-3">
                                     Binus Game Development Club
-                                </h5>
+                                </h3>
                                 <p className="text-gray-600 my-8">
                                     Tempat berkumpulnya para binusian untuk bermain, mengamati, dan
                                     mengembangkan game. Kami menawarkan berbagai kursus game
@@ -124,10 +124,10 @@ function About() {
                 </div>
                 <div className="container max-w-2xl mx-auto mt-16">
                     <div className="text-center m-4 ">
-                        <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Visi</h3>
-                        <h5 className="text-xl text-gray-800 font-semibold leading-none mb-3">
+                        <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">Visi</h2>
+                        <h3 className="text-xl text-gray-800 font-semibold leading-none mb-3">
                             Tujuan BGDC
-                        </h5>
+                        </h3>
                         <p className="text-gray-600 my-8">
                             Menjadi organisasi yang menghasilkan game developer berkualitas dengan
                             menyediakan pengajaran, bimbingan, dan sarana publikasi game sembari
@@ -137,10 +137,10 @@ function About() {
                 </div>
                 <div className="container max-w-5xl mx-auto mt-16">
                     <div className="text-center m-4 ">
-                        <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Misi</h3>
-                        <h5 className="text-xl text-gray-800 font-semibold leading-none mb-3">
+                        <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">Misi</h2>
+                        <h3 className="text-xl text-gray-800 font-semibold leading-none mb-3">
                             Play, Observe, Develop!
-                        </h5>
+                        </h3>
                     </div>
                     <div className="px-8 lg:px-auto m-4 lg:grid gap-8 grid-cols-3 align-middle">
                         <div className="text-center pt-8 ">
@@ -191,12 +191,12 @@ function About() {
             </div>
             <div className="container max-w-2xl mx-auto mt-16">
                 <div className="text-center m-4 ">
-                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                    <h2 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                         Aktivitas
-                    </h3>
-                    <h5 className=" text-xl text-gray-800 font-semibold leading-none mb-3">
+                    </h2>
+                    <p className=" text-xl text-gray-800 font-semibold leading-none mb-3">
                         Kegiatan yang dilakukan oleh BGDC
-                    </h5>
+                    </p>
                 </div>
 
                 <div className="flex flex-wrap flex-col-reverse sm:flex-row-reverse">
@@ -269,10 +269,10 @@ function About() {
             </div>
             <div className="container max-w-5xl mx-auto mt-8" id="BGDC_Join">
                 <div className=" px-8 lg:px-auto text-center m-4">
-                    <h3 className="mb-8 font-bold break-normal text-3xl md:text-5xl text-gray-800 ">
+                    <h2 className="mb-8 font-bold break-normal text-3xl md:text-5xl text-gray-800 ">
                         Pengurus
-                    </h3>
-                    <h3 className="text-sm md:text-base font-bold">Orang-Orang Dibalik BGDC</h3>
+                    </h2>
+                    <p className="text-sm md:text-base font-bold">Orang-Orang Dibalik BGDC</p>
                 </div>
                 <div className="px-8 lg:px-auto m-4 grid grid-cols-1 gap-8 sm:grid-cols-3 ">
                     {pengurusStatic.map((props, i) => (

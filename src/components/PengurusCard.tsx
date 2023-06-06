@@ -18,7 +18,7 @@ const PengurusCard = ({ fullName, jabatanName, portraitImagePath }: PengurusCard
                     height={225}
                 />
             </div>
-            <h1 className="my-4 font-bold break-normal text-lg md:text-lg">{fullName}</h1>
+            <h3 className="my-4 font-bold break-normal text-lg md:text-lg">{fullName}</h3>
             <p className="text-sm md:text-sm font-semibold">{jabatanName}</p>
         </div>
     )
