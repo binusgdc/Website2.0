@@ -6,7 +6,10 @@ export default async function handler(
     res: NextApiResponse<Redirect[] | { error: string }>
 ) {
     if (req.method !== "GET") {
-        return res.status(404)
+        return res.status(405).send({ error: "Method Not Allowed" })
+    }
+    if (redirectsService === undefined) {
+        return res.status(404).send({ error: "No Redirects Found" })
     }
     try {
         const redirects = await redirectsService.getAllRedirects()
