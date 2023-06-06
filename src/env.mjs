@@ -2,6 +2,7 @@ import { z } from "zod"
 
 const envSchema = z.object({
     NODE_ENV: z.enum(["development", "test", "production"]),
+    NEXTAUTH_SECRET: z.string(),
     AIRTABLE_KEY: z.string(),
     AIRTABLE_BASE_ID: z.string(),
     AIRTABLE_REDIRECTS_TABLE_ID: z.string(),
@@ -18,6 +19,7 @@ const envSchema = z.object({
  */
 const processEnv = {
     NODE_ENV: process.env.NODE_ENV ?? "production",
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     AIRTABLE_KEY: process.env.AIRTABLE_KEY,
     AIRTABLE_BASE_ID: process.env.AIRTABLE_BASE_ID,
     AIRTABLE_REDIRECTS_TABLE_ID: process.env.AIRTABLE_REDIRECTS_TABLE_ID,
