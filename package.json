@@ -9,12 +9,15 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
+    "airtable": "^0.12.1",
     "next": "^12.2.5",
+    "next-auth": "^4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "sass": "^1.55.0",
-    "sharp": "^0.32.0"
+    "sharp": "^0.32.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.2.5",
