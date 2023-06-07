@@ -20,7 +20,7 @@ const Testimonial = ({
 
                 <div className="flex pb-6 items-center justify-between">
                     <div className="flex mt-8 ">
-                        <a className="inline-block mr-4" href="#">
+                        <a className="inline-block mr-4">
                             <Image
                                 className="rounded-full max-w-none w-12 h-12"
                                 src={profileImagePath}
@@ -31,9 +31,7 @@ const Testimonial = ({
                         </a>
                         <div className="flex flex-col">
                             <div>
-                                <a className="inline-block text-lg font-bold " href="#">
-                                    {personName}
-                                </a>
+                                <a className="inline-block text-lg font-bold ">{personName}</a>
                             </div>
                             <div className="text-slate-500">{personTitle}</div>
                         </div>
