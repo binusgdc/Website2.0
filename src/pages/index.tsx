@@ -25,14 +25,6 @@ const testimonialsStatic: TestimonialProps[] = [
         Thanks BGDC to helps me learn about GameDev, another level of Marketing is unlocked!
         Hope we will have a Marketing curriculum in BGDC to build more market-oriented games.`,
     },
-
-    {
-        personName: "Vanessa Angelique Wiria",
-        personTitle: "Talent Group Member",
-        profileImagePath: "/images/testimony_img/Or1on.jpg",
-        statement: `Talent group seru banget, makin banyak yang ikut ya biar makin
-        goks!!`,
-    },
     {
         personName: "Robertus Eric",
         personTitle: "BGDC Class Member",
