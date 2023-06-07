@@ -19,21 +19,11 @@ const testimonialsStatic: TestimonialProps[] = [
     {
         personName: "Arfiana Maulina",
         personTitle: "Community Member",
-        profileImagePath: "/images/testimony_img/Arfiana Maulina.jpeg",
-        statement: `I am not a gamer, nor a player. How can I work at two-award
-        winning Indie Games Studio and part of the organizer of GameDev
-        Community? As a marketer, I am happy to expand the Game to the
-        International Market that will help to drive sales. Thanks to
-        BGDC to introduce me the basic about GameDev, another level of
-        my Marketing is unlocked! Hope will have a Marketing curriculum
-        there to making more impact on the product.`,
-    },
-    {
-        personName: "Vanessa Angelique Wiria",
-        personTitle: "Talent Group Member",
-        profileImagePath: "/images/testimony_img/Or1on.jpg",
-        statement: `Talent group seru banget, makin banyak yang ikut ya biar makin
-        goks!!`,
+        profileImagePath: "/images/testimony_img/Arfiana Maulina.jpg",
+        statement: `I am not a gamer, nor a player. How can I work at two-award winning indie games studios and being an organizer at Indie Games Group Indonesia?
+        As a marketer, I am happy to expand and support many local games to the international market. 
+        Thanks BGDC to helps me learn about GameDev, another level of Marketing is unlocked!
+        Hope we will have a Marketing curriculum in BGDC to build more market-oriented games.`,
     },
     {
         personName: "Robertus Eric",
@@ -49,10 +39,8 @@ const testimonialsStatic: TestimonialProps[] = [
         personName: "Arkannabil Pratama",
         personTitle: "Partner",
         profileImagePath: "/images/testimony_img/Mordsven.jpg",
-        statement: `Saya dari Tim PR NC sangat senang selama ini bekerja sama dengan
-        BGDC dan untuk sejauh ini tim kami belum pernah mengalami
-        masalah saat bekerja sama dengan BGDC, kami berharap kedepannya
-        NC dan BGDC dapat bekerja sama lagi.`,
+        statement: `Saya dari Tim PR Nippon Club senang bekerja sama dengan BGDC. 
+        Kami berharap kedepannya Nippon Club dan BGDC dapat bekerja sama lagi.`,
     },
     {
         personName: "Pom-Pom",
