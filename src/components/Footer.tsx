@@ -36,7 +36,7 @@ const Footer = () => {
 
                         <div className="mt-12">
                             <span className="static lg:text-center text-xs text-white">
-                                Copyright © 2021. Binus Game Development Club . All Rights Reserved.
+                                Copyright © 2023. Binus Game Development Club . All Rights Reserved.
                             </span>
                         </div>
                     </div>
