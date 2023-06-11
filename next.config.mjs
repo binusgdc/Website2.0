@@ -2,6 +2,9 @@
 
 await import("./src/env.mjs")
 
+const fs = require("fs")
+const redirectFile = "./_redirects"
+
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
