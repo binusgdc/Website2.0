@@ -14,26 +14,17 @@ export interface RedirectsData {
     removeIfExists(sourcePath: string): Promise<void>
 }
 
-export interface RedirectsAuthData {
-    containsEmail(emailAddress: string): Promise<boolean>
-}
-
 export class RedirectsService {
     private readonly redirects: RedirectsData
-    private readonly redirectsAuth: RedirectsAuthData
 
-    constructor(data: RedirectsData, redirectsAuth: RedirectsAuthData) {
+    constructor(data: RedirectsData) {
         this.redirects = data
-        this.redirectsAuth = redirectsAuth
     }
     async getRedirectFor(sourcePath: string): Promise<Redirect | undefined> {
         return await this.redirects.getForPath(sourcePath)
     }
     async getAllRedirects(): Promise<Redirect[]> {
         return await this.redirects.getAll()
-    }
-    async emailIsAuthorized(emailAddress: string): Promise<boolean> {
-        return await this.redirectsAuth.containsEmail(emailAddress)
     }
 }
 
@@ -62,23 +53,12 @@ export class RedirectsInMemory implements RedirectsData {
     }
 }
 
-export class RedirectsAirtable implements RedirectsData, RedirectsAuthData {
+export class RedirectsAirtable implements RedirectsData {
     private readonly base: AirtableBase
     private readonly redirectsTableId: string
-    private readonly authTableId: string
-    constructor(base: AirtableBase, redirectsTableId: string, authTableId: string) {
+    constructor(base: AirtableBase, redirectsTableId: string) {
         this.base = base
         this.redirectsTableId = redirectsTableId
-        this.authTableId = authTableId
-    }
-    async containsEmail(emailAddress: string): Promise<boolean> {
-        const recordResult = await this.base(this.authTableId)
-            .select({
-                filterByFormula: `{Email Address} = '${emailAddress}'`,
-                maxRecords: 1,
-            })
-            .all()
-        return recordResult.length === 1
     }
     async removeIfExists(sourcePath: string): Promise<void> {
         const recordToRemoveResult = await this.base(this.redirectsTableId)
@@ -141,10 +121,9 @@ export class RedirectsAirtable implements RedirectsData, RedirectsAuthData {
     }
 }
 
-const base = new Airtable({ apiKey: env.AIRTABLE_KEY }).base(env.AIRTABLE_BASE_ID as string)
+const base = new Airtable({ apiKey: env.AIRTABLE_KEY }).base(env.AIRTABLE_BASE_ID)
 const redirectsData: RedirectsAirtable = new RedirectsAirtable(
     base,
-    env.AIRTABLE_REDIRECTS_TABLE_ID,
-    env.AIRTABLE_AUTHORIZED_TABLE_ID
+    env.AIRTABLE_REDIRECTS_TABLE_ID
 )
-export const redirectsService = new RedirectsService(redirectsData, redirectsData)
+export const redirectsService = new RedirectsService(redirectsData)
