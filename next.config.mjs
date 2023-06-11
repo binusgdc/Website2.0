@@ -2,7 +2,7 @@
 
 await import("./src/env.mjs")
 
-const fs = require("fs")
+import * as fs from "fs"
 const redirectFile = "./_redirects"
 
 const nextConfig = {
