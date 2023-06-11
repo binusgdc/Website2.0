@@ -26,6 +26,13 @@ const testimonialsStatic: TestimonialProps[] = [
         Hope we will have a Marketing curriculum in BGDC to build more market-oriented games.`,
     },
     {
+        personName: "Roger Gilbert Fernandi",
+        personTitle: "BGDC Staff Member",
+        profileImagePath: "/images/testimony_img/Roger Gilbert Fernandi.jpg",
+        statement:
+            "BGDC provides a friendly and supportive environment that motivates members to socialize and engages in self-improvement, both soft and hard skills.",
+    },
+    {
         personName: "Robertus Eric",
         personTitle: "BGDC Class Member",
         profileImagePath: "/images/pengurus_img/Robertus Eric 2.jpg",
