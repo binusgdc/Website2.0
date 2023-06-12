@@ -29,8 +29,8 @@ const testimonialsStatic: TestimonialProps[] = [
         personName: "Roger Gilbert Fernandi",
         personTitle: "BGDC Staff Member",
         profileImagePath: "/images/testimony_img/Roger Gilbert Fernandi.jpg",
-        statement:
-            "BGDC provides a friendly and supportive environment that motivates members to socialize and engages in self-improvement, both soft and hard skills.",
+        statement: `BGDC provides a friendly and supportive environment that motivates members to
+        socialize and engage in self-improvement, both soft and hard skills.`,
     },
     {
         personName: "Robertus Eric",
