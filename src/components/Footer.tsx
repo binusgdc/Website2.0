@@ -4,7 +4,7 @@ import { FaItchIo } from "react-icons/fa"
 const Footer = () => {
     return (
         <>
-            <footer className="   bg-neutral-700 p-16 pt-24 pb-40 sm:p-16">
+            <footer className="   bg-neutral-700 p-16">
                 <div className=" lg:flex  justify-center ">
                     <div className="hidden lg:block">
                         <div className="grid grid-cols-3 gap-3">
@@ -218,7 +218,7 @@ const Footer = () => {
                             <div className="mt-12 border-rounded border border-amber-400 border-t-2 border-l-0 border-r-0 border-b-0  "></div>
                         </div>
 
-                        <div className="flex justify-between h-60 sm:h-32 items-center mt-5 mb-5 lg:mt-0 lg:mb-0 sm:flex-row flex-col">
+                        <div className="flex lg:hidden justify-between h-60 sm:h-32 items-center mt-5 mb-5 lg:mt-0 lg:mb-0 sm:flex-row flex-col">
                             <div className="lg:hidden w-full sm:w-auto h-full flex items-center justify-center p-1">
                                 <Image
                                     width={130}
