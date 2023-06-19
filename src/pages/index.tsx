@@ -852,17 +852,7 @@ export default function App() {
                                             Kelas ini mencakupi banyak hal mulai dari programming,
                                             design, art, sampai sound.
                                         </p>
-                                        <div className="flex space-x-2 justify-center md:justify-start">
-                                            <div>
-                                                <a
-                                                    type="button"
-                                                    className="inline-block px-4 py-4 bg-gradient-to-r from-start-gradient to-end-gradient text-white font-medium text-sm  leading-tight rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
-                                                    href="https://binusgdc.com/kurikulum2022"
-                                                >
-                                                    Lihat Kurikulum BGDC!
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <div className="flex space-x-2 justify-center md:justify-start"></div>
                                     </div>
                                 </div>
                             </div>
