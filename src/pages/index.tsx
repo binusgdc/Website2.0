@@ -646,7 +646,7 @@ export default function App() {
                     <div className="absolute left-1/2 transform -translate-x-1/2 mt-[-350px]">
                         <div className="flex-shrink-0 grid place-items-center w-[170px] lg:w-[200px] mr-24 ml-[100px] lg:ml-8 mt-[450px] lg:mt-10">
                             <a
-                                className="text-[10pt] lg:text-[12pt] bg-gradient-to-b from-orange-400 to-yellow-400 text-white font-bold px-6 py-4 rounded-3xl"
+                                className="text-center text-[10pt] lg:text-[12pt] bg-gradient-to-b from-orange-400 to-yellow-400 text-white font-bold px-6 py-4 rounded-3xl"
                                 href="https://bgdc.itch.io/"
                             >
                                 Lihat Game Kami →
