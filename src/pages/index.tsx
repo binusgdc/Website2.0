@@ -35,7 +35,7 @@ const testimonialsStatic: TestimonialProps[] = [
     {
         personName: "Robertus Eric",
         personTitle: "BGDC Class Member",
-        profileImagePath: "/images/pengurus_img/Robertus Eric 2.jpg",
+        profileImagePath: "/images/testimony_img/Robertus Eric 2.jpg",
         statement: `Kelas BGDC sangat membantu saya dalam memahami hal-hal mengenai
         game development. Saya sendiri mengikuti kelas 2D Art BGDC dan
         menurut saya, kelas tersebut seru dan membantu saya dalam
@@ -60,7 +60,7 @@ const testimonialsStatic: TestimonialProps[] = [
     {
         personName: "Vetri Marvel Budiman",
         personTitle: "Talent Group Member",
-        profileImagePath: "/images/pengurus_img/Vetri Marvel Budiman 2 edited.png",
+        profileImagePath: "/images/testimony_img/Vetri Marvel Budiman 2 edited.png",
         statement: `Jadi saya suka bebek dan karena saya bikin game bebek, saya
         sudah bisa bikin model bebek-bebek keren. Sebagai bonus saya
         dapat membuat animasi bebek. Aku senang sekali bisa membuat

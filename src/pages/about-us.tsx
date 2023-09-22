@@ -4,89 +4,79 @@ import Image from "next/image"
 
 const pengurusStatic: PengurusCardProps[] = [
     {
-        fullName: "Audrey Levina",
+        fullName: "Ida Bagus Kuwera Girindra Putra",
         jabatanName: "Ketua Umum BGDC",
-        portraitImagePath: "/images/pengurus_img/Audrey Levina 2.jpg",
+        portraitImagePath: "/images/pengurus_img/Kuwera.png",
     },
     {
-        fullName: "Nathanael Matthew Makmur",
+        fullName: "Teuku Humam Zahran",
         jabatanName: "Ketua Regional Kemanggisan",
-        portraitImagePath: "/images/pengurus_img/Nathanael Matthew Makmur 2.jpg",
+        portraitImagePath: "/images/pengurus_img/Humam.png",
     },
     {
-        fullName: "Vetri Marvel Budiman",
+        fullName: "Roger Gilbert Fernandi",
         jabatanName: "Ketua Regional Alam Sutera",
-        portraitImagePath: "/images/pengurus_img/Vetri Marvel Budiman 2 edited.png",
+        portraitImagePath: "/images/pengurus_img/Roger.png",
     },
     {
-        fullName: "Robertus Eric",
+        fullName: "Wilson Nathaniel",
         jabatanName: "Sekretaris Umum",
-        portraitImagePath: "/images/pengurus_img/Robertus Eric 2.jpg",
+        portraitImagePath: "/images/pengurus_img/Wilson.png",
     },
     {
-        fullName: "Dheanandri",
+        fullName: "Mary Regina Ang",
         jabatanName: "Bendahara Umum",
-        portraitImagePath: "/images/pengurus_img/Dheanandri.jpg",
+        portraitImagePath: "/images/pengurus_img/Mary.png",
     },
     {
-        fullName: "Justin Christian",
-        jabatanName: "Database Manager",
-        portraitImagePath: "/images/pengurus_img/Justin Christian.jpg",
+        fullName: "Alana Leandra",
+        jabatanName: "Coordinator Community Development Division",
+        portraitImagePath: "/images/pengurus_img/Alana.png",
     },
     {
-        fullName: "Daniel Alexander",
-        jabatanName: "Koordinator Community Development Division",
-        portraitImagePath: "/images/pengurus_img/Daniel Alexander 2.jpg",
+        fullName: "Andrew Lawrence",
+        jabatanName: "Sub-Coordinator Community Development Division",
+        portraitImagePath: "/images/pengurus_img/Andrew.png",
     },
     {
-        fullName: "Rionaldi Marhanson Wijaya",
-        jabatanName: "Sub-Koordinator Community Development Division",
-        portraitImagePath: "/images/pengurus_img/Rionaldi Marhanson Wijaya 3.jpg",
+        fullName: "Swasa Raditya",
+        jabatanName: "Sub-Coordinator Community Development Division",
+        portraitImagePath: "/images/pengurus_img/Swasa.png",
     },
     {
-        fullName: "Ariel Vito Suyata Ong",
-        jabatanName: "Sub-Koordinator Community Development Division",
-        portraitImagePath: "/images/pengurus_img/Ariel Vito Suyata Ong.jpg",
+        fullName: "Derian Ardenichson",
+        jabatanName: "Coordinator Education Division",
+        portraitImagePath: "/images/pengurus_img/Derian.png",
     },
     {
-        fullName: "Richard Prayogi",
-        jabatanName: "Koordinator Education Division",
-        portraitImagePath: "/images/pengurus_img/Richard Prayogi 2.jpg",
+        fullName: "Sean Matthew",
+        jabatanName: "Sub-Coordinator Education Division",
+        portraitImagePath: "/images/pengurus_img/Sean.png",
     },
     {
-        fullName: "Gaung Ramadhan Bagaswara",
-        jabatanName: "Sub-Koordinator Education Division",
-        portraitImagePath: "/images/pengurus_img/Gaung Ramadhan Bagaswara 2.jpg",
+        fullName: "Angeline Cecilia",
+        jabatanName: "Coordinator Public Relations Division",
+        portraitImagePath: "/images/pengurus_img/Angel.png",
     },
     {
-        fullName: "Winson Allan Wijaya",
-        jabatanName: "Sub-Koordinator Education Division",
-        portraitImagePath: "/images/pengurus_img/Winson Allan Wijaya.jpg",
+        fullName: "Lauretta Gail Rosalind Wijaya",
+        jabatanName: "Sub-Coordinator Public Relations Division",
+        portraitImagePath: "/images/pengurus_img/Lau.png",
     },
     {
-        fullName: "Hubertus Darrel Santoso",
-        jabatanName: "Koordinator Public Relations Division",
-        portraitImagePath: "/images/pengurus_img/Hubertus Darrel Santoso 2.jpeg",
+        fullName: "Rezi Kharmeilya",
+        jabatanName: "Sub-Coordinator Public Relations Division",
+        portraitImagePath: "/images/pengurus_img/Rei.png",
     },
     {
-        fullName: "Vito Sebastian Sanjaya",
-        jabatanName: "Sub-Koordinator Public Relations Division",
-        portraitImagePath: "/images/pengurus_img/Vito Sebastian Sanjaya 2.jpg",
+        fullName: "Julia Marcelina",
+        jabatanName: "Coordinator Media and Creative Division",
+        portraitImagePath: "/images/pengurus_img/Julia.png",
     },
     {
-        fullName: "Ferry",
-        jabatanName: "Sub-Koordinator Public Relations Division",
-        portraitImagePath: "/images/pengurus_img/Ferry Edited.png",
-    },
-    {
-        fullName: "Stanly Bianconeri",
-        jabatanName: "Koordinator Media and Creative Division",
-        portraitImagePath: "/images/pengurus_img/Stanly Bianconeri 2.jpg",
-    },
-    {
-        fullName: "Steven Yoshell Yapriadi",
-        jabatanName: "HR Manager",
-        portraitImagePath: "/images/pengurus_img/Steven Yoshell Yapriadi 2.png",
+        fullName: "Shafira Desriani Rosyad",
+        jabatanName: "Sub-Coordinator Media and Creative Division",
+        portraitImagePath: "/images/pengurus_img/Rara.png",
     },
 ]
 
@@ -274,7 +264,7 @@ function About() {
                     </h2>
                     <p className="text-sm md:text-base font-bold">Orang-Orang Dibalik BGDC</p>
                 </div>
-                <div className="px-8 lg:px-auto m-4 grid grid-cols-1 gap-8 sm:grid-cols-3 ">
+                <div className="px-8 lg:px-auto m-4 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 ">
                     {pengurusStatic.map((props, i) => (
                         <PengurusCard key={i} {...props}></PengurusCard>
                     ))}
