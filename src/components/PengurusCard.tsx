@@ -11,10 +11,16 @@ const PengurusCard = ({ fullName, jabatanName, portraitImagePath }: PengurusCard
     const [isLoaded, setLoaded] = useState(false)
     return (
         <div className="text-center pt-4 grid place-items-center">
-            <div className={`border-orange-300 bg-orange-300 w-[200px] h-[200px] rounded-full border-4`}>
+            <div
+                className={`border-orange-300 bg-orange-300 w-[200px] h-[200px] rounded-full border-4`}
+            >
                 <Image
-                    onLoad={(_e) => {setLoaded(true)}}
-                    className={`object-cover transition-opacity ${isLoaded ? "opacity-100" : "opacity-0"}`} 
+                    onLoad={(_e) => {
+                        setLoaded(true)
+                    }}
+                    className={`object-cover transition-opacity ${
+                        isLoaded ? "opacity-100" : "opacity-0"
+                    }`}
                     src={portraitImagePath}
                     alt={fullName}
                     width={200}
