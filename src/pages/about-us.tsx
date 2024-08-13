@@ -45,56 +45,53 @@ const pengurusStatic: PengurusCardProps[] =
          "outlineColorHex": bendaharaOutline
      },
      {
-         "fullName": "M. Raphael Caesar Ponda'ag"
+         "fullName": "M. Raphael Caesar Ponda'ag",
          "jabatanName": "Koordinator Community Development Division",
          "portraitImagePath": "/images/pengurus_img/ponda.png",
          "outlineColorHex": comdevOutline
      },
      {
-         "fullName": "Nathanael Marvin Wijaya"
+         "fullName": "Nathanael Marvin Wijaya",
          "jabatanName": "Sub-Koordinator Community Development Division",
          "portraitImagePath": "/images/pengurus_img/marvin.png",
          "outlineColorHex": comdevOutline
      },
      {
-         "fullName": "Vivian Catharina"
+         "fullName": "Vivian Catharina",
          "jabatanName": "Koordinator Education Division",
          "portraitImagePath": "/images/pengurus_img/vivian.jpg",
          "outlineColorHex": eduOutline
      },
      {
-         "fullName": "Mikael Ananda Ang"
+         "fullName": "Mikael Ananda Ang",
          "jabatanName": "Sub-Koordinator Education Division",
          "portraitImagePath": "/images/pengurus_img/mikael.jpg",
          "outlineColorHex": eduOutline
      },
      {
-         "fullName": "Joshua Mackenzie Chandra"
+         "fullName": "Joshua Mackenzie Chandra",
          "jabatanName": "Koordinator Education Division",
          "portraitImagePath": "/images/pengurus_img/JoshDog.png",
          "outlineColorHex": prOutline
      },
      {
-         "fullName": "Jesslyn Saputra"
+         "fullName": "Jesslyn Saputra",
          "jabatanName": "Sub-Koordinator Education Division",
          "portraitImagePath": "/images/pengurus_img/jess.jpg",
          "outlineColorHex": prOutline
      },
      {
-         "fullName": "Josephine Tatyana Aryandi"
+         "fullName": "Josephine Tatyana Aryandi",
          "jabatanName": "Sub-Koordinator Education Division",
          "portraitImagePath": "/images/pengurus_img/ck.jpg",
          "outlineColorHex": prOutline
      },
      {
-         "fullName": "Labitta Arella"
+         "fullName": "Labitta Arella",
          "jabatanName": "Koordinator Media and Creative Division",
          "portraitImagePath": "/images/pengurus_img/tita.png",
          "outlineColorHex": medcreaOutline
      },
-
-
-
 ];
 
 
