@@ -23,7 +23,7 @@ const pengurusStatic: PengurusCardProps[] =
      {
          "fullName": "Indra Cetta Daniswara",
          "jabatanName": "Ketua Regional Alam Sutera",
-         "portraitImagePath": "/images/pengurus_img/indra mask.jpg",
+         "portraitImagePath": "/images/pengurus_img/indraDevourer.jpg",
          "outlineColorHex": ketregOutline
      },
      {
