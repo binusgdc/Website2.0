@@ -2,83 +2,31 @@ import PengurusCard, { PengurusCardProps } from "../components/PengurusCard"
 import MainLayout from "../layouts/MainLayouts"
 import Image from "next/image"
 
-const pengurusStatic: PengurusCardProps[] = [
-    {
-        fullName: "Ida Bagus Kuwera Girindra Putra",
-        jabatanName: "Ketua Umum BGDC",
-        portraitImagePath: "/images/pengurus_img/Kuwera.png",
-    },
-    {
-        fullName: "Teuku Humam Zahran",
-        jabatanName: "Ketua Regional Kemanggisan",
-        portraitImagePath: "/images/pengurus_img/Humam.png",
-    },
-    {
-        fullName: "Roger Gilbert Fernandi",
-        jabatanName: "Ketua Regional Alam Sutera",
-        portraitImagePath: "/images/pengurus_img/Roger.png",
-    },
-    {
-        fullName: "Wilson Nathaniel",
-        jabatanName: "Sekretaris Umum",
-        portraitImagePath: "/images/pengurus_img/Wilson.png",
-    },
-    {
-        fullName: "Mary Regina Ang",
-        jabatanName: "Bendahara Umum",
-        portraitImagePath: "/images/pengurus_img/Mary.png",
-    },
-    {
-        fullName: "Alana Leandra",
-        jabatanName: "Coordinator Community Development Division",
-        portraitImagePath: "/images/pengurus_img/Alana.png",
-    },
-    {
-        fullName: "Andrew Lawrence",
-        jabatanName: "Sub-Coordinator Community Development Division",
-        portraitImagePath: "/images/pengurus_img/Andrew.png",
-    },
-    {
-        fullName: "Swasa Raditya",
-        jabatanName: "Sub-Coordinator Community Development Division",
-        portraitImagePath: "/images/pengurus_img/Swasa.png",
-    },
-    {
-        fullName: "Derian Ardenichson",
-        jabatanName: "Coordinator Education Division",
-        portraitImagePath: "/images/pengurus_img/Derian.png",
-    },
-    {
-        fullName: "Sean Matthew",
-        jabatanName: "Sub-Coordinator Education Division",
-        portraitImagePath: "/images/pengurus_img/Sean.png",
-    },
-    {
-        fullName: "Angeline Cecilia",
-        jabatanName: "Coordinator Public Relations Division",
-        portraitImagePath: "/images/pengurus_img/Angel.png",
-    },
-    {
-        fullName: "Lauretta Gail Rosalind Wijaya",
-        jabatanName: "Sub-Coordinator Public Relations Division",
-        portraitImagePath: "/images/pengurus_img/Lau.png",
-    },
-    {
-        fullName: "Rezi Kharmeilya",
-        jabatanName: "Sub-Coordinator Public Relations Division",
-        portraitImagePath: "/images/pengurus_img/Rei.png",
-    },
-    {
-        fullName: "Julia Marcelina",
-        jabatanName: "Coordinator Media and Creative Division",
-        portraitImagePath: "/images/pengurus_img/Julia.png",
-    },
-    {
-        fullName: "Shafira Desriani Rosyad",
-        jabatanName: "Sub-Coordinator Media and Creative Division",
-        portraitImagePath: "/images/pengurus_img/Rara.png",
-    },
-]
+const ketumOutline = "#ca0085";
+const ketregOutline = "#f19400";
+
+const pengurusStatic: PengurusCardProps[] =
+[
+    // {
+    //     "fullName": "Indra Cetta Daniswara",
+    //     "jabatanName": "Ketua Umum BGDC",
+    //     "portraitImagePath": "/images/pengurus_img/indra.jpg",
+    //     "outlineColorHex" : ketumOutline
+    // },
+    // {
+    //     "fullName": "Indra Cetta Daniswara",
+    //     "jabatanName": "KetReg Alam Sutera",
+    //     "portraitImagePath": "/images/pengurus_img/KetReg Alam Sutera_Indra Cetta Daniswara.png",
+    //     "outlineColorHex": ketregOutline
+    // },
+    // {
+    //     "fullName": "Dave Edmund Daniel",
+    //     "jabatanName": "KetReg Kemanggisan",
+    //     "portraitImagePath": "/images/pengurus_img/KetReg Alam Sutera_Dave Edmund Daniel.png",
+    //     "outlineColorHex": ketregOutline
+    // },
+];
+
 
 function About() {
     return (

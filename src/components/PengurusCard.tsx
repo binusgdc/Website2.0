@@ -5,20 +5,25 @@ export type PengurusCardProps = {
     fullName: string
     jabatanName: string
     portraitImagePath: string
+    outlineColorHex: string
 }
 
-const PengurusCard = ({ fullName, jabatanName, portraitImagePath }: PengurusCardProps) => {
+const PengurusCard = ({ fullName, jabatanName, portraitImagePath, outlineColorHex }: PengurusCardProps) => {
     const [isLoaded, setLoaded] = useState(false)
     return (
         <div className="text-center pt-4 grid place-items-center">
             <div
-                className={`border-orange-300 bg-orange-300 w-[200px] h-[200px] rounded-full border-4`}
+                className={`w-[200px] h-[200px] rounded-full border-8`}
+                style={{
+                    borderColor: outlineColorHex,
+                    backgroundColor: outlineColorHex
+                }}
             >
                 <Image
                     onLoad={(_e) => {
                         setLoaded(true)
                     }}
-                    className={`object-cover transition-opacity ${
+                    className={`object-cover rounded-full transition-opacity ${
                         isLoaded ? "opacity-100" : "opacity-0"
                     }`}
                     src={portraitImagePath}
