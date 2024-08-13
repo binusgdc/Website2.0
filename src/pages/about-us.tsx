@@ -4,27 +4,97 @@ import Image from "next/image"
 
 const ketumOutline = "#ca0085";
 const ketregOutline = "#f19400";
+const bendaharaOutline = "#bb3bae";
+const sekreOutline = "#bb3bae";
+const prOutline = "#cc2424";
+const eduOutline = "#3ca8F5";
+const medcreaOutline = "#8747d8";
+const comdevOutline = "#ffc700"; 
+
 
 const pengurusStatic: PengurusCardProps[] =
 [
-    // {
-    //     "fullName": "Indra Cetta Daniswara",
-    //     "jabatanName": "Ketua Umum BGDC",
-    //     "portraitImagePath": "/images/pengurus_img/indra.jpg",
-    //     "outlineColorHex" : ketumOutline
-    // },
-    // {
-    //     "fullName": "Indra Cetta Daniswara",
-    //     "jabatanName": "KetReg Alam Sutera",
-    //     "portraitImagePath": "/images/pengurus_img/KetReg Alam Sutera_Indra Cetta Daniswara.png",
-    //     "outlineColorHex": ketregOutline
-    // },
-    // {
-    //     "fullName": "Dave Edmund Daniel",
-    //     "jabatanName": "KetReg Kemanggisan",
-    //     "portraitImagePath": "/images/pengurus_img/KetReg Alam Sutera_Dave Edmund Daniel.png",
-    //     "outlineColorHex": ketregOutline
-    // },
+    {
+         "fullName": "Indra Cetta Daniswara",
+         "jabatanName": "Ketua Umum BGDC",
+         "portraitImagePath": "/images/pengurus_img/indra.jpg",
+         "outlineColorHex" : ketumOutline
+     },
+     {
+         "fullName": "Indra Cetta Daniswara",
+         "jabatanName": "Ketua Regional Alam Sutera",
+         "portraitImagePath": "/images/pengurus_img/indra mask.jpg",
+         "outlineColorHex": ketregOutline
+     },
+     {
+         "fullName": "Dave Edmund Daniel",
+         "jabatanName": "Ketua Regional Kemanggisan",
+         "portraitImagePath": "/images/pengurus_img/Dave.jpg",
+         "outlineColorHex": ketregOutline
+     },
+     {
+         "fullName": "Joshua Mackenzie Chandra",
+         "jabatanName": "Sekretaris Umum",
+         "portraitImagePath": "/images/pengurus_img/josh.png",
+         "outlineColorHex": sekreOutline
+     },
+     {
+         "fullName": "Marcello Arvel",
+         "jabatanName": "Bendahara Umum",
+         "portraitImagePath": "/images/pengurus_img/arvel.jpg",
+         "outlineColorHex": bendaharaOutline
+     },
+     {
+         "fullName": "M. Raphael Caesar Ponda'ag"
+         "jabatanName": "Koordinator Community Development Division",
+         "portraitImagePath": "/images/pengurus_img/ponda.png",
+         "outlineColorHex": comdevOutline
+     },
+     {
+         "fullName": "Nathanael Marvin Wijaya"
+         "jabatanName": "Sub-Koordinator Community Development Division",
+         "portraitImagePath": "/images/pengurus_img/marvin.png",
+         "outlineColorHex": comdevOutline
+     },
+     {
+         "fullName": "Vivian Catharina"
+         "jabatanName": "Koordinator Education Division",
+         "portraitImagePath": "/images/pengurus_img/vivian.jpg",
+         "outlineColorHex": eduOutline
+     },
+     {
+         "fullName": "Mikael Ananda Ang"
+         "jabatanName": "Sub-Koordinator Education Division",
+         "portraitImagePath": "/images/pengurus_img/mikael.jpg",
+         "outlineColorHex": eduOutline
+     },
+     {
+         "fullName": "Joshua Mackenzie Chandra"
+         "jabatanName": "Koordinator Education Division",
+         "portraitImagePath": "/images/pengurus_img/JoshDog.png",
+         "outlineColorHex": prOutline
+     },
+     {
+         "fullName": "Jesslyn Saputra"
+         "jabatanName": "Sub-Koordinator Education Division",
+         "portraitImagePath": "/images/pengurus_img/jess.jpg",
+         "outlineColorHex": prOutline
+     },
+     {
+         "fullName": "Josephine Tatyana Aryandi"
+         "jabatanName": "Sub-Koordinator Education Division",
+         "portraitImagePath": "/images/pengurus_img/ck.jpg",
+         "outlineColorHex": prOutline
+     },
+     {
+         "fullName": "Labitta Arella"
+         "jabatanName": "Koordinator Media and Creative Division",
+         "portraitImagePath": "/images/pengurus_img/tita.png",
+         "outlineColorHex": medcreaOutline
+     },
+
+
+
 ];
 
 
