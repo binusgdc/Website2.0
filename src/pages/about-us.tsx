@@ -70,19 +70,19 @@ const pengurusStatic: PengurusCardProps[] =
      },
      {
          "fullName": "Joshua Mackenzie Chandra",
-         "jabatanName": "Koordinator Education Division",
+         "jabatanName": "Koordinator Public Relations Division",
          "portraitImagePath": "/images/pengurus_img/JoshDog.png",
          "outlineColorHex": prOutline
      },
      {
          "fullName": "Jesslyn Saputra",
-         "jabatanName": "Sub-Koordinator Education Division",
+         "jabatanName": "Sub-Koordinator Public Relations Division",
          "portraitImagePath": "/images/pengurus_img/jess.jpg",
          "outlineColorHex": prOutline
      },
      {
          "fullName": "Josephine Tatyana Aryandi",
-         "jabatanName": "Sub-Koordinator Education Division",
+         "jabatanName": "Sub-Koordinator Public Relations Division",
          "portraitImagePath": "/images/pengurus_img/ck.jpg",
          "outlineColorHex": prOutline
      },
